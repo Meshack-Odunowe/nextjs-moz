@@ -12,6 +12,7 @@ import { db } from '../firebase/config';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Image from 'next/image';
+import Head from 'next/head'; 
 function Blog() {
   const [loadingInProgress, setLoading] = useState(true);
   const [postList, setPostList] = useState([]);
@@ -73,6 +74,7 @@ function Blog() {
 
   return (
     <>
+  
       <nav className='my-8 justify-end max-w-7xl px-4 flex gap-4'>
         {user ? ( // Check if there is a logged-in user
           <>
@@ -84,7 +86,7 @@ function Blog() {
             </button>
           </>
         ) : (
-          <Link href={'login'} onClick={handleGetStartedClick} to='/login' className='bg-slate-100 text-black px-4 py-2 rounded-md hover:font-bold'>
+          <Link href={'/login'} onClick={handleGetStartedClick} to='/login' className='bg-slate-100 text-black px-4 py-2 rounded-md hover:font-bold'>
             Sign Up/Login
           </Link>
         )}

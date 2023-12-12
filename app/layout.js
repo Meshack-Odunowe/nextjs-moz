@@ -1,9 +1,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import NavBar from "../../mozisha-nextjs/app/components/navbar/page";
+import NavBar from "./components/navbar/page";
 import Footer from "./footer/page";
 import { ToastContainer } from "react-toastify";
-// import {  AuthProvider } from "./context/AuthContext";
+import {  AuthProvider } from "./context/Context";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {

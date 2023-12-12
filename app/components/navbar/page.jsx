@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { FcMenu } from 'react-icons/fc';
-import { ImTimes } from 'react-icons/im';
+import { FaTimes, faTimes } from 'react-icons/fa';
 import { useRouter } from 'next/navigation';
 import img from "../../../public/mozishaweb.svg";
 
@@ -59,7 +59,7 @@ const NavBar = () => {
           <nav className="flex relative md:hidden py-8 mx-4 justify-between items-center">
             <Link href="/"
               onClick={navigateToHome}>
-                <Image className="w-40" src={img} alt="" />
+              <Image className="w-40" src={img} alt="" width={50} height={50} />
              
             </Link>
             <ul
@@ -88,7 +88,7 @@ const NavBar = () => {
                 </Link>
               </li>
               <li onClick={closeMenu} className="cursor-pointer">
-                <Link href="/blog">
+                <Link href="/workinprogress">
                  Blog
                 </Link>
               </li>
@@ -101,7 +101,7 @@ const NavBar = () => {
   onClick={toggleMenu}
 />
 {menuOpen && (
-  <ImTimes
+  <FaTimes
     className={`absolute md:hidden top-6 right-4 text-3xl z-30`}
     onClick={closeMenu}
   />
@@ -145,7 +145,7 @@ const NavBar = () => {
               </Link>
             </li>
             <li className="px-4 py-4" onClick={handleGetStartedClick}>
-              <Link href="/blog">
+              <Link href="/workinprogress">
                 Blog
               </Link>
             </li>
