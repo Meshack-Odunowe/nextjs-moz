@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 'use client'// pages/team.js
 import { useEffect } from "react";
 import Image from "next/image";
@@ -116,7 +115,7 @@ const Team = () => {
                 expertise lies in curriculum and instruction, with a primary
                 research focus on mathematics and science education. Before
                 joining Mozisha, Professor Holtman served as a director at the
-                University of the Western Cape, recognized as one of Africa's
+                University of the Western Cape, recognized as one of Africa&apos;s
                 top universities. She is also a Certified Reinvention
                 Practitioner.
               </blockquote>
