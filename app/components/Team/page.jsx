@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client'// pages/team.js
 import { useEffect } from "react";
 import Image from "next/image";
