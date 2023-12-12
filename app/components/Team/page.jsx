@@ -1,4 +1,4 @@
-// pages/team.js
+'use client'// pages/team.js
 import { useEffect } from "react";
 import Image from "next/image";
 import AOS from "aos";
