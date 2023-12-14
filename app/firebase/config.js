@@ -24,7 +24,7 @@ export { database, db };
 export const storage = getStorage(app);
 export const auth = getAuth(app);
 // export const provider = new GoogleAuthProvider();
-const provider = new firebase.auth.GoogleAuthProvider();
+export const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({ prompt: "select_account" });
 const signIn = () => auth.signInWithPopup(provider);
 const signOut = () => auth.signOut();
