@@ -12,7 +12,6 @@ import Hero from './components/hero/page';
 import HowItWorks from './components/howitworks/page';
 import Testimonial from './components/testimonial/page';
 import FrequentlyAskedQuestions from './components/frequentlyAskedQuestions/page';
-
 function Home() {
   const [isHovered, setIsHovered] = useState(false);
   const router = useRouter(); // Initialize useRouter

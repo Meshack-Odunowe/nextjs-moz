@@ -3,7 +3,7 @@ import "./globals.css";
 import NavBar from "./components/navbar/page";
 import Footer from "./footer/page";
 import { ToastContainer } from "react-toastify";
-import {  AuthProvider } from "./context/Context";
+import Whatsapp from "./components/Whatsapp/Whatsapp";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -13,18 +13,23 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+
+  
+
   return (
     <html lang="en">
       <ToastContainer autoClose={2000} />
-      {/* <AuthProvider> */}
+      <head>
+        <link rel='icon' href='/favicon.png'/>
+      </head>
         <body className={inter.className}>
           <NavBar />
 
           {children}
-
+       <Whatsapp/>
           <Footer />
         </body>
-      {/* </AuthProvider> */}
     </html>
   );
 }
