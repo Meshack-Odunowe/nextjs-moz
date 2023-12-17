@@ -77,16 +77,15 @@ const NavBar = () => {
                 About Us
                 </Link>
               </li>
-              <li onClick={closeMenu} className="cursor-pointer">
-                <Link href="/business">
-                  Businesses
-                </Link>
+              <li onClick={handleGetStartedClick} className="px-4 py-4 ">
+              <Link href="/mentors">
+Mentoring              </Link>
+            </li>
+              <li onClick={closeMenu}>
+                <Link href="/mockinterview">
+mock Interviews                </Link>
               </li>
-              <li onClick={closeMenu} className="cursor-pointer">
-                <Link href="/talents">
-                  Talents
-                </Link>
-              </li>
+             
               <li onClick={closeMenu} className="cursor-pointer">
                 <Link href="/workinprogress">
                  Blog
@@ -134,16 +133,15 @@ const NavBar = () => {
               About Us
               </Link>
             </li>
-            <li onClick={handleGetStartedClick} className="px-4 py-4">
-              <Link href="/business">
-                Businesses
-              </Link>
+            <li onClick={handleGetStartedClick} className="px-4 py-4 ">
+              <Link href="/mentors">
+Mentoring              </Link>
             </li>
-            <li onClick={handleGetStartedClick} className="px-4 py-4">
-              <Link href="/talents">
-                Talents
-              </Link>
+            <li onClick={handleGetStartedClick} className="px-4 py-4 ">
+              <Link href="/mockinterview">
+Mock Interviews              </Link>
             </li>
+           
             <li className="px-4 py-4" onClick={handleGetStartedClick}>
               <Link href="/workinprogress">
                 Blog

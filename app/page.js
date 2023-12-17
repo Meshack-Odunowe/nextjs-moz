@@ -84,7 +84,7 @@ function Home() {
               </div>
               <div>
                 <button className="bg-purple-700 text-white rounded-md md:px-4 md:py-2 py-2 hover:bg-purple-100 mb-4 hover:text-purple-800 hover:font-bold md:w-full justify-center items-center w-full">
-                  <Link href="/workinprogress"onClick={handleGetStartedClick}>For Mentors
+                  <Link href="/mentors"onClick={handleGetStartedClick}>For Mentors
                   </Link>
                 </button>
                 <p className="text-sm text-center mb-16">
