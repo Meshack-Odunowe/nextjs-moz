@@ -2,7 +2,7 @@
 import { useState } from "react";
 import noel from "../../public/noel.jpg";
 import frederick from "../../public/fred-mentor.png";
-import Victor from "../../public/victor-mentor.jpg";
+import Victor from "../../public/victormentor.png";
 import Image from "next/image";
 
 const Explore = () => {
