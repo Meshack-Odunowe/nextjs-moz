@@ -33,10 +33,10 @@ const Footer = () => {
           <Link href="/business">Businesses</Link>
         </p>
         <p className="" onClick={handleGetStartedClick}>
-          <Link href="/fortalents">Talents</Link>
+          <Link href="/talents">Talents</Link>
         </p>
         <p className="" onClick={handleGetStartedClick}>
-          <Link href="/blog">Blog</Link>
+          <Link href="/workinprogress">Blog</Link>
         </p>
 
         <p className="mt-8" onClick={handleGetStartedClick}>
