@@ -19,6 +19,7 @@ const About = () => {
   return (
     <><Head>
     <title>About</title>
+    <meta name='description' content='I hope this tutorial is helpful for you' />
   </Head>
       <div data-aos-duration="2000" data-aos="fade-up" className="md:p-20 p-8">
         <h1

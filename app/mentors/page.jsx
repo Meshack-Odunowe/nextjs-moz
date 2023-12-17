@@ -24,15 +24,15 @@ const Ment = () => {
       data-aos="fade-up"
       className="px-8 max-w-[1200px] mx-auto mt-12">
       <h1 className=" text-4xl text-center font-bold  md:text-6xl pb-16">
-        Welcome to Mozisha Mentoring
+        Welcome to Mozisha Mentorship
       </h1>{" "}
       <p className=" flex items-center  gap-x-4 text-2xl font-semibold mb-4">
         <span className="  text-purple-700">
           <FaRocket />
         </span>{" "}
-        Unlock Your Potential, Shape Futures     </p>
+        A Platform for Unlocking Potentials.    </p>
       <p className=" leading-8 tracking-wider mb-8">
-      At Mozisha, we believe in the power of mentorship to transform careers and lives. Whether you're a seasoned professional eager to share your wisdom or a talented individual seeking guidance, Mozisha Mentoring is your gateway to success and fulfillment.
+      At Mozisha, we believe in the power of mentorship to transform careers and lives. Whether you're a seasoned professional eager to share your wisdom or a talented individual seeking guidance, Mozisha Mentorship is your gateway to success and fulfillment.
       </p>
       <div data-aos-duration="2000" data-aos="fade-up">
         <div data-aos-duration="2000" data-aos="fade-up" className="mb-32">

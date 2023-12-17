@@ -21,7 +21,7 @@ function MenteesTab() {
       className="flex flex-col md:flex-row mt-8  gap-8 items-center h-full">
       <div data-aos-duration="2000" data-aos="fade-up" className="md:w-1/2">
         <h1 className="my-8 text-3xl md:text-4xl font-bold">
-          Welcome to Mozisha Mentoring
+          Welcome to Mozisha Mentorship
         </h1>
         <p className=" leading-8 mb-8">
           Your gateway to personalized guidance, hands-on insights, and a direct
@@ -56,7 +56,7 @@ function MenteesTab() {
       </div>
       <div data-aos-duration="2000" data-aos="fade-up">
             <h2 className=" font-bold text-2xl mb-8 text-center">
-              Why Mozisha Mentoring?
+              Why Mozisha Mentorship?
             </h2>
 
             <div
@@ -76,7 +76,7 @@ function MenteesTab() {
                       Tailored Guidance
                     </h4>
                     <p className=" ">
-                      Our mentoring program is crafted to suit your unique
+                      Our mentorship program is crafted to suit your unique
                       journey. Whether you're a budding professional or an
                       aspiring talent, we connect you with seasoned experts
                       who've been there and conquered that!
@@ -124,7 +124,7 @@ function MenteesTab() {
                 data-aos-duration="2000"
                 data-aos="fade-left"
                 src={M}
-                alt="mentoring"
+                alt="mentorship"
                 className=" object-cover h-96 "
               />
             </div>
@@ -217,7 +217,7 @@ function MenteesTab() {
                       Global Network
                     </h4>
                     <p className=" ">
-                      Mozisha's mentoring doesn't just stop at advice; it opens
+                      Mozisha's mentorship doesn't just stop at advice; it opens
                       doors. Connect with professionals from diverse
                       backgrounds, expanding your network and horizons.
                     </p>
@@ -258,7 +258,7 @@ function MenteesTab() {
                     Sign Up
                   </p>
                   <p className=" font-semibold tracking-wide leading-8">
-                    Join the Mozisha Mentoring community. Tell us about your
+                    Join the Mozisha Mentorship community. Tell us about your
                     goals, dreams, and the skills you want to develop.
                   </p>
                 </div>
@@ -311,7 +311,7 @@ function MenteesTab() {
                     Achieve Success
                   </p>
                   <p className=" font-semibold tracking-wide leading-8">
-                    With Mozisha Mentoring, success is not just a goal; it's an
+                    With Mozisha Mentorship, success is not just a goal; it's an
                     inevitable outcome. Your journey to a thriving career starts
                     here.
                   </p>
@@ -328,7 +328,7 @@ function MenteesTab() {
               </p>
               <p className=" leading-8 max-w-3xl mb-8">
                 Don't just dream about success; make it a reality with Mozisha
-                Mentoring. Sign up now and embark on a journey where talents are
+                Mentorship. Sign up now and embark on a journey where talents are
                 nurtured, skills are honed, and success is inevitable.
               </p>
               <p className="mb-12">
