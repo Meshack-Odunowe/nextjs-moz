@@ -1,8 +1,8 @@
-'use client'
+"use client";
 import { FaDesktop } from "react-icons/fa";
 
 import { ImStatsBars } from "react-icons/im";
-import Link  from "next/link";
+import Link from "next/link";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -16,7 +16,6 @@ function Details() {
   }, []);
   return (
     <div className="my-24">
-      
       <p className=" text-center leading-8 my-8">
         Discover mentors specializing in product fields worldwide.
       </p>
@@ -54,7 +53,7 @@ function Details() {
             </p>
           </div>
         </div>
-      
+
         <div
           data-aos-duration="2000"
           data-aos="fade-up"
@@ -64,9 +63,10 @@ function Details() {
           </div>
           <div>
             <h2 className="md:text-2xl font-extrabold text-purple-700">
-International Development            </h2>
+              International Development
+            </h2>
             <p className="text-teal-700 font-bold">
-            Fostering sustainable economic growth.
+              Fostering sustainable economic growth.
             </p>
           </div>
         </div>
@@ -79,9 +79,10 @@ International Development            </h2>
           </div>
           <div>
             <h2 className="md:text-2xl font-extrabold text-purple-700">
-Sales and Marketing            </h2>
+              Sales and Marketing{" "}
+            </h2>
             <p className="text-teal-700 font-bold">
-            Promote, sell, and distribute products or services .
+              Promote, sell, and distribute products or services .
             </p>
           </div>
         </div>
@@ -89,7 +90,7 @@ Sales and Marketing            </h2>
       <button className=" text-center font-bold my-8 bg-purple-700 text-white px-6 py-2 rounded-md cursor-pointer hover:underline">
         <Link href="explorementors" onClick={handleGetStartedClick}>
           Explore Mentors
-        </Link>{" "}
+        </Link>
       </button>
     </div>
   );

@@ -289,7 +289,7 @@ function MenteesTab() {
                   <p className=" text-red-600 px-6 py-2 border-red-300 border w-fit rounded-xl">
                     Experience Growth
                   </p>
-                  <img
+                  <Image width={400}
                     data-aos-duration="2000"
                     data-aos="fade-left"
                     src={Arrow}
