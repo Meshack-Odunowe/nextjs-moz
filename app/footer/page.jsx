@@ -40,10 +40,13 @@ const Footer = () => {
         </p>
 
         <p className="mt-8" onClick={handleGetStartedClick}>
-          <Link href="/terms">Terms of Use</Link>
+          <Link href="/termsofuse">Terms of Use</Link>
         </p>
         <p onClick={handleGetStartedClick}>
-          <Link href="/privacy">Privacy Policy</Link>
+          <Link href="/privacypolicy">Privacy Policy</Link>
+        </p>
+        <p onClick={handleGetStartedClick}>
+          <Link href="/faq">Frequently Asked Questions</Link>
         </p>
       </div>
       <div data-aos-duration="1000" data-aos="fade-up">

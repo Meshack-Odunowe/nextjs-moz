@@ -1,11 +1,13 @@
 "use client";
-import { FaDesktop } from "react-icons/fa";
+import { FaDatabase, FaDesktop, FaGlobeAfrica } from "react-icons/fa";
 
 import { ImStatsBars } from "react-icons/im";
 import Link from "next/link";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { SiBmcsoftware} from "react-icons/si";
+import { GiArchiveResearch } from "react-icons/gi";
 function Details() {
   function handleGetStartedClick() {
     window.scrollto(0, 0);
@@ -44,7 +46,7 @@ function Details() {
           data-aos="fade-up"
           className="flex gap-8 items-center bg-green-100 shadow-md w-full  px-4 py-4 rounded-md ">
           <div>
-            <ImStatsBars className="text-3xl text-teal-700" />
+            <FaDatabase  className="text-3xl text-teal-700" />
           </div>
           <div>
             <h2 className="md:text-2xl font-extrabold text-purple-700">Data</h2>
@@ -59,7 +61,7 @@ function Details() {
           data-aos="fade-up"
           className="flex gap-8 items-center bg-green-100 shadow-md w-full  px-4 py-4 rounded-md ">
           <div>
-            <ImStatsBars className="text-3xl text-teal-700" />
+            <FaGlobeAfrica className="text-3xl text-teal-700" />
           </div>
           <div>
             <h2 className="md:text-2xl font-extrabold text-purple-700">
@@ -84,6 +86,32 @@ function Details() {
             <p className="text-teal-700 font-bold">
               Promote, sell, and distribute products or services .
             </p>
+          </div>
+        </div>
+        <div
+          data-aos-duration="2000"
+          data-aos="fade-up"
+          className="flex gap-8 items-center bg-green-100 shadow-md w-full  px-4 py-4 rounded-md ">
+          <div>
+            <SiBmcsoftware className="text-3xl text-teal-700" />
+          </div>
+          <div>
+            <h2 className="md:text-2xl font-extrabold text-purple-700">Software Engineering            </h2>
+            <p className="text-teal-700 font-bold">
+            Design, development, testing, deployment, and maintenance of software systems.            </p>
+          </div>
+        </div>
+        <div
+          data-aos-duration="2000"
+          data-aos="fade-up"
+          className="flex gap-8 items-center bg-green-100 shadow-md w-full  px-4 py-4 rounded-md ">
+          <div>
+            <GiArchiveResearch className="text-3xl text-teal-700" />
+          </div>
+          <div>
+            <h2 className="md:text-2xl font-extrabold text-purple-700">Academic and Business Research          </h2>
+            <p className="text-teal-700 font-bold">
+            Generate insights for practical applications and organizational decision-making.          </p>
           </div>
         </div>
       </div>
