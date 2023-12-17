@@ -8,6 +8,7 @@ import img2 from '../../public/group3.jpg';
 import img3 from '../../public/pexels.jpg';
 import img4 from '../../public/united.jpeg';
 import Team from '../components/Team/page';
+import Head from 'next/head';
 
 const About = () => {
   useEffect(() => {
@@ -16,7 +17,9 @@ const About = () => {
   }, []);
 
   return (
-    <>
+    <><Head>
+    <title>About</title>
+  </Head>
       <div data-aos-duration="2000" data-aos="fade-up" className="md:p-20 p-8">
         <h1
           data-aos-duration="2000"
