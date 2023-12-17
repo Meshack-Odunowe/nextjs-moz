@@ -54,13 +54,13 @@ const Explore = () => {
             key={index}
             className="px-4 leading-8 flex flex-col border shadow-lg py-8 rounded-lg hover:scale-110 transition-all ">
             <Image
-              width={400}
+              width={400} height={400}
               src={item.image}
               alt={item.name}
               className="rounded-md w-full h-full object-cover"
             />
             <h2 className="font-bold">{item.name}</h2>
-            <p>Occupation: {item.occupation}</p>
+            <p className=" text-purple-700"> {item.occupation}</p>
           </div>
         ))}
       </div>
