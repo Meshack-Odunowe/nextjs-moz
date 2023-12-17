@@ -52,7 +52,7 @@ function WhyMentorWithMozisha() {
                     </h4>
                     <p className=" ">
                       Your experiences are a treasure trove of insights. Mozisha
-                      Mentoring is your platform to share these invaluable
+                      Mentorship is your platform to share these invaluable
                       lessons, providing mentees with a unique perspective on
                       the realities of the professional world.
                     </p>
@@ -81,7 +81,7 @@ function WhyMentorWithMozisha() {
                 data-aos-duration="2000"
                 data-aos="fade-left"
                 src={M}
-                alt="mentoring"
+                alt="mentorship"
                 className=" object-cover h-96 "
               />
             </div>
@@ -114,7 +114,7 @@ function WhyMentorWithMozisha() {
                       Enhance Leadership Skill{" "}
                     </h4>
                     <p className=" ">
-                      Mentoring is not just about guiding; it's about leading.
+                      Mentorship is not just about guiding; it's about leading.
                       Sharpen your leadership skills as you guide talents
                       through their career journeys.
                     </p>
@@ -145,7 +145,7 @@ function WhyMentorWithMozisha() {
                     </h4>
                     <p className=" ">
                       Connect with a diverse community of mentors and mentees.
-                      Mozisha Mentoring opens doors to new relationships,
+                      Mozisha Mentorship opens doors to new relationships,
                       collaborations, and opportunities.
                     </p>
                   </div>
@@ -247,7 +247,7 @@ function WhyMentorWithMozisha() {
                     </h4>
                     <p className=" ">
                       Your influence extends beyond your individual successes.
-                      Mozisha Mentoring allows you to contribute to the
+                      Mozisha Mentorship allows you to contribute to the
                       collective success of a new generation of professionals,
                       leaving a lasting legacy.
                     </p>
@@ -265,7 +265,7 @@ function WhyMentorWithMozisha() {
 
             <div data-aos-duration="2000" data-aos="fade-up">
               <h5 className=" text-2xl font-bold text-center my-16">
-                Join Mozisha Mentoring - Where Your Expertise Shapes the Future{" "}
+                Join Mozisha Mentorship - Where Your Expertise Shapes the Future{" "}
               </h5>
               <div
                 data-aos-duration="2000"
