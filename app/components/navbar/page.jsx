@@ -71,7 +71,7 @@ const NavBar = () => {
                 <Link href="/about">About Us</Link>
               </li>
               <li onClick={closeMenu} className="px-4 py-4 ">
-                <Link href="/mentors">Mentoring </Link>
+                <Link href="/mentors">Mentorship </Link>
               </li>
               <li onClick={closeMenu}>
                 <Link href="/mockinterview">Mock Interviews </Link>
