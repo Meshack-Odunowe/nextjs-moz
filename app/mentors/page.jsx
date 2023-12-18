@@ -91,7 +91,7 @@ const Ment = () => {
             className="flex flex-col md:flex-row mt-8 mb-16  gap-8 items-center">
             <div data-aos-duration="2000" data-aos="fade-up" className="">
               <h1 className="my-8 text-3xl md:text-4xl font-bold">
-A platform for unlocking potentials              </h1>
+Empowering Young Professionals            </h1>
               <p className=" leading-8 mb-8">
                By dedicating just one hour each month, you can help shape the future of young african professionals.
               </p>

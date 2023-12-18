@@ -97,7 +97,7 @@ export default function FrequentlyAskedQuestions() {
       </Accordion>
       <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography className=' rounded-md text-purple-900 py-4 px-8 w-full'>How does Mozisha handle Executive Assistant and Admin Support?
+          <Typography className=' rounded-md text-purple-900 py-4 px-8 w-full'>How can Mozisha help my business? 
 
 </Typography>
         </AccordionSummary>
