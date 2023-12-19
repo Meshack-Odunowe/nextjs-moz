@@ -58,8 +58,7 @@ function Home() {
               Unlocking African Talents for Global Success
             </h1>
             <p className="mt-8 text-[18px] text-gray-500 md:text-start ">
-              Welcome to Mozisha, Your Gateway to Premium Talents to Supercharge
-              Business Growth.
+              Welcome to Mozisha, Africa's Skills Factory - Your Gateway to Premium Talents to Supercharge Business Growth.
             </p>
             <div className="flex flex-col lg:flex-row mt-16   md:gap-8">
               {' '}

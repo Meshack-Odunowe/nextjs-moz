@@ -19,7 +19,11 @@ const About = () => {
   return (
     <><Head>
     <title>About</title>
-    <meta name='description' content='I hope this tutorial is helpful for you' />
+    <meta
+          name="description"
+        content="At Mozisha, our mission is clear: to nurture premium African talents and connect them with businesses worldwide.  " />
+        <link rel="canonical" href="/about" />
+      
   </Head>
       <div data-aos-duration="2000" data-aos="fade-up" className="md:p-20 p-8">
         <h1
@@ -29,6 +33,20 @@ const About = () => {
         >
           Our Mission
         </h1>
+        <p
+          data-aos-duration="2000"
+          data-aos="fade-up"
+          className="md:px-8 leading-8 py-8">
+          At Mozisha, our mission is clear: to nurture premium African talents
+          and connect them with businesses worldwide. We work to address the
+          challenge of skills mismatch by equipping young Africans with
+          in-demand skills through our innovative practice-based training model.
+          Mozisha also collaborates with global businesses to facilitate access
+          to employment opportunities. Through these partnerships, we aim to
+          help companies scale efficiently while tackling the problem of youth
+          unemployment in Africa. Mozisha provides top-notch outsourcing
+          solutions for business growth.
+        </p>
         <div
           data-aos-duration="2000"
           data-aos="fade-up"
