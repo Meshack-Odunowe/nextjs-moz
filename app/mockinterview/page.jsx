@@ -1,10 +1,20 @@
+'use client'
 /* eslint-disable react/no-unescaped-entities */
 import interview from "../../public/interview.jpg";
 import Arrow from "../../public/arrow.png";
 import { FaGraduationCap, FaSearch, FaSuitcase } from "react-icons/fa";
 import InterviewForm from "../components/AllAboutMentors/InterviewForm";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 import Image from "next/image";
 export default function MockInterview() {
+  useEffect(() => {
+    
+    window.scrollTo(0, 0);
+
+  }, []);
   return (
     <div className=" max-w-6xl mx-auto p-4">
       <div className=" flex flex-col gap-8 md:flex-row  items-center">
