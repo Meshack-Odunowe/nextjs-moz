@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaWhatsapp } from 'react-icons/fa';
 import { useRouter } from 'next/navigation'; 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -11,7 +10,6 @@ import Head from 'next/head';
 import Hero from './components/hero/page';
 import HowItWorks from './components/howitworks/page';
 import Testimonial from './components/testimonial/page';
-import Chat from './components/Chat'
 import FrequentlyAskedQuestions from './components/frequentlyAskedQuestions/page';
 function Home() {
   const [isHovered, setIsHovered] = useState(false);
