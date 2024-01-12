@@ -5,6 +5,7 @@ import Footer from "./footer/page";
 import { ToastContainer } from "react-toastify";
 import Whatsapp from "./components/Whatsapp/Whatsapp";
 import Head from "next/head";
+import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -21,23 +22,26 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-       <Head>
+      <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="google-site-verification" content="Lp0VRsvcy7dFnbasOW4pGobR46Xvy1MA-T7cL2eCbGU" />
         <link rel='icon' href='/favicon.png'/>
-      </Head>
-      <ToastContainer autoClose={2000} />
-      <head>
-        <link rel='icon' href='/favicon.png'/>
+        
+        {/* Move the Tawk.to script here */}
+        <Script
+          type="text/javascript"
+          src="https://embed.tawk.to/65a10fc60ff6374032bf4458/1hjuisdne"
+          async
+        />
       </head>
-        <body className={inter.className}>
-          <NavBar />
 
-          {children}
-       <Whatsapp/>
-          <Footer />
-        </body>
+      <body className={inter.className}>
+        <NavBar />
+        {children}
+        <Whatsapp/>
+        <Footer />
+      </body>
     </html>
   );
 }

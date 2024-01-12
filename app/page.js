@@ -11,6 +11,7 @@ import Head from 'next/head';
 import Hero from './components/hero/page';
 import HowItWorks from './components/howitworks/page';
 import Testimonial from './components/testimonial/page';
+import Chat from './components/Chat'
 import FrequentlyAskedQuestions from './components/frequentlyAskedQuestions/page';
 function Home() {
   const [isHovered, setIsHovered] = useState(false);
@@ -47,13 +48,14 @@ function Home() {
   return (
     <>
       <Head>
-        <title>Home</title>
-        <meta
-          name="Home"
-          content=" Welcome to Mozisha, Your Gateway to Premium Talents to Supercharge Business Growth.  "
-        />
-        <link rel="canonical" href="/home" />
-      </Head>
+  <title>Home</title>
+  <meta
+    name="Home"
+    content=" Welcome to Mozisha, Your Gateway to Premium Talents to Supercharge Business Growth.  "
+  />
+  <link rel="canonical" href="/home" />
+</Head>
+
       <div>
         <div className="flex justify-between items-center gap-16 leading-8  max-w-[1240px] mx-auto flex-col lg:flex-row px-4">
           <div>

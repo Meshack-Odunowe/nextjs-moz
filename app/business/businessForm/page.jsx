@@ -32,7 +32,22 @@ const BusinessForm = () => {
     'Others',
   ];
   const [formValid, setFormValid] = useState(true);
-
+  const handleCheckboxChange = (e) => {
+    const { value } = e.target;
+    const updatedTalentRequirements = [...formData.talentRequirements];
+  
+    if (updatedTalentRequirements.includes(value)) {
+      // Remove the talent if it was already selected
+      const index = updatedTalentRequirements.indexOf(value);
+      updatedTalentRequirements.splice(index, 1);
+    } else {
+      // Add the talent if it wasn't selected
+      updatedTalentRequirements.push(value);
+    }
+  
+    setFormData({ ...formData, talentRequirements: updatedTalentRequirements });
+  };
+  
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -187,23 +202,22 @@ const BusinessForm = () => {
           />
         </div>
         <div className="mt-4 md:mt-8">
-          <label className="font-bold mr-8 w-full">
-            Talent Requirements:
-          </label>
-          <select
-            className="border py-4 px-4 w-full"
-            name="talentRequirements"
-            value={formData.talentRequirements}
-            onChange={handleInputChange}
-          >
-            <option value="">Select a talent requirement</option>
-            {talentOptions.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
-        </div>
+  <label className="font-bold mr-8 w-full">Talent Requirements:</label>
+  {talentOptions.map((option) => (
+    <div key={option} className="flex items-center">
+      <input
+        type="checkbox"
+        id={option}
+        name="talentRequirements"
+        value={option}
+        checked={formData.talentRequirements.includes(option)}
+        onChange={handleCheckboxChange}
+      />
+      <label htmlFor={option} className="ml-2">{option}</label>
+    </div>
+  ))}
+</div>
+
         {formData.talentRequirements === 'Others' && (
           <div className="mt-4 md:mt-8">
             <label className="font-bold mr-8">Other Requirements:</label>
