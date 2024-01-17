@@ -36,5 +36,41 @@ export default function sitemap() {
       changeFrequency: 'weekly',
       priority: 0.5,
     },
+    {
+      url: 'https://mozisha.com/mentors/alicia-kimiagarov',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.5,
+    },
+    {
+      url: 'https://mozisha.com/mentors/achumboro-ataande',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.5,
+    },
+    {
+      url: 'https://mozisha.com/mentors/chineduanayo',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.5,
+    },
+    {
+      url: 'https://mozisha.com/mentors/bolajisamson',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.5,
+    },
+    {
+      url: 'https://mozisha.com/mentors/victorouko',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.5,
+    },
+    {
+      url: 'https://mozisha.com/mentors/frederichohen',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.5,
+    },
   ]
 }

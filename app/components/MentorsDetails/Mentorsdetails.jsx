@@ -8,7 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 function Details() {
   function handleGetStartedClick() {
-    window.scrollto(0, 0);
+    window.scrollTo(0, 0);
   }
   useEffect(() => {
     AOS.init();

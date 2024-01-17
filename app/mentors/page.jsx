@@ -10,6 +10,7 @@ import WhyMentorWithMozisha from "../components/AllAboutMentors/WhyMentorWithMoz
 import { FaRegHandPointRight, FaRocket, FaRocketchat } from "react-icons/fa";
 import Image from "next/image";
 import MenteesTab from "../components/AllAboutMentors/MenteesTab";
+import { IoArrowRedo } from "react-icons/io5";
 const Ment = () => {
   useEffect(() => {
     AOS.init();
@@ -63,6 +64,18 @@ const Ment = () => {
             </span>
             I'm Looking for a Mentor
           </Link>
+          <button className="flex items-center gap-4 mb-4 hover:underline  text-purple-700   mr-4">
+          <span>
+              <FaRegHandPointRight />
+            </span>
+        <Link href="explorementors" className="flex gap-2 justify-center  items-center">
+              
+              Explore Mentors <span>
+              <IoArrowRedo className=" animate-bounce" />
+          </span>
+            </Link>
+            
+      </button>
         </div>
       </div>
       <Tabs

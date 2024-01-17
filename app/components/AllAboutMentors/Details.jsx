@@ -10,7 +10,7 @@ import { SiBmcsoftware} from "react-icons/si";
 import { GiArchiveResearch } from "react-icons/gi";
 function Details() {
   function handleGetStartedClick() {
-    window.scrollto(0, 0);
+    window.scrollTo(0, 0);
   }
   useEffect(() => {
     AOS.init();

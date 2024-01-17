@@ -2,93 +2,241 @@
 import { useState } from "react";
 import noel from "../../public/noel.jpg";
 import frederick from "../../public/fred-mentor.png";
+import chinedu from "../../public/chineduanayo.jpeg";
+import bolaji from "../../public/bolajisamson.jpeg";
 import Victor from "../../public/victormentor.png";
+import alicia from "../../public/alicia.jpeg";
+import achumboro from "../../public/achumboroataande.jpeg";
+
 import Image from "next/image";
-
+import { FaLocationDot } from "react-icons/fa6";
+import { FaCommentDots } from "react-icons/fa";
+import { IoArrowRedo } from "react-icons/io5";
+import Link from "next/link";
 const Explore = () => {
-  const itemsPerPage = 5;
-  const [currentPage, setCurrentPage] = useState(1);
-
-  const data = [
-    {
-      image: frederick,
-      name: "Frederick",
-      occupation: "Software Engineer",
-    },
-    {
-      image: Victor,
-      name: "Victor Ouko",
-      occupation: "Experienced IT & Business consultant",
-    },
-    
-    
-  ];
-
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const currentData = data.slice(startIndex, endIndex);
-
-  const totalPages = Math.ceil(data.length / itemsPerPage);
-
-  const handlePrevPage = () => {
-    window.scrollTo(0, 0);
-    setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
-  };
-
-  const handleNextPage = () => {
-    window.scrollTo(0, 0);
-
-    setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
-  };
-
+  
   return (
-    <div data-aos-duration="2000" data-aos="fade-up">
-      <div
-        data-aos-duration="2000"
-        data-aos="fade-up"
-        className="flex flex-col md:grid md:grid-cols-3 md:px-4 gap-y-16 md:my-16 md:flex-wrap md:mx-auto max-w-[1240px] items-center flex-grow gap-8">
-        {currentData.map((item, index) => (
-          <div
-            data-aos-duration="2000"
-            data-aos="fade-up"
-            key={index}
-            className="px-4 leading-8 flex flex-col border shadow-lg py-8 rounded-lg hover:scale-110 transition-all ">
-            <Image
-              width={400} height={400}
-              src={item.image}
-              alt={item.name}
-              className="rounded-md w-full h-full object-cover"
-            />
-            <h2 className="font-bold">{item.name}</h2>
-            <p className=" text-purple-700"> {item.occupation}</p>
-          </div>
-        ))}
-      </div>
-      <div
-        data-aos-duration="2000"
-        data-aos="fade-up"
-        className="flex justify-center mb-8">
-        {data.length > itemsPerPage && (
-          <div
-            data-aos-duration="2000"
-            data-aos="fade-up"
-            className="flex gap-8 text-white mt-12">
-            <button
-              onClick={handlePrevPage}
-              className="bg-purple-700 px-6 py-2 rounded-md"
-              disabled={currentPage === 1}>
-              Prev
+    <div >
+      <div className=" mx-auto px-16 mt-24 flex flex-col lg:flex-row gap-16">
+        <div>
+          <div className="flex flex-col  md:flex-row gap-8 shadow-md p-4 bg-gray-50">
+            <div>
+              <Image
+                src={frederick}
+                alt="main image, showing a diverse group of people smiling."
+                className="rounded-lg h-48  object-cover"
+                width={200}
+                height={200}
+              />{" "}
+            </div>
+            <div >
+              <h2 className=" font-bold my-4 text-lg"> Frederick Ohen</h2>
+              <p className="mb-4">Software Engineer</p>
+              <div className="flex gap-4 items-center">
+                <FaLocationDot className=" text-red-500 text-xl" />
+                <p className="  text-sm mb-4">United states of America</p>
+              </div>
+              <div className="flex gap-4 justify-center items-center">
+                <FaCommentDots className=" text-red-500 text-xl"  />
+                <p className="   text-sm">
+                  '...eager to leverage my knowledge and robust expertise to give back...'
+                </p>
+              </div>
+            </div>
+            <Link href='mentors/frederickohen'>
+            <button className="px-6 py-4 bg-green-600 h-20 font-bold text-white flex flex-col items-center justify-center rounded-md" >
+              <span>
+                <IoArrowRedo />
+              </span>
+              <p>View</p>
             </button>
-
-            <button
-              onClick={handleNextPage}
-              className="bg-purple-700 px-6 py-2 rounded-md"
-              disabled={currentPage === totalPages}>
-              Next
-            </button>
+            </Link>
           </div>
-        )}
+        </div>
+        <div>
+          <div className="flex flex-col  md:flex-row gap-8 shadow-md p-4 bg-gray-50">
+            <div>
+              <Image
+                src={Victor}
+                alt="main image, showing a diverse group of people smiling."
+                className="rounded-lg h-48 object-cover"
+                width={200}
+                height={200}
+              />{" "}
+            </div>
+            <div >
+              <h2 className=" font-bold my-4 text-lg"> Victor Ouko</h2>
+              <p className="mb-4">Consultant</p>
+              <div className="flex gap-4 items-center">
+                <FaLocationDot className=" text-red-500 text-xl" />
+                <p className="  text-sm mb-4">Germany</p>
+              </div>
+              <div className="flex gap-4 justify-center items-center">
+                <FaCommentDots className=" text-red-500 text-xl"  />
+                <p className="   text-sm">
+                  "I would like to help students with help in applying for
+                  internships.
+                </p>
+              </div>
+            </div>
+            <Link href='mentors/victorouko'>
+            <button className="px-6 py-4 bg-green-600 h-20 font-bold text-white flex flex-col items-center justify-center rounded-md" >
+              <span>
+                <IoArrowRedo />
+              </span>
+              <p>View</p>
+            </button>
+            </Link>
+          </div>
+        </div>
       </div>
+      <div className=" mx-auto px-16 mt-24 flex flex-col lg:flex-row gap-16">
+        <div>
+          <div className="flex flex-col  md:flex-row gap-8 shadow-md p-4 bg-gray-50">
+            <div>
+              <Image
+                src={chinedu}
+                alt="main image, showing a diverse group of people smiling."
+                className="rounded-lg h-48  object-cover"
+                width={200}
+                height={200}
+              />{" "}
+            </div>
+            <div >
+              <h2 className=" font-bold my-4 text-lg"> Chinedu Anayo</h2>
+              <p className="mb-4"> Data Analyst | Business Intelligence Developer | SQL Expert | Instructor</p>
+              <div className="flex gap-4 items-center">
+                <FaLocationDot className=" text-red-500 text-xl" />
+                <p className="  text-sm mb-4">Calgary, Alberta, Canada</p>
+              </div>
+              <div className="flex gap-4 justify-center items-center">
+                <FaCommentDots className=" text-red-500 text-xl"  />
+                <p className="   text-sm">
+                  'I provide actionable recommendations that drive informed business decisions'
+                </p>
+              </div>
+            </div>
+            <Link href='/mentors/chineduanayo'>
+            <button className="px-6 py-4 bg-green-600 h-20 font-bold text-white flex flex-col items-center justify-center rounded-md" >
+              <span>
+                <IoArrowRedo />
+              </span>
+              <p>View</p>
+            </button>
+            </Link>
+          </div>
+        </div>
+        <div>
+          <div className="flex flex-col  md:flex-row gap-8 shadow-md p-4 bg-gray-50">
+            <div>
+              <Image
+                src={bolaji}
+                alt="main image, showing a diverse group of people smiling."
+                className="rounded-lg h-48 object-cover"
+                width={200}
+                height={200}
+              />{" "}
+            </div>
+            <div >
+              <h2 className=" font-bold my-4 text-lg"> Bolaji Samson</h2>
+              <p className="mb-4">Data Scientist | Operation Research Specialist | Business Analyst </p>
+              <div className="flex gap-4 items-center ">
+                <FaLocationDot className=" text-red-500 text-xl flex justify-center" />
+                <p className="  text-sm mb-4">Lancaster, England, United Kingdom </p>
+              </div>
+              <div className="flex gap-4 justify-center items-center">
+                <FaCommentDots className=" text-red-500 text-xl  flex justify-center"  />
+                <p className="   text-sm">
+                  "research-oriented and diligent goal-getter who is committed to achieving results"
+                </p>
+              </div>
+            </div>
+            <Link href='mentors/bolajisamson'>
+            <button className="px-6 py-4 bg-green-600 h-20 font-bold text-white flex flex-col items-center justify-center rounded-md" >
+              <span>
+                <IoArrowRedo />
+              </span>
+              <p>View</p>
+            </button>
+            </Link>
+          </div>
+        </div>
+        
+      </div>
+      <div className=" mx-auto px-16 mt-24 flex flex-col lg:flex-row gap-16">
+        <div>
+          <div className="flex flex-col  md:flex-row gap-8 shadow-md p-4 bg-gray-50">
+            <div>
+              <Image
+                src={alicia}
+                alt="main image, showing a diverse group of people smiling."
+                className="rounded-lg h-48  object-cover"
+                width={200}
+                height={200}
+              />{" "}
+            </div>
+            <div >
+              <h2 className=" font-bold my-4 text-lg"> Alicia Kimiagarov</h2>
+              <p className="mb-4">Data Strategy Leader </p>
+              <div className="flex gap-4 items-center">
+                <FaLocationDot className=" text-red-500 text-xl" />
+                <p className="  text-sm mb-4">Huntsville-Decatur-Albertville Area</p>
+              </div>
+              <div className="flex gap-4 justify-center items-center">
+                <FaCommentDots className=" text-red-500 text-xl"  />
+                <p className="   text-sm">
+                  '...passionate about helping others develop professionally.'
+                </p>
+              </div>
+            </div>
+            <Link href='mentors/alicia-kimiagarov'>
+            <button className="px-6 py-4 bg-green-600 h-20 font-bold text-white flex flex-col items-center justify-center rounded-md" >
+              <span>
+                <IoArrowRedo />
+              </span>
+              <p>View</p>
+            </button>
+            </Link>
+          </div>
+        </div>
+        <div>
+          <div className="flex flex-col  md:flex-row gap-8 shadow-md p-4 bg-gray-50">
+            <div>
+              <Image
+                src={achumboro}
+                alt="main image, showing a diverse group of people smiling."
+                className="rounded-lg h-48 object-cover"
+                width={200}
+                height={200}
+              />{" "}
+            </div>
+            <div >
+              <h2 className=" font-bold my-4 text-lg"> Achumboro Ataande</h2>
+              <p className="mb-4"> Attorney | Entrepreneur</p>
+              <div className="flex gap-4 items-center">
+                <FaLocationDot className=" text-red-500 text-xl" />
+                <p className="  text-sm mb-4">Germany</p>
+              </div>
+              <div className="flex gap-4 justify-center items-center">
+                <FaCommentDots className=" text-red-500 text-xl"  />
+                <p className="   text-sm">
+                  "...educates thousands of people yearly ...
+                </p>
+              </div>
+            </div>
+            <Link href='mentors/achumboroataande'>
+            <button className="px-6 py-4 bg-green-600 h-20 font-bold text-white flex flex-col items-center justify-center rounded-md" >
+              <span>
+                <IoArrowRedo />
+              </span>
+              <p>View</p>
+            </button>
+            </Link>
+          </div>
+        </div>
+      </div>
+     
+      
     </div>
   );
 };
