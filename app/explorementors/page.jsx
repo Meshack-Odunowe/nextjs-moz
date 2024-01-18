@@ -74,8 +74,8 @@ const Explore = () => {
               <div className="flex gap-4 justify-center items-center">
                 <FaCommentDots className=" text-red-500 text-xl"  />
                 <p className="   text-sm">
-                  "I would like to help students with help in applying for
-                  internships.
+                  '...Skilled communicator with
+          experience delivering training content...'
                 </p>
               </div>
             </div>
