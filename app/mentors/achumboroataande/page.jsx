@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 function Achumboro() {
   return (
-    <div className="  px-8 md:px-32">
-      <div className="flex max-w-4xl flex-col md:flex-row gap-8 justify-center items-start ">
+    <div className="  px-8 md:px-32 ">
+      <div className="flex max-w-lg flex-col md:flex-row gap-8 justify-center items-start ">
         <Image
           width={200}
           height={100}
@@ -22,10 +22,10 @@ function Achumboro() {
           <span className="flex flex-row gap-4">
             <p className=" font-semibold"> LinkedIn:</p>
             <p className=" text-blue-500 underline">
-              <Link
+              <Link className=" max-w-xl flex-wrap text-sm"
                 href={"https://www.linkedin.com/in/achumboroataande/"}
                 target="_blank">
-                https://www.linkedin.com/in/achumboroataande/
+                www.linkedin.com/in/achumboroataande/
               </Link>
             </p>
           </span>

@@ -24,7 +24,7 @@ function Bolaji() {
             <p className=" font-semibold"> LinkedIn:</p>
             <p className=" text-blue-500 underline">
               <Link href={"https://www.linkedin.com/in/bolaji-samson-augustine-a55737149/"} target="_blank">
-              https://www.linkedin.com/in/bolaji-samson-augustine-a55737149/        </Link>
+            www.linkedin.com/in/bolaji-samson-augustine        </Link>
             </p>
           </span>
           <span className="flex flex-row gap-4">

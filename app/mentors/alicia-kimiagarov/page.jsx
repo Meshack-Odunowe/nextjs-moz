@@ -6,7 +6,7 @@ import { IoCheckmarkDone } from "react-icons/io5";
 function Alicia() {
   return (
     <div className="  px-8 md:px-32">
-      <div className="flex max-w-4xl flex-col md:flex-row gap-8 justify-center items-start ">
+      <div className="flex max-w-4xl flex-col md:flex-row gap-8 justify-center items-start  max-w-lg ">
         <Image
           width={200}
           height={100}
@@ -26,7 +26,7 @@ function Alicia() {
               <Link
                 href={"https://www.linkedin.com/in/aliciakimiagarov/"}
                 target="_blank">
-                https://www.linkedin.com/in/aliciakimiagarov/{" "}
+                www.linkedin.com/in/aliciakimiagarov/{" "}
               </Link>
             </p>
           </span>

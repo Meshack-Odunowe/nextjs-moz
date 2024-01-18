@@ -24,7 +24,7 @@ function Chinedu() {
             <p className=" font-semibold"> LinkedIn:</p>
             <p className=" text-blue-500 underline">
               <Link href={"https://www.linkedin.com/in/chinedu-anayokafor/ "} target="_blank">
-              https://www.linkedin.com/in/chinedu-anayokafor/              </Link>
+              www.linkedin.com/in/chinedu-anayokafor/              </Link>
             </p>
           </span>
           <span className="flex flex-row gap-4">

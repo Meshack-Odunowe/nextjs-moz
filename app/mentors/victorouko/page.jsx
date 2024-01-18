@@ -26,7 +26,7 @@ function Victor() {
               <Link
                 href={"https://www.linkedin.com/in/victor-ouko-b53b8488/"}
                 target="_blank">
-                https://www.linkedin.com/in/victor-ouko-b53b8488/{" "}
+               www.linkedin.com/in/victor-ouko-b53b8488/{" "}
               </Link>
             </p>
           </span>
