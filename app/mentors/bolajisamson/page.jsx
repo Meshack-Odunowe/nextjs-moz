@@ -41,7 +41,8 @@ function Bolaji() {
       <div>
         <h2 className=" font-bold text-2xl my-16">About Bolaji</h2>
         <p className="  leading-8 mb-16">
-        A passionate problem-solver with proven experience in research and business analysis. An enthusiast of Artificial Intelligence(AI) for driving business solutions and powering market research.
+        Bolaji holds his first degree in Economics and a second degree in Business Analytics from one of the top Universities in the UK. He has over 5 years of professional experience across various fields such as Business Research, Operation Research, Data Analysis and Data Science. He currently works as a data scientist in the UK. He is passionate about solving business problems using a data-driven approach and AI.
+
         </p>
       </div>
     </div>
