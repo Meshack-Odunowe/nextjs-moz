@@ -405,7 +405,8 @@ const RegistrationForm = () => {
               <label
                 htmlFor="cvLink"
                 className="block my-4 text-gray-600 text-sm font-medium">
-                Link To CV
+                Link To CV <span className="  font-bold"> (Please ensure the link provides access to view your CV)
+                </span> 
               </label>
               <input
                 type="text"
