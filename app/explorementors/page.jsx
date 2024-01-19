@@ -24,7 +24,7 @@ const Explore = () => {
               <Image
                 src={frederick}
                 alt="main image, showing a diverse group of people smiling."
-                className="rounded-lg h-48  object-cover"
+                className="rounded-lg h-48  object-cover w-[220px]"
                 width={200}
                 height={200}
               />{" "}
@@ -105,7 +105,7 @@ const Explore = () => {
               <Image
                 src={chinedu}
                 alt="main image, showing a diverse group of people smiling."
-                className="rounded-lg h-48  object-cover"
+                className="rounded-lg h-48  object-cover w-[220px]"
                 width={200}
                 height={200}
               />{" "}
@@ -190,7 +190,7 @@ const Explore = () => {
               <Image
                 src={alicia}
                 alt="main image, showing a diverse group of people smiling."
-                className="rounded-lg h-48  object-cover"
+                className="rounded-lg h-48  object-cover w-[220px]"
                 width={200}
                 height={200}
               />{" "}
@@ -224,11 +224,11 @@ const Explore = () => {
         </div>
         <div>
           <div className="flex flex-col  md:flex-row gap-8 shadow-md p-4 bg-gray-50 max-w-[620px]">
-            <div>
+            <div className="max-w-[200px]">
               <Image
                 src={achumboro}
                 alt="main image, showing a diverse group of people smiling."
-                className="rounded-lg h-48 object-cover"
+                className="rounded-lg h-48 object-cover w-[220px]"
                 width={200}
                 height={200}
               />{" "}
@@ -246,7 +246,8 @@ const Explore = () => {
               <span>
                   <FaCommentDots className=" text-lg " />
                 </span>                <p className="   text-sm">
-                  "...educates thousands of people yearly ...
+                  "...a licensed
+          lawyer,  who invests in early-stage startups in the US and Africa ...
                 </p>
               </div>
             </div>
@@ -269,7 +270,7 @@ const Explore = () => {
               <Image
                 src={faustine}
                 alt="main image, showing a diverse group of people smiling."
-                className="rounded-lg h-48  object-cover"
+                className="rounded-lg h-48  object-cover w-[220px]"
                 width={200}
                 height={200}
               />{" "}
