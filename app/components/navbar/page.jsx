@@ -78,7 +78,7 @@ const NavBar = () => {
               </li>
 
               <li onClick={closeMenu} className="cursor-pointer">
-                <Link href="/workinprogress">Blog</Link>
+                <Link href="/blog">Blog</Link>
               </li>
             </ul>
             <div>
@@ -126,7 +126,7 @@ const NavBar = () => {
             </li>
 
             <li className="px-4 py-4" onClick={handleGetStartedClick}>
-              <Link href="/workinprogress">Blog</Link>
+              <Link href="/blog">Blog</Link>
             </li>
           </ul>
         </div>

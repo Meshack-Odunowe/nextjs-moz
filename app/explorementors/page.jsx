@@ -279,8 +279,7 @@ const Explore = () => {
               <h2 className=" font-bold my-4 text-lg"> Faustine Wabwire</h2>
               <p className="mb-4">
                 {" "}
-                Senior Program Officer, Global Policy & Advocacy at Bill &
-                Melinda Gates Foundation{" "}
+               International Development Expert
               </p>
               <div className="flex gap-4 items-center">
                 <span>

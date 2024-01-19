@@ -26,6 +26,7 @@
     "firebase": "^10.7.1",
     "github-slugger": "^2.0.0",
     "next": "14.0.4",
+    "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-datepicker": "^4.24.0",
     "react-dom": "^18",

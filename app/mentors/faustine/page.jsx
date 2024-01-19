@@ -18,7 +18,7 @@ function Faustine() {
           <h1 className=" text-2xl font-bold">Faustine Wabwire</h1>
           <span className="flex  gap-4">
             <p className=" font-semibold">Job title:</p>
-            <p>Senior Program Officer, Global Policy & Advocacy at Bill & Melinda Gates Foundation  </p>
+            <p>International Development Expert  </p>
           </span>
           <span className="flex flex-row gap-4">
             <p className=" font-semibold"> LinkedIn:</p>
