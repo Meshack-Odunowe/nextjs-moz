@@ -1,8 +1,8 @@
-import BlogDetails from '../components/Blog/BlogDetails'
+
 function Blog() {
   return (
     <div>
-      <h2>Work in Progress</h2>
+      <h1>Hello World</h1>
     </div>
   )
 }
