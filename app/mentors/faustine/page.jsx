@@ -1,5 +1,5 @@
 import React from "react";
-import faustine from "../../../public/faustine.jpg";
+import faustine from "../../../public/Faustine.jpg";
 import Image from "next/image";
 import Link from "next/link";
 

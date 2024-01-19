@@ -7,7 +7,7 @@ import bolaji from "../../public/bolajisamson.jpeg";
 import Victor from "../../public/victormentor.png";
 import alicia from "../../public/alicia.jpeg";
 import achumboro from "../../public/achumboroataande.jpeg";
-import faustine from "../../public/faustine.jpg";
+import faustine from "../../public/Faustine.jpg";
 
 import Image from "next/image";
 import { FaLocationDot } from "react-icons/fa6";
