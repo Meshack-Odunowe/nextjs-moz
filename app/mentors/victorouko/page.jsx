@@ -18,7 +18,7 @@ function Victor() {
           <h1 className=" text-2xl font-bold">Victor Ouko</h1>
           <span className="flex  gap-4">
             <p className=" font-semibold">Job title :</p>
-            <p> Consultant</p>
+            <p> IT/ Business Consultant</p>
           </span>
           <span className="flex flex-row gap-4">
             <p className=" font-semibold"> LinkedIn:</p>

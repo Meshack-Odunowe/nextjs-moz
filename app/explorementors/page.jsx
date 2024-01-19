@@ -215,7 +215,7 @@ const Explore = () => {
               <p className="mb-4"> Attorney | Entrepreneur</p>
               <div className="flex gap-4 items-center">
                 <FaLocationDot className=" text-red-500 text-xl" />
-                <p className="  text-sm mb-4">Germany</p>
+                <p className="  text-sm mb-4"> New York, United States</p>
               </div>
               <div className="flex gap-4 justify-center items-center">
                 <FaCommentDots className=" text-red-500 text-xl"  />
