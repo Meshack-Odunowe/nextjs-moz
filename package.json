@@ -14,6 +14,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.19",
     "@mui/material": "^5.14.20",
+    "@portabletext/react": "^3.0.11",
     "@sanity/client": "^6.11.1",
     "@tailwindcss/typography": "^0.5.10",
     "ai": "^2.2.31",
