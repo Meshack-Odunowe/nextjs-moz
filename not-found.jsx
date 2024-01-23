@@ -1,13 +1,7 @@
-'use client'
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 
 const ErrorPage = () => {
-  const router = useRouter();
-
-  const goHome = () => {
-    router.push('/');
-  };
+  
 
   return (
     <>
@@ -16,7 +10,7 @@ const ErrorPage = () => {
           Error! Go Back to Home Page! ‼️
         </li>
         <Link href="/"
-           className="font-bold bg-purple-800 text-white py-4 px-8 rounded-md text-center" onClick={goHome}>
+           className="font-bold bg-purple-800 text-white py-4 px-8 rounded-md text-center" >
             Go Home
          
         </Link>

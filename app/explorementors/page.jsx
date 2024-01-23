@@ -278,7 +278,7 @@ const Explore = () => {
             <div>
               <h2 className=" font-bold my-4 text-lg"> Faustine Wabwire</h2>
               <p className="mb-4">
-                {" "}
+                {" "}wwww
                International Development Expert
               </p>
               <div className="flex gap-4 items-center">

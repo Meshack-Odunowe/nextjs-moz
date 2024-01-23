@@ -38,7 +38,7 @@ const Footer = () => {
           <Link href="/talents">Talents</Link>
         </p>
         <p className="" onClick={handleGetStartedClick}>
-          <Link href="/workinprogress">Blog</Link>
+          <Link href="/blog">Blog</Link>
         </p>
 
         <p className="mt-8" onClick={handleGetStartedClick}>
