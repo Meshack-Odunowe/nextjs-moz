@@ -13,7 +13,7 @@ const SingleBlogPage = async ({ params }) => {
     <div className="flex space-y-8 my-8 flex-col lg:px-96 px-4 min-h-screen">
       <div className="w-full flex flex-col justify-center space-y-8 items-center">
         <h1 className="text-3xl  font-semibold drop-shadow-md">
-          {singlePost.slug}
+          {singlePost.title}
         </h1>
         <Image
           src={singlePost.image}
