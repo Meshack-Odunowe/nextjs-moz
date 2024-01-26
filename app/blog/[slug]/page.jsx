@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { client, urlFor } from "../../lib/sanity";
-import {PortableText} from '@portabletext/react'
+import { PortableText } from '@portabletext/react'
+export const revalidate=30
+
 async function getData(slug) {
   const query = `*[_type == 'blog' && slug.current == '${slug}']{
     'currentSlug':slug.current,
