@@ -5,9 +5,9 @@ import {schemaTypes} from './schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'mozisha-blog',
+  title: 'nextjsblog',
 
-  projectId: 'u65jolos',
+  projectId: 'gplmvtcn',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
