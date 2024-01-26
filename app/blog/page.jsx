@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { client, urlFor } from "../lib/sanity";
+import HeroSection from '../components/Blog/HeroSection'
 import Link from "next/link";
 export const revalidate=30
 async function getData() {
@@ -20,9 +21,10 @@ export default async function Blog() {
   console.log(data);
   return (
     <div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 mx-auto lg:px-16  px-4 lg:mx-auto mt-5 ">
+      <HeroSection/>
+      <div className="grid grid-cols-1  lg:grid-cols-3 gap-16 mx-auto bg-blue-100 py-8 lg:px-16  px-4 lg:mx-auto mt-5 ">
         {data.map((post, index) => (
-          <div key={index}>
+          <div key={index} className="bg-gray-100 rounded-md p-4">
             <Image
               src={urlFor(post.titleImage).url()}
               alt="image"
