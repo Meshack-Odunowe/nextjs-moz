@@ -25,6 +25,16 @@ export default {
       name: 'publishedAt',
       title: 'Published At',
       type: 'datetime',
+    }, {
+      name: 'author',
+      title: 'Author',
+      type: 'reference',
+      to: {type: 'author'},
+    },{
+      name: 'categories',
+      title: 'Categories',
+      type: 'array',
+      of: [{type: 'reference', to: {type: 'category'}}],
     },
     {
       name: 'smallDescription',
