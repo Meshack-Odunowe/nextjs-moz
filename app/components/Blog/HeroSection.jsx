@@ -4,7 +4,7 @@ import { FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <div className="lg:px-24 px-4 py-16 ">
+    <div className="lg:px-24 px-4 py-16  md:px-20">
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col  p-4 space-y-4 justify-end py-8 flex-1">
           <h1 className="capitalize text-5xl md:text-5xl font-bold leading-10">
