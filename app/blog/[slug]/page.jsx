@@ -8,12 +8,36 @@ async function getData(slug) {
     'currentSlug':slug.current,
       title,
       content,
-      titleImage
+      titleImage,
+      smallDescription
   }[0]
   `;
   const data = await client.fetch(query);
   return data;
 }
+
+export async function generateMetadata({ params }) {
+  const blog = await getData(params.slug);
+  const title = blog.title;
+  const description = blog.smallDescription;
+  const imageURL = urlFor(blog.titleImage).url();
+
+  return {
+    title: title,
+    description: description,
+    openGraph: {
+      images: [
+        {
+          url: imageURL,
+          width: 800,
+          height: 800,
+        },
+      ],
+    },
+  };
+}
+
+
 export default async function BlogArticle({ params }) {
   const data = await getData(params.slug);
   console.log(data);

@@ -1,38 +1,26 @@
 // pages/business.js
-'use client'
-import Image from 'next/image';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
-import Head from 'next/head';
-import BusinessForm from './businessForm/page';
-const Business = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-    window.scrollTo(0, 0);
 
-  }, []);
+import Image from 'next/image';
+
+import BusinessForm from './businessForm/page';
+export const metadata = {
+  title:'Business',
+description:"As your trusted growth partner, we specialize in providing top-notch operations, sales, marketing, and customer support talents tailored to your unique needs. "
+}
+const Business = () => {
+ 
 
   return (
     <>
-      <Head>
-        <title>Business</title>
-        <meta
-          name="description"
-          content="Join other VC-backed companies supported by Mozisha."
-        />
-        <link rel="canonical" href="/business" />
-      </Head>
+      
       <div
-        data-aos-duration="2000"
-        data-aos="fade-up"
+        
         className="text-center text-3xl md:text-4xl font-bold"
       >
         Mozisha, Your Growth Partner
       </div>
 
-      <div data-aos-duration="2000" data-aos="fade-up">
+      <div >
         <Image
           src="/handshake2.jpg" 
           alt="Two people shaking hands"
@@ -41,8 +29,7 @@ const Business = () => {
           className="mx-auto rounded-md w-[800px] py-16 px-4 my-8"
         />
         <p
-          data-aos-duration="2000"
-          data-aos="fade-up"
+          
           className="py-4 leading-8 px-4 md:px-16"
         >
           Join other VC-backed companies supported by Mozisha. As your trusted

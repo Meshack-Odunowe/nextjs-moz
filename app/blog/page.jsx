@@ -2,6 +2,7 @@ import Image from "next/image";
 import { client, urlFor } from "../lib/sanity";
 import HeroSection from "../components/Blog/HeroSection";
 import Link from "next/link";
+import {Metadata} from 'next'
 import { FaAnglesRight } from "react-icons/fa6";
 export const revalidate = 30;
 async function getData() {
@@ -24,6 +25,10 @@ async function getData() {
   }`;
   const data = await client.fetch(query);
   return data;
+}
+export const metadata = {
+  title:'Blog Section',
+description:'Welcome to the blog section of Mozisha, your source for the latest updates in the domain of AI, technology, data, business, and beyond. Stay informed with the most recent news and insights shaping the dynamic landscape of innovation and progress.'
 }
 
 export default async function Blog() {
@@ -51,9 +56,17 @@ export default async function Blog() {
               />{" "}
             </div>
             <div className="flex justify-between items-center mt-4">
-              <p className=" border  shadow-sm bg-gray-100  text-gray-400  p-1 text-[10px] font-bold ">
-                {Date(post.publishedAt).substring(0, 10)}
-              </p>
+            <p className="border shadow-sm bg-gray-100 text-gray-400 p-1 text-[10px] font-bold">
+  {new Date(post.publishedAt).toLocaleString('en-GB', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  })}
+</p>
+
               <p className="  shadow-md   text-sm bg-gray-100  text-gray-400  font-bold border p-1">
                 {" "}
                 <span className=" text-[10px]"> Posted By:</span>{" "}
