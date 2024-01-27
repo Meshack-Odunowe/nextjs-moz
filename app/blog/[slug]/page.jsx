@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { client, urlFor } from "../../lib/sanity";
 import { PortableText } from '@portabletext/react'
-export const revalidate=30
+import readingTime from "reading-time";
+
+export const revalidate=10
 
 async function getData(slug) {
   const query = `*[_type == 'blog' && slug.current == '${slug}']{
@@ -15,7 +17,16 @@ async function getData(slug) {
   const data = await client.fetch(query);
   return data;
 }
-
+function extractTextFromPortableText(content) {
+  return content
+    .map((block) => {
+      if (block.children) {
+        return block.children.map((child) => child.text).join(" ");
+      }
+      return block.text;
+    })
+    .join(" ");
+}
 export async function generateMetadata({ params }) {
   const blog = await getData(params.slug);
   const title = blog.title;
@@ -41,11 +52,19 @@ export async function generateMetadata({ params }) {
 export default async function BlogArticle({ params }) {
   const data = await getData(params.slug);
   console.log(data);
+  const textForReadingTime = extractTextFromPortableText(data.content);
+
   return (
     <>
+     
     <h1 className=" text-3xl block  font-bold leading-8 tracking-tight sm:text-4xl text-center my-8">
       {data.title}
-    </h1>
+      </h1>
+      <p className="border shadow-sm bg-gray-100 text-gray-400 p-1 w-fit text-[10px] font-bold text-center mx-auto">
+        {textForReadingTime
+          ? readingTime(textForReadingTime).text
+          : "Reading time not available"}
+      </p>
     <Image
     src={urlFor(data.titleImage).url()}
     alt="image"

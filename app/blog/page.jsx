@@ -2,9 +2,9 @@ import Image from "next/image";
 import { client, urlFor } from "../lib/sanity";
 import HeroSection from "../components/Blog/HeroSection";
 import Link from "next/link";
-import {Metadata} from 'next'
+
 import { FaAnglesRight } from "react-icons/fa6";
-export const revalidate = 30;
+export const revalidate = 10;
 async function getData() {
   const query = `
   *[_type == 'blog'] | order(_createdAt desc){
@@ -13,6 +13,8 @@ async function getData() {
       'currentSlug':slug.current,
       titleImage,
     publishedAt,
+    content,
+
     categories[]->{
       
       name
@@ -27,9 +29,10 @@ async function getData() {
   return data;
 }
 export const metadata = {
-  title:'Blog Section',
-description:'Welcome to the blog section of Mozisha, your source for the latest updates in the domain of AI, technology, data, business, and beyond. Stay informed with the most recent news and insights shaping the dynamic landscape of innovation and progress.'
-}
+  title: "Blog Section",
+  description:
+    "Welcome to the blog section of Mozisha, your source for the latest updates in the domain of AI, technology, data, business, and beyond. Stay informed with the most recent news and insights shaping the dynamic landscape of innovation and progress.",
+};
 
 export default async function Blog() {
   const data = await getData();
@@ -38,10 +41,7 @@ export default async function Blog() {
     <div>
       <HeroSection />
       <div className=" flex flex-col mx-auto">
-        <h2 className=" text-4xl my-8 text-center font-bold">
-          Blogs{" "}
-          
-        </h2>
+        <h2 className=" text-4xl my-8 text-center font-bold">Blogs </h2>
       </div>
       <div className="grid grid-cols-1  lg:grid-cols-3 gap-16 mx-auto  py-8 lg:px-16  px-4 lg:mx-auto mt-5 ">
         {data.map((post, index) => (
@@ -56,16 +56,17 @@ export default async function Blog() {
               />{" "}
             </div>
             <div className="flex justify-between items-center mt-4">
-            <p className="border shadow-sm bg-gray-100 text-gray-400 p-1 text-[10px] font-bold">
-  {new Date(post.publishedAt).toLocaleString('en-GB', {
-    day: '2-digit',
-    month: '2-digit',
-    year: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-    hour12: false,
-  })}
-</p>
+              <p className="border shadow-sm bg-gray-100 text-gray-400 p-1 text-[10px] font-bold">
+                {new Date(post.publishedAt).toLocaleString("en-GB", {
+                  day: "2-digit",
+                  month: "2-digit",
+                  year: "numeric",
+                  hour: "2-digit",
+                  minute: "2-digit",
+                  hour12: false,
+                })}
+              </p>{" "}
+           
 
               <p className="  shadow-md   text-sm bg-gray-100  text-gray-400  font-bold border p-1">
                 {" "}
