@@ -8,13 +8,12 @@ const HeroSection = () => {
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col  p-4 space-y-4 justify-end py-8 flex-1">
           <h1 className="capitalize text-5xl md:text-5xl font-bold leading-10">
-            Mozisha Blog Section{" "}
+            Mozisha Blog {" "}
           </h1>
           <p className=" leading-8">
-            Welcome to the blog section of Mozisha, your source for the latest
-            updates in the domain of AI, technology, data, business, and beyond.
-            Stay informed with the most recent news and insights shaping the
-            dynamic landscape of innovation and progress.
+            Your reliable source for the latest
+            updates in education, technology,  business, and human capital development in Africa.
+            
           </p>
 
           <h6 className="font-semibold  pt-8">

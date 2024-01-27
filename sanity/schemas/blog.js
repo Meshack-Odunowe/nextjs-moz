@@ -51,12 +51,15 @@ export default {
         }
       ]
     },
-    // {
-    //   name: 'author',
-    //   title: 'Author',
-    //   // type: 'reference',
-    //   // to: {type: 'author'},
-    // }
+    {
+      name: 'comments',
+      title: 'Comments',
+      type: 'array',
+      of: [{ type: 'comment' }],
+      options: {
+        layout: 'grid',
+      },
+    },
 
   ]
 }
