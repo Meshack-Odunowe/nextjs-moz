@@ -11,8 +11,7 @@ const HeroSection = () => {
             Mozisha Blog {" "}
           </h1>
           <p className=" leading-8">
-            Your reliable source for the latest
-            updates in education, technology,  business, and human capital development in Africa.
+            Your go-to destination for the most recent updates on education, technology, business and human capital development in Africa.
             
           </p>
 
