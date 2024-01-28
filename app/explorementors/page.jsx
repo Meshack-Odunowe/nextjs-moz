@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import noel from "../../public/noel.jpg";
+import ruona from "../../public/Ruona.jpeg";
 import frederick from "../../public/fred-mentor.png";
 import chinedu from "../../public/chineduanayo.jpeg";
 import bolaji from "../../public/bolajisamson.jpeg";
@@ -278,7 +278,7 @@ const Explore = () => {
             <div>
               <h2 className=" font-bold my-4 text-lg"> Faustine Wabwire</h2>
               <p className="mb-4">
-                {" "}wwww
+                
                International Development Expert
               </p>
               <div className="flex gap-4 items-center">
@@ -297,6 +297,50 @@ const Explore = () => {
               </div>
             </div>
             <Link href="mentors/faustine">
+              <button className="px-6 py-4 bg-green-600 h-20 font-bold text-white flex flex-col items-center justify-center rounded-md">
+                <span>
+                  <IoArrowRedo />
+                </span>
+                <p>View</p>
+              </button>
+            </Link>
+          </div>
+        </div>
+
+
+
+
+        <div>
+          <div className="flex flex-col  md:flex-row gap-8 shadow-md p-4 bg-gray-50 max-w-[620px] ">
+            <div>
+              <Image
+                src={ruona}
+                alt="Ruona."
+                className="rounded-lg h-48  object-cover w-[220px]"
+                width={200}
+                height={200}
+              />{" "}
+            </div>
+            <div>
+              <h2 className=" font-bold my-4 text-lg"> Ruona Dibie</h2>
+              <p className="mb-4">
+              Software Engineer at LinkedIn
+              </p>
+              <div className="flex gap-4 items-center">
+                <span>
+                  <FaLocationDot className=" text-lg " />
+                </span>
+                <p className="  text-sm mb-4">United States of America</p>
+              </div>
+              <div className="flex gap-4 justify-center items-center">
+              <span>
+                  <FaCommentDots className=" text-lg " />
+                </span>                <p className="   text-sm">
+                  '...I look forward to co-learning with young African talents'
+                </p>
+              </div>
+            </div>
+            <Link href="mentors/ruona-dibie">
               <button className="px-6 py-4 bg-green-600 h-20 font-bold text-white flex flex-col items-center justify-center rounded-md">
                 <span>
                   <IoArrowRedo />
