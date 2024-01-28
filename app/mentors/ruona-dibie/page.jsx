@@ -43,7 +43,7 @@ function Ruona() {
       <div>
         <h2 className=" font-bold text-2xl my-16">About Ruona</h2>
         <p className="  leading-8 mb-16">
-        I was born and raised in Nigeria before moving the US. I am currently a Software Engineer at LinkedIn. I've been in the Tech Industry for over four years now and I absolutely love it. I am very big on sports, fitness and the outdoors. I look forward to working with you all to learn and grow together.
+        I was born and raised in Nigeria before moving the US. I am currently a Software Engineer at LinkedIn. I've been in the Tech Industry for over five years now and I absolutely love it. I am very big on sports, fitness and the outdoors. I look forward to working with you all to learn and grow together.
         </p>
 
         
