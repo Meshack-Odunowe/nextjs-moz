@@ -1,43 +1,30 @@
-'use client'
-import { useEffect } from 'react';
+
 import Image from 'next/image';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 import img2 from '../../public/group3.jpg';
 import img3 from '../../public/pexels.jpg';
 import img4 from '../../public/united.jpeg';
 import Team from '../components/Team/page';
-import Head from 'next/head';
-
+export const metadata = {
+  title:'About Us',
+description:"At Mozisha, our mission is clear: to nurture premium African talents and connect them with businesses worldwide.  "
+}
 const About = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-    window.scrollTo(0, 0);
-
-  }, []);
-
+ 
+ 
   return (
-    <><Head>
-    <title>About</title>
-    <meta
-          name="description"
-        content="At Mozisha, our mission is clear: to nurture premium African talents and connect them with businesses worldwide.  " />
-        <link rel="canonical" href="/about" />
+   <>
       
-  </Head>
-      <div data-aos-duration="2000" data-aos="fade-up" className="md:p-20 p-8">
+      <div  className="md:p-20 p-8">
         <h1
-          data-aos-duration="2000"
-          data-aos="fade-up"
+          
           className="text-4xl font-bold text-center"
         >
           Our Mission
         </h1>
         <p
-          data-aos-duration="2000"
-          data-aos="fade-up"
+          
           className="md:px-8 leading-8 py-8">
           At Mozisha, our mission is clear: to nurture premium African talents
           and connect them with businesses worldwide. We work to address the
@@ -50,13 +37,11 @@ const About = () => {
           solutions for business growth.
         </p>
         <div
-          data-aos-duration="2000"
-          data-aos="fade-up"
+          
           className="flex flex-col md:flex-row gap-4 md:gap-24 my-24 items-center"
         >
           <div
-            data-aos-duration="2000"
-            data-aos="fade-up"
+            
             className="md:w-1/2"
           >
             <Image
@@ -68,14 +53,13 @@ const About = () => {
             />
           </div>
           <div
-            data-aos-duration="2000"
-            data-aos="fade-up"
+            
             className="md:w-1/2 leading-8"
           >
             <h1 className="text-center py-8 font-bold text-2xl">
               Enrich Your Diversity
             </h1>
-            <p data-aos-duration="2000" data-aos="fade-up">
+            <p >
               We pride ourselves in the rich diversity of our talents. Mozishans
               come from over 50 countries, 3000 ethnic groups, and 2100
               languages in Africa. We also ensure that at least 50% of all our
@@ -86,13 +70,11 @@ const About = () => {
           </div>
         </div>
         <div
-          data-aos-duration="2000"
-          data-aos="fade-up"
+          
           className="flex items-center flex-col md:flex-row-reverse pt-20 gap-4 md:gap-24 my-24"
         >
           <div
-            data-aos-duration="2000"
-            data-aos="fade-up"
+            
             className="md:w-1/2"
           >
             <Image
@@ -104,8 +86,7 @@ const About = () => {
             />
           </div>
           <div
-            data-aos-duration="2000"
-            data-aos="fade-up"
+            
             className="md:w-1/2 leading-8"
           >
             <h1 className="text-center py-8 font-bold text-2xl">
@@ -121,13 +102,11 @@ const About = () => {
           </div>
         </div>
         <div
-          data-aos-duration="2000"
-          data-aos="fade-up"
+          
           className="flex flex-col items-center md:flex-row pt-20 gap-4 md:gap-24 my-24"
         >
           <div
-            data-aos-duration="2000"
-            data-aos="fade-up"
+            
             className="md:w-1/2"
           >
             <Image
@@ -139,8 +118,7 @@ const About = () => {
             />
           </div>
           <div
-            data-aos-duration="2000"
-            data-aos="fade-up"
+            
             className="md:w-1/2 leading-8"
           >
             <h1 className="text-center py-8 font-bold text-2xl">
