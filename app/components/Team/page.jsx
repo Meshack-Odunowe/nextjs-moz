@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import achumboro from "../../../public/achumboroataande.jpeg";
 import faustine from "../../../public/Faustine.jpg";
-import alicia from "../../../public/Alicia.jpeg";
+import alicia from "../../../public/alicia.jpeg";
 
 import kene from "../../../public/kene.jpg";
 import lorna from "../../../public/lorna.jpeg";
