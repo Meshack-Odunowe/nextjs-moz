@@ -6,26 +6,19 @@ import { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import { ClipLoader, RingLoader } from "react-spinners";
-import { FcSalesPerformance } from "react-icons/fc";
-import { SiAltiumdesigner } from "react-icons/si";
-import { BiNetworkChart } from "react-icons/bi";
-import { AiOutlineDatabase } from "react-icons/ai";
-import { SiCoinmarketcap } from "react-icons/si";
+
 
 import Head from "next/head";
 import Image from "next/image";
-import img from "../../../public/howtoregister.jpg";
 import { useRouter } from "next/navigation";
 
-const RegistrationForm = () => {
- 
-
+const ApprenticeshipForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
-    text: "",
-    cvLink: "",
+    motivation: "",
+    selectedSkill: "",
   });
 
   const [isLoading, setIsLoading] = useState(false);
@@ -39,12 +32,12 @@ const RegistrationForm = () => {
 
   const sendEmail = () => {
     emailjs
-      .sendForm(
-        "service_f47hszb",
-        "template_offegni",
-        form.current,
-        "oCtQ4YXyDy5Xm4BQm"
-      )
+    .sendForm(
+      "service_w6v0yit",
+      "template_gvgru2h",
+      form.current,
+      "KeJ5uXs7qlFjIHPHL"
+    )
       .then(
         (result) => {
           console.log(result.text);
@@ -91,8 +84,8 @@ const RegistrationForm = () => {
       firstName: formData.firstName,
       lastName: formData.lastName,
       email: formData.email,
-      text: formData.text,
-      cvLink: formData.cvLink,
+      selectedSkill: formData.selectedSkill,
+      motivation:formData.motivation
     };
 
     try {
@@ -109,14 +102,14 @@ const RegistrationForm = () => {
           position: "top-right",
           autoClose: 2000,
         });
-      
+
         toast.onChange(() => {
           // Redirect to the "/success" page
           router.push("/success");
         });
-      
+
         setRegisteredEmails([...registeredEmails, formData.email]);
-      }else {
+      } else {
         toast.error("Data could not be saved.", {
           position: "top-right",
           autoClose: 3000,
@@ -134,8 +127,8 @@ const RegistrationForm = () => {
       firstName: "",
       lastName: "",
       email: "",
-      text: "",
-      cvLink: "",
+      selectedSkill: "",
+      motivation:"",
     });
   };
 
@@ -146,55 +139,38 @@ const RegistrationForm = () => {
         <meta name="description" content=" Join as a skilled talent .  " />
         <link rel="canonical" href="/register" />
       </Head>
-      <div  className="mb-60">
-        <div
-          
-          className="flex mx-auto h-screen max-w-[1240px] gap-8 justify-start    leading-8 flex-col md:flex-row relative">
-          <div
-            
-            className="mx-4 md:w-1/2 ">
-            <h1 className="text-center md:text-start mt-8 mb-16 leading-10">
-              <span className="text-2xl md:text-8xl font-bold mb-16 text-purple-700">
-              Why 
+      <div className="mb-60">
+        <div className=" flex flex-col gap-10 lg:flex-row items-center justify-center lg:px-20 my-10">
+          <div className="mx-4 md:w-1/2 ">
+            <h1 className="text-center md:text-start mt-8 mb-4 leading-10">
+              <span className="text-2xl md:text-5xl font-bold mb-16 mr-4 text-purple-700">
+                Why 
               </span>{" "}
-              <span className="text-red-500 text-2xl md:text-8xl  font-bold">
-              Mozisha Apprenticeship?
+              <span className="text-red-500 text-2xl md:text-5xl  font-bold">
+                 Mozisha Apprenticeship?
               </span>
             </h1>
-            <div
-              
-              className="mx-auto md:text-start text-center leading-10 mt-8">
+            <div className="mx-auto md:text-start text-center leading-10 mt-8">
               <p>
-              Gain skills, get experience, and secure your future. We're bridging the gap between talent and opportunity.
+                Gain skills, get experience, and secure your future. We're
+                bridging the gap between talent and opportunity.
               </p>
             </div>
           </div>
-          <div
-            
-            className="rounded- pb-20">
+          <div className="rounded- pb-20">
             <Image
-            src='/apprenticesignup.jpg'
-            width={400}
+              src="/apprenticeship.jpg"
+              width={400}
               height={400}
               alt="a young man working"
-              className="max-h-[600px] px-4 md:px-0 md:w-[600px] rounded-lg object-cover mb-16"
+              className="max-h-[600px] px-4 md:px-0 md:w-[600px] rounded-lg object-cover "
             />
           </div>
         </div>
-      
-     
-        
-      
-       
-        
 
-
-
-        <div
-          
-          className="md:max-w-lg mx-auto h-screen mt-8 px-4 my-24">
+        <div className="md:max-w-lg mx-auto h-screen mt-8 px-4 ">
           <h2 className="text-2xl font-semibold mb-4">
-            Sign up to find dignified work.
+            Sign up as an apprentice.
           </h2>
           <form
             ref={form}
@@ -250,35 +226,35 @@ const RegistrationForm = () => {
                 required
                 className="w-full border py-2 px-3 rounded-lg focus:outline-none focus:ring focus:border-[#7e22ce]"
               />
-              <label
-                htmlFor="cvLink"
-                className="block my-4 text-gray-600 text-sm font-medium">
-                Link To CV <span className="  font-bold"> (Please ensure the link provides access to view your CV)
-                </span> 
-              </label>
-              <input
-                type="text"
-                id="cvLink"
-                name="cvLink"
-                placeholder="Provide Google Drive CV link"
-                value={formData.cvLink}
-                onChange={handleInputChange}
-                required
-                className="w-full border py-2 px-3 rounded-lg focus:outline-none focus:ring focus:border-[#7e22ce]"
-              />
+ <div className="py-8">
+          <label htmlFor="selectedSkill">Skill</label>
+          <select
+            name="selectedSkill"
+            id="selectedSkill"
+            className="border focus-visible:bg-purple-100 w-full pl-5"
+            value={formData.selectedSkill}
+            onChange={handleInputChange}
+          >
+            <option className=" py-4 my-8" value="">Select a skill</option>
+            <option value="International development">International development</option>
+            <option value="Software development">Sales and Marketing.</option>
+            <option value="Data">Data</option>
+            <option value="Designs">Designs</option>
+          </select>
+        </div>
               <label
                 htmlFor="text"
-                className="block my-4 text-gray-600 text-sm font-medium">
-                Tell us about yourself (500 characters maximum)
+                className="block my-8 text-gray-600 text-sm font-medium">
+                What's your motivation?{" "}
               </label>
               <textarea
-                id="text"
-                name="text"
-                placeholder="Tell us about yourself..."
-                value={formData.text}
+                id="motivation"
+                name="motivation"
+                placeholder="Tell us why you want to be an apprentice.."
+                value={formData.motivation}
                 onChange={handleInputChange}
                 maxLength={500} // Set a maximum character limit
-                rows={4} // You can adjust the number of rows as needed
+                rows={4} 
                 className="w-full border py-2 px-3 rounded-lg focus:outline-none focus:ring focus:border-[#7e22ce]"
               />
             </div>
@@ -301,4 +277,4 @@ const RegistrationForm = () => {
   );
 };
 
-export default RegistrationForm;
+export default ApprenticeshipForm;

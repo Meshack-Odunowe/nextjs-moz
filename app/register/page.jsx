@@ -429,8 +429,8 @@ const RegistrationForm = () => {
                 placeholder="Tell us about yourself..."
                 value={formData.text}
                 onChange={handleInputChange}
-                maxLength={500} // Set a maximum character limit
-                rows={4} // You can adjust the number of rows as needed
+                maxLength={500} 
+                rows={4} 
                 className="w-full border py-2 px-3 rounded-lg focus:outline-none focus:ring focus:border-[#7e22ce]"
               />
             </div>

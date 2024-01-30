@@ -50,6 +50,7 @@ const MenteeForm = () => {
       formData.firstName === "" ||
       formData.lastName === "" ||
       formData.email === "" ||
+      formData.text === "" ||
       formData.selectedSkill === ""   // Check if selectedSkill is empty
     ) {
       setFormValid(false);
@@ -64,7 +65,8 @@ const MenteeForm = () => {
       firstName: formData.firstName,
       lastName: formData.lastName,
       email: formData.email,
-      selectedSkill: formData.selectedSkill,  // Include selectedSkill
+      selectedSkill: formData.selectedSkill,  
+      text:formData.text
     };
 
     try {
@@ -158,14 +160,16 @@ const MenteeForm = () => {
         </div>
        
         <div className="mb-8">
-          <label htmlFor="email">Why do you need a mentor?</label>
-          <input
+          <label htmlFor="text">Why do you need a mentor?</label>
+          <textarea
             type="text"
-            name="email"
-            id="email"
+            name="text"
+            id="text"
             className="border focus-visible:bg-purple-100 w-full  pl-5"
             placeholder="maximum of 500 characters"
-            value={formData.email}
+            value={formData.text}
+            rows={4} 
+maxLength={500}
             onChange={handleInputChange}
           />
         </div>
