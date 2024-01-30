@@ -209,7 +209,7 @@ Advisory Board      </h1>
           <div
             data-aos-duration="5000"
             data-aos="fade-up"
-            className="flex flex-col md:flex-row md:gap-16 md:my-24 justify-center md:items-center h-screen md:h-full">
+            className="flex flex-col md:flex-row md:gap-16 md:my-24 justify-center md:items-center h-screen md:h-full mt-40">
             <div data-aos-duration="5000" data-aos="fade-up">
               <Image
                 className="rounded-full  object-cover mb-8 md:mb-0 max-w-[400px] h-[200px] w-[200px]"
@@ -300,7 +300,7 @@ Faustine Wabwire              </p>
               <Image
                 className="rounded-full object-cover mb-8 md:mb-0 max-w-[400px] h-[200px] w-[200px]"
                 src={alicia}
-                alt="Image of Sola,our chief operating officer"
+                alt="Image of Alicia"
                 width={200}
                 height={200}
               />
@@ -323,6 +323,43 @@ Alicia Kimiagarov              </p>
                 data-aos="fade-up"
                 className="text-purple-700 font-bold  underline   "
                 href="www.linkedin.com/in/aliciakimiagarov/
+          "
+                target="_">
+                LinkedIn Profile
+              </Link>
+            </div>
+          </div>
+          <div
+            data-aos-duration="2000"
+            data-aos="fade-up"
+            className="flex flex-col md:flex-row md:gap-16 md:my-12 py-4 justify-center my-8 md:justify-start h-screen md:h-full md:items-center">
+            <div data-aos-duration="2000" data-aos="fade-up">
+              <Image
+                className="rounded-full object-cover mb-8 md:mb-0 max-w-[400px] h-[200px] w-[200px]"
+                src='/gilbert.jpg'
+                alt="Image of Gilbert Anyetei"
+                width={200}
+                height={200}
+              />
+            </div>
+            <div data-aos-duration="2000" data-aos="fade-up">
+              <p
+                data-aos-duration="2000"
+                data-aos="fade-up"
+                className="text-purple-900 font-extrabold text-2xl">
+Gibert Anyetei           </p>
+              
+              <blockquote
+                data-aos-duration="2000"
+                data-aos="fade-up"
+                className="italic text-sm my-4">
+                Gilbert Anyetei currently serves as an Investment Associate at Innovation Edge. Innovation Edge is an early stage impact-first investment firm that invests in early stage social enterprises. Gilbert is responsible for growing the IE investment profile, which includes pipeline building, venture building and portfolio management. Before this, he joined RisCura’s alternative investment services division, which focused on providing investment advisory services to private equity, venture capital, infrastructure and pension funds. As a Senior Associate, Gilbert was responsible for managing the team of analysts and providing expert investment valuation, modeling and consulting advice. Gilbert was also the principal author of RisCura’s Bright Africa publication – a cutting-edge research initiative focusing on Africa’s investment landscape. Prior to RisCura, he obtained his Chartered Accountant qualification after completing his articles at PricewaterhouseCoopers in the financial services division (insurance, asset management and other niche financial service offerings). He studied Business Science (Specialising in Finance and Accounting) and thereafter he obtained a Postgraduate Diploma in Accounting at the University of Cape Town. Gilbert is an experienced investment professional who is passionate about supporting innovative entrepreneurs in building and growing their ventures. 
+              </blockquote>
+              <Link
+                data-aos-duration="2000"
+                data-aos="fade-up"
+                className="text-purple-700 font-bold  underline   "
+                href="https://www.linkedin.com/in/gilbert-anyetei-ca-sa-3b983b51/
           "
                 target="_">
                 LinkedIn Profile
