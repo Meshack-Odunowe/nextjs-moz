@@ -74,7 +74,7 @@ const NavBar = () => {
                 <Link href="/mentors">Mentorship </Link>
               </li>
               <li onClick={closeMenu}>
-                <Link href="/apprenticeship">Apprenticeship</Link>
+                <Link href="/workinprogress">Apprenticeship</Link>
               </li>
 
               <li onClick={closeMenu} className="cursor-pointer">
@@ -122,7 +122,7 @@ const NavBar = () => {
               <Link href="/mentors">Mentorship </Link>
             </li>
             <li onClick={handleGetStartedClick} className="px-4 py-4 ">
-              <Link href="/apprenticeship">Apprenticeship </Link>
+              <Link href="/workinprogress">Apprenticeship </Link>
             </li>
 
             <li className="px-4 py-4" onClick={handleGetStartedClick}>
