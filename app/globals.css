@@ -14,3 +14,6 @@
 .content-hover-scale:hover {
   transform: scale(1.05);
 }
+ blockquote{
+   color: #6b7280 ;
+}
