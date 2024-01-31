@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/navigation";
+import { ClipLoader, RingLoader } from "react-spinners";
 
 const MenteeForm = () => {
   const handleInputChange = (e) => {
@@ -26,6 +27,7 @@ const MenteeForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
     emailjs
       .sendForm(
@@ -54,6 +56,7 @@ const MenteeForm = () => {
       formData.selectedSkill === ""   // Check if selectedSkill is empty
     ) {
       setFormValid(false);
+      
       return;
     }
 
@@ -173,12 +176,17 @@ maxLength={500}
             onChange={handleInputChange}
           />
         </div>
-        <button
-          onClick={handleSubmit}
-          className="bg-purple-700 text-white rounded-md md:px-4 md:py-2 py-2  hover:bg-purple-100 mb-4 hover:text-purple-800 hover:font-bold md:w-full justify-center items-center w-full"
-        >
-          Submit
-        </button>
+        {isLoading ? (
+              <div>
+                <ClipLoader color={"#7e22ce"} loading={isLoading} size={50} />
+              </div>
+            ) : (
+              <button
+                type="submit"
+                className="w-full bg-purple-500 text-white py-2 px-3 rounded-lg hover:bg-purple-700  mb-4  transition duration-300">
+                Submit{" "}
+              </button>
+            )}
       </form>
     </div>
   );

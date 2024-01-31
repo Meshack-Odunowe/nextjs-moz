@@ -6,34 +6,24 @@ import { GrConnect } from "react-icons/gr";
 import { GiSecretBook } from "react-icons/gi";
 import { RxTransform } from "react-icons/rx";
 import backgroundImage from "../../public/apprenticeship.jpg";
-import apprentice from "../../public/apprentice1.jpeg";
-import circle from "../../public/pngimage.png";
+
 function Apprenticeship() {
-  const backgroundImageStyle = {
-    backgroundImage: `url(${backgroundImage.src})`,
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    width: "100vw",
-    height: "100vh",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  };
+
 
   return (
-    <div className="px-4 md:px-48">
-      <div className="flex  flex-col leading-8 lg:flex-row items-center justify-center gap-8 py-8  px-10">
+    <div className="px-4 md:px-24">
+      <div className="flex  flex-col leading-8 lg:flex-row items-center justify-center gap-8 ">
         <div>
-          <h1 className="text-5xl  font-bold  tracking-normal leading-[70px] my-5  ">
+          <h1 className="text-5xl  font-bold  tracking-normal leading-[70px] my-5 lg:text-7xl text-center  md:text-start">
             <strong className=" text-gray-600">Mozisha Appren<span className=" text-purple-700 ">tice</span></strong>{" "}
             
           </h1>
           <p className="text-gray-600"> Closing Africa’s Skills Gap through Experiential Learning</p>
         </div>
-        <div className=" bg-purple-700">
+        <div className="">
           <Image
-          src={apprentice}
+          className="rounded-md"
+          src='/executive.jpg'
             width={900}
             height={900}
             alt="image of a girl"
@@ -48,7 +38,8 @@ function Apprenticeship() {
 
         </button>
         <button className=" bg-purple-700 text-white rounded-md mt-4 px-4 py-2 hover:bg-white hover:text-purple-700 mb-4">
-          Get an Apprentice
+          <Link href='/apprenticeship/get-apprentice'>Get an Apprentice</Link>
+         
         </button>
       </div>
       <section>

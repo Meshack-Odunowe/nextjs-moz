@@ -235,8 +235,8 @@ const ApprenticeshipForm = () => {
             value={formData.selectedSkill}
             onChange={handleInputChange}
           >
-            <option className=" py-4 my-8" value="">Select a skill</option>
-            <option value="International development">International development</option>
+            <option className=" py-4 my-8  bg-white" value="">Select a skill</option>
+            <option value="International development" className=" bg-white">International development</option>
             <option value="Software development">Sales and Marketing.</option>
             <option value="Data">Data</option>
             <option value="Designs">Designs</option>
