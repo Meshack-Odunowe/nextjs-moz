@@ -7,6 +7,8 @@ import { useRouter } from "next/navigation";
 import { ClipLoader, RingLoader } from "react-spinners";
 
 const MenteeForm = () => {
+  const [isLoading, setIsLoading] = useState(false); // Added isLoading state
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -43,7 +45,10 @@ const MenteeForm = () => {
         (error) => {
           console.log(error.text);
         }
-      );
+      )
+      .finally(() => {
+        setIsLoading(false); // Set loading to false after sending email
+      });
   };
 
   const handleSubmit = async (e) => {
@@ -56,11 +61,11 @@ const MenteeForm = () => {
       formData.selectedSkill === ""   // Check if selectedSkill is empty
     ) {
       setFormValid(false);
-      
       return;
     }
 
     setFormValid(true);
+    setIsLoading(true); // Set loading to true before form submission
 
     const url =
       "https://mozisha-47b2f-default-rtdb.firebaseio.com/talents.json";
@@ -69,7 +74,7 @@ const MenteeForm = () => {
       lastName: formData.lastName,
       email: formData.email,
       selectedSkill: formData.selectedSkill,  
-      text:formData.text
+      text: formData.text,
     };
 
     try {
@@ -97,6 +102,8 @@ const MenteeForm = () => {
       }
     } catch (error) {
       console.error("error:", error);
+    } finally {
+      setIsLoading(false); // Set loading to false after form submission
     }
 
     setFormData({ ...formData });
