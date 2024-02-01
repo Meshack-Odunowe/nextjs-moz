@@ -18,7 +18,7 @@ function Apprenticeship() {
             <strong className=" text-gray-600">Mozisha Appren<span className=" text-purple-700 ">tice</span></strong>{" "}
             
           </h1>
-          <p className="text-gray-600"> Closing Africa’s Skills Gap through Experiential Learning</p>
+          <p className=" text-center text-gray-600"> Closing Africa’s Skills Gap through Experiential Learning</p>
         </div>
         <div className="">
           <Image
