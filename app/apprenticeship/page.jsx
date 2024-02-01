@@ -14,8 +14,8 @@ function Apprenticeship() {
     <div className="px-4 md:px-24">
       <div className="flex  flex-col leading-8 lg:flex-row items-center justify-center gap-8 ">
         <div>
-          <h1 className="text-5xl  font-bold  tracking-normal leading-[70px] my-5 lg:text-7xl text-center  md:text-start">
-            <strong className=" text-gray-600">Mozisha Appren<span className=" text-purple-700 ">tice</span></strong>{" "}
+          <h1 className="text-5xl  font-bold  tracking-normal leading-[70px] my-5 lg:text-7xl text-center  md:text-start ">
+            <strong className=" text-gray-600">Mozisha Appren<span className=" text-purple-700 ">ticeship</span></strong>{" "}
             
           </h1>
           <p className=" md:text-start text-center text-gray-600"> Closing Africa’s Skills Gap through Experiential Learning</p>
