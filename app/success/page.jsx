@@ -18,7 +18,7 @@ const SuccessPage = () => {
           <Image width={400} height={400} src={welcome} alt="Image of people shaking hands" />
         </div>
         <p className="text-purple-600 text-center font-extrabold">
-          We'll be in touch within the next six hours.
+          We'll be in touch soon.!
         </p>
         <div className="mx-auto">
           <Link href="/" 
