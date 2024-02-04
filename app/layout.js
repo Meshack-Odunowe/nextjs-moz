@@ -34,35 +34,7 @@ export default function RootLayout({ children }) {
           async
         />
 
-        {/* <!-- HTML Meta Tags --> */}
-        <title>Mozisha</title>
-        <meta
-          name="description"
-          content="Unlocking African Talents for Global Success. Welcome to Mozisha, Your Gateway to Premium Talents to Supercharge Business Growth."
-        />
-
-        {/* <!-- Facebook Meta Tags --> */}
-        <meta property="og:url" content="https://mozisha.com/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Mozisha" />
-        <meta
-          property="og:description"
-          content="Unlocking African Talents for Global Success. Welcome to Mozisha, Your Gateway to Premium Talents to Supercharge Business Growth."
-        />
-        <meta property="og:image" content="" />
-
-        {/* <!-- Twitter Meta Tags --> */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="mozisha.com" />
-        <meta property="twitter:url" content="https://mozisha.com/" />
-        <meta name="twitter:title" content="Mozisha" />
-        <meta
-          name="twitter:description"
-          content="Unlocking African Talents for Global Success. Welcome to Mozisha, Your Gateway to Premium Talents to Supercharge Business Growth."
-        />
-        <meta name="twitter:image" content="" />
-
-        {/* <!-- Meta Tags Generated via https://www.opengraph.xyz --></meta> */}
+        
       </head>
 
       <body className={inter.className}>
