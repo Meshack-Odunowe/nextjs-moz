@@ -63,7 +63,7 @@ export default async function BlogArticle({ params }) {
   <meta property="og:title" content={data.title} />
   <meta property="og:description" content={data.smallDescription} />
   <meta property="og:image" content={urlFor(data.titleImage).url()} />
-  <meta property="og:url" content={`https://www.mozisha.com/${data.currentSlug}`} />
+  <meta property="og:url" content={`https://www.mozisha.com/blog/${data.currentSlug}`} />
   <meta property="og:type" content="article" />
 </Head>
 
