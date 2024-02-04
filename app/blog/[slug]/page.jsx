@@ -2,7 +2,7 @@ import Image from "next/image";
 import { client, urlFor } from "../../lib/sanity";
 import { PortableText } from '@portabletext/react'
 import readingTime from "reading-time";
-
+import Head from 'next/head';
 export const revalidate=10
 
 async function getData(slug) {
@@ -51,11 +51,22 @@ export async function generateMetadata({ params }) {
 
 export default async function BlogArticle({ params }) {
   const data = await getData(params.slug);
-  console.log(data);
+  // console.log(data);
   const textForReadingTime = extractTextFromPortableText(data.content);
 
   return (
     <>
+      <Head>
+  <title>{data.title}</title>
+  <meta name="description" content={data.smallDescription} />
+
+  <meta property="og:title" content={data.title} />
+  <meta property="og:description" content={data.smallDescription} />
+  <meta property="og:image" content={urlFor(data.titleImage).url()} />
+  <meta property="og:url" content={`https://www.mozisha.com/${data.currentSlug}`} />
+  <meta property="og:type" content="article" />
+</Head>
+
      
     <h1 className=" text-3xl block  font-bold leading-8 tracking-tight sm:text-4xl text-center my-8">
       {data.title}
