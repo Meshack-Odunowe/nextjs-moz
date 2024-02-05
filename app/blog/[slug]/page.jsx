@@ -40,8 +40,7 @@ export async function generateMetadata({ params }) {
       images: [
         {
           url: imageURL,
-          width: 800,
-          height: 800,
+          
         },
       ],
     },
@@ -51,7 +50,6 @@ export async function generateMetadata({ params }) {
 
 export default async function BlogArticle({ params }) {
   const data = await getData(params.slug);
-  // console.log(data);
   const textForReadingTime = extractTextFromPortableText(data.content);
 
   return (
