@@ -33,6 +33,7 @@ function extractTextFromPortableText(content) {
 export async function generateMetadata({ params }) {
   const blog = await getData(params.slug);
   const title = blog.title;
+  
   const description = blog.smallDescription;
   const imageURL = urlFor(blog.titleImage).width(1200).height(630).url(); // Set width and height
   return {
@@ -42,8 +43,8 @@ export async function generateMetadata({ params }) {
       images: [
         {
           url: imageURL,
-          width: 1200, // Optional: Provide the actual width of the image
-          height: 630, // Optional: Provide the actual height of the image
+          width: 1200, 
+          height: 630, 
         },
       ],
     },

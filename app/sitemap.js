@@ -72,5 +72,35 @@ export default function sitemap() {
       changeFrequency: 'weekly',
       priority: 0.5,
     },
+    {
+      url: 'https://mozisha.com/blog/unleashing-africa-s-creative-force-part-2',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.5,
+    },
+    {
+      url: 'https://mozisha.com/blog/unleashing-africa-s-creative-force',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.5,
+    },
+    {
+      url: 'https://mozisha.com/apprenticeship',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.5,
+    },
+    {
+      url: 'https://mozisha.com/apprenticeship/apprenticesignup',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.5,
+    },
+    {
+      url: 'https://mozisha.com/apprenticeship/get-apprentice',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.5,
+    },
   ]
 }
