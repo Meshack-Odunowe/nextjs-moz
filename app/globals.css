@@ -17,3 +17,10 @@
  blockquote{
    color: #6b7280 ;
 }
+
+.checkmark {
+  @apply text-green-500 text-9xl -mt-10;
+}
+.card {
+  @apply bg-white p-16 rounded-lg shadow-md inline-block;
+}

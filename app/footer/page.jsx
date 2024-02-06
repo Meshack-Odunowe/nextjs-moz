@@ -55,9 +55,9 @@ const Footer = () => {
         <h6
           data-aos-duration="1000"
           data-aos="fade-up"
-          className="font-semibold "
+          className=" underline "
           onClick={handleGetStartedClick}>
-          <Link href="tel:+27824277902">Contact Us</Link>
+          <Link href="/contact-us">Contact Us</Link>
         </h6>
         <Link href="mailto:info@mozisha.com">info@mozisha.com</Link>
         <div className="text-3xl flex gap-4 mt-36">
