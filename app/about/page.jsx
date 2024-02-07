@@ -14,6 +14,9 @@ const About = () => {
   return (
     <>
       <div className="md:p-20 p-8">
+        <div className=" max-w-6xl mx-auto">
+
+        
         <h1 className="text-4xl text-gray-600 font-bold text-center">
           Mozisha - Africa’s Skills Factory.
         </h1>
@@ -22,16 +25,16 @@ const About = () => {
           premium African talents. We empower young Africans with the in-demand
           skills they need to succeed in today’s global market, thereby
           addressing the challenge of skill mismatch where formal education
-          falls short. How do we do it? Through our innovative practice-based
-          training model, encompassing immersive skills training, capstone
-          projects, mentorship, and apprenticeship programs. We equip young
-          Africans to compete on a global scale. But we don't stop there.
+          falls short. <br /> <br/> How do we do it? Through our innovative
+          practice-based training model, encompassing immersive skills training,
+          capstone projects, mentorship, and apprenticeship programs. We equip
+          young Africans to compete on a global scale.<br /> <br/> But we don't stop there.
           Mozisha is committed to bridging the gap between talent and
           opportunity. We help global businesses to access top-tier remote
           talents and invest in workforce development. By forging strategic
           partnerships, we enable companies to scale efficiently while
           simultaneously tackling youth unemployment in Africa.
-        </p>
+        </p></div>
 
         <h2 className="text-2xl font-bold text-center text-gray-600 mb-8">
           Our Core Values
