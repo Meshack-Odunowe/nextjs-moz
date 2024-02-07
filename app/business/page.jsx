@@ -1,7 +1,7 @@
 // pages/business.js
 
 import Image from 'next/image';
-
+import BusinessInfo from '../components/BusinessInfo/BusinessInfo'
 import BusinessForm from './businessForm/page';
 export const metadata = {
   title:'Business',
@@ -41,12 +41,12 @@ const Business = () => {
         </p>
       </div>
 
-      <div className="max-w-[1000px] mx-auto px-8 h-full pb-48 shadow-2xl mb-44">
+          <BusinessInfo/>
+      <div className="max-w-[768px] mx-auto px-8 h-full pb-48 shadow-2xl mb-44">
         <h3 className="text-purple-800 leading-8 text-center mt-20">
           Fill out the form below and let Mozisha be the driving force behind
           your success.
         </h3>
-
         <BusinessForm />
       </div>
     </>

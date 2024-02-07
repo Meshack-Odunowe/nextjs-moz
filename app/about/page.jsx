@@ -1,145 +1,146 @@
-
-import Image from 'next/image';
-
-
-import img2 from '../../public/group3.jpg';
-import img3 from '../../public/pexels.jpg';
-import img4 from '../../public/united.jpeg';
-import Team from '../components/Team/page';
+import Team from "../components/Team/page";
+import { FcSearch } from "react-icons/fc";
+import { FcOk } from "react-icons/fc";
+import { FcOrgUnit } from "react-icons/fc";
+import { FcServices } from "react-icons/fc";
+import { FcSportsMode } from "react-icons/fc";
+import { FcOrganization } from "react-icons/fc";
 export const metadata = {
-  title:'About Us',
-description:"At Mozisha, our mission is clear: to nurture premium African talents and connect them with businesses worldwide.  "
-}
+  title: "About Us",
+  description:
+    "At Mozisha, our mission is clear: to nurture premium African talents and connect them with businesses worldwide.  ",
+};
 const About = () => {
- 
- 
   return (
-   <>
-      
-      <div  className="md:p-20 p-8">
-        <h1
-          
-          className="text-4xl font-bold text-center"
-        >
-          Our Mission
+    <>
+      <div className="md:p-20 p-8">
+        <h1 className="text-4xl text-gray-600 font-bold text-center">
+          Mozisha - Africa’s Skills Factory.
         </h1>
-        <p
-          
-          className="md:px-8 leading-8 py-8">
-          At Mozisha, our mission is clear: to nurture premium African talents
-          and connect them with businesses worldwide. We work to address the
-          challenge of skills mismatch by equipping young Africans with
-          in-demand skills through our innovative practice-based training model.
-          Mozisha also collaborates with global businesses to facilitate access
-          to employment opportunities. Through these partnerships, we aim to
-          help companies scale efficiently while tackling the problem of youth
-          unemployment in Africa. Mozisha provides top-notch outsourcing
-          solutions for business growth.
+        <p className="md:px-8 leading-8 py-8 text-gray-500">
+          Mozisha is a technology workforce development firm that nurtures
+          premium African talents. We empower young Africans with the in-demand
+          skills they need to succeed in today’s global market, thereby
+          addressing the challenge of skill mismatch where formal education
+          falls short. How do we do it? Through our innovative practice-based
+          training model, encompassing immersive skills training, capstone
+          projects, mentorship, and apprenticeship programs. We equip young
+          Africans to compete on a global scale. But we don't stop there.
+          Mozisha is committed to bridging the gap between talent and
+          opportunity. We help global businesses to access top-tier remote
+          talents and invest in workforce development. By forging strategic
+          partnerships, we enable companies to scale efficiently while
+          simultaneously tackling youth unemployment in Africa.
         </p>
-        <div
-          
-          className="flex flex-col md:flex-row gap-4 md:gap-24 my-24 items-center"
-        >
-          <div
-            
-            className="md:w-1/2"
-          >
-            <Image
-              src={img4}
-              alt="people joining hands in solidarity"
-              className="rounded-md"
-              width={800}
-              height={600}
-            />
-          </div>
-          <div
-            
-            className="md:w-1/2 leading-8"
-          >
-            <h1 className="text-center py-8 font-bold text-2xl">
-              Enrich Your Diversity
-            </h1>
-            <p >
-              We pride ourselves in the rich diversity of our talents. Mozishans
-              come from over 50 countries, 3000 ethnic groups, and 2100
-              languages in Africa. We also ensure that at least 50% of all our
-              talents are women. By partnering with Mozisha, you are sure to
-              significantly enhance diversity, equity and inclusion in your
-              organization
-            </p>
-          </div>
-        </div>
-        <div
-          
-          className="flex items-center flex-col md:flex-row-reverse pt-20 gap-4 md:gap-24 my-24"
-        >
-          <div
-            
-            className="md:w-1/2"
-          >
-            <Image
-              src={img2}
-              alt="young people discussing"
-              className="rounded-md"
-              width={800}
-              height={600}
-            />
-          </div>
-          <div
-            
-            className="md:w-1/2 leading-8"
-          >
-            <h1 className="text-center py-8 font-bold text-2xl">
-              Unique Training Model
-            </h1>
-            <p>
-              Mozisha leverages a combination of study and on the job learning to
-              nurture its talents. Through our partnership with businesses
-              around the world with whom we co-design our courses, we ensure
-              that our talents are trained and retrained to meet the demands of
-              the constantly changing labour market.
-            </p>
-          </div>
-        </div>
-        <div
-          
-          className="flex flex-col items-center md:flex-row pt-20 gap-4 md:gap-24 my-24"
-        >
-          <div
-            
-            className="md:w-1/2"
-          >
-            <Image
-              src={img3}
-              alt="young boy working"
-              className="rounded-md"
-              width={800}
-              height={600}
-            />
-          </div>
-          <div
-            
-            className="md:w-1/2 leading-8"
-          >
-            <h1 className="text-center py-8 font-bold text-2xl">
-              A Footprint in Africa.
-            </h1>
-            <p>
-              As the most youthful continent in the world, Africa is poised to
-              be the major supplier of human capital in the next few decades.
-              With Mozisha’s access to talents from over 50 countries in Africa,
-              we are well positioned to help your organization tap into the
-              future of the global labour force.
-            </p>
-          </div>{" "}
-        </div>
-        <Team />
 
+        <h2 className="text-2xl font-bold text-center text-gray-600 mb-8">
+          Our Core Values
+        </h2>
+        <div className=" flex flex-col lg:flex-row gap-16 my-16">
+          <div className=" shadow-lg p-2 bg-gray-50 rounded-2xl   w-fit flex  flex-col items-center justify-center">
+            <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center">
+              <div className=" rounded-full w-32 h-32 flex items-center justify-center    bg-purple-100 mx-auto">
+                <FcSearch className=" text-4xl text-green-400 " />
+              </div>
+            </div>
+            <h4 className=" text-gray-600 font-bold mt-7 text-center">
+              Transparency
+            </h4>
+
+            <p className=" text-gray-500 my-4 text-center">
+              We believe in open communication, honesty, and accountability in
+              everything we do.
+            </p>
+          </div>
+          <div className=" shadow-lg p-2 bg-gray-50 rounded-2xl  w-fit flex  flex-col items-center justify-center">
+            <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center">
+              <div className=" rounded-full w-32 h-32 flex items-center justify-center    bg-purple-100 mx-auto">
+                <FcOk className=" text-4xl text-green-400 " />
+              </div>
+            </div>
+            <h4 className=" text-gray-600 font-bold mt-7 text-center">
+              Excellence
+            </h4>
+
+            <p className=" text-gray-500 my-4 text-center">
+              We are committed to achieving the highest standards, constantly
+              pushing ourselves to deliver unparalleled services.
+            </p>
+          </div>
+          <div className=" shadow-lg p-2 bg-gray-50 rounded-2xl  w-fit flex  flex-col items-center justify-center ">
+            <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center">
+              <div className=" rounded-full w-32 h-32 flex items-center justify-center    bg-purple-100 mx-auto">
+                <FcOrganization className=" text-4xl text-green-400 " />
+              </div>
+            </div>
+            <h4 className=" text-gray-600 font-bold mt-7 text-center">
+              Diversity
+            </h4>
+
+            <p className=" text-gray-500 my-4 text-center">
+              We empower our team through inclusivity, leading to richer
+              experiences and better results.
+            </p>
+          </div>
+        </div>
+
+        <div className=" flex flex-col lg:flex-row gap-16 my-16">
+          <div className=" shadow-lg p-2 bg-gray-50 rounded-2xl  w-fit flex  flex-col items-center justify-center">
+            <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center">
+              <div className=" rounded-full w-32 h-32 flex items-center justify-center    bg-purple-100 mx-auto">
+                <FcOrgUnit className=" text-4xl text-green-400 " />
+              </div>
+            </div>
+            <h4 className=" text-gray-600 font-bold mt-7 text-center">
+              Collaboration{" "}
+            </h4>
+
+            <p className=" text-gray-500 my-4 text-center">
+              We value collective efforts as a team because everyone contributes
+              to amplifying our impact.
+            </p>
+          </div>
+          <div className=" shadow-lg p-2 bg-gray-50 rounded-2xl  w-fit flex  flex-col items-center justify-center">
+            <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center">
+              <div className=" rounded-full w-32 h-32 flex items-center justify-center    bg-purple-100 mx-auto">
+                <FcSportsMode className=" text-4xl text-green-400 " />
+              </div>
+            </div>
+            <h4 className=" text-gray-600 font-bold mt-7 text-center">
+              Empowerment{" "}
+            </h4>
+
+            <p className=" text-gray-500 my-4 text-center">
+              Our mission is to set up individuals and organizations for
+              success, equipping them with the resources required to thrive.
+            </p>
+          </div>
+          <div className=" shadow-lg p-2 bg-gray-50 rounded-2xl  w-fit flex  flex-col items-center justify-center ">
+            <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center">
+              <div className=" rounded-full w-32 h-32 flex items-center justify-center    bg-purple-100 mx-auto">
+                <FcServices className=" text-4xl text-green-400 " />
+              </div>
+            </div>
+            <h4 className=" text-gray-600 font-bold mt-7 text-center">
+              Innovation{" "}
+            </h4>
+
+            <p className=" text-gray-500 my-4 text-center">
+              We embrace creativity by adapting to the ever-evolving trends
+              driving progress through forward-thinking.
+            </p>
+          </div>
+        </div>
+
+        <p className=" italic animate-pulse font-bold mb-16 text-red-500">
+          These values shape our culture, define our approach, and guide us in
+          creating meaningful impact every day.
+        </p>
+
+        <Team />
       </div>
     </>
   );
 };
 
 export default About;
-
-

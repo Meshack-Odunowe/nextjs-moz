@@ -5,8 +5,11 @@ import Image from "next/image";
 import { GrConnect } from "react-icons/gr";
 import { GiSecretBook } from "react-icons/gi";
 import { RxTransform } from "react-icons/rx";
-import backgroundImage from "../../public/apprenticeship.jpg";
-
+export const metadata = {
+  title: "Apprenticeship",
+  description:
+    "Mozisha Apprenticeship is where African talents are merged with businesses for three months of hands-on training. The programme is designed to empower young Africans with practical skills for real-world success.  ",
+};
 function Apprenticeship() {
 
 

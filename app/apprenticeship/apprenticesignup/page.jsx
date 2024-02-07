@@ -186,7 +186,7 @@ const ApprenticeshipForm = () => {
                 type="text"
                 id="firstName"
                 name="firstName"
-                placeholder="John"
+                placeholder="John Doe"
                 value={formData.firstName}
                 onChange={handleInputChange}
                 required
