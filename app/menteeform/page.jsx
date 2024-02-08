@@ -166,6 +166,7 @@ const MenteeForm = () => {
             <option value="Software development">Sales and Marketing.</option>
             <option value="Data">Data</option>
             <option value="Designs">Designs</option>
+            <option value="Designs">Software Development</option>
           </select>
         </div>
        
