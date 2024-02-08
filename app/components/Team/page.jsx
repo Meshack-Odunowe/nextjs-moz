@@ -197,7 +197,7 @@ const Team = () => {
         data-aos-duration="5000"
         data-aos="fade-up"
         className="max-w-[768px] mx-auto">
-        <h1 className="md:text-center font-bold text-gray-950 uppercase text-4xl mb-8 md:text-4xl md:py-16 pt-8">
+        <h1 className="md:text-center font-bold text-gray-950 uppercase text-4xl  md:text-4xl md:py-16 py-24">
           Advisory Board{" "}
         </h1>
         <div data-aos-duration="5000" data-aos="fade-up">
@@ -208,7 +208,7 @@ const Team = () => {
             <div
               data-aos-duration="5000"
               data-aos="fade-up"
-              className="flex flex-col md:flex-row md:gap-16 md:my-24 justify-center md:items-center h-screen md:h-full ">
+              className="flex flex-col  md:flex-row md:gap-16 md:my-24 justify-center md:items-center  md:h-full ">
               <div data-aos-duration="5000" data-aos="fade-up">
                 <Image
                   className="rounded-full  object-cover mb-8 md:mb-0 max-w-[400px] h-[200px] w-[200px]"
@@ -222,7 +222,7 @@ const Team = () => {
                 <p
                   data-aos-duration="2000"
                   data-aos="fade-up"
-                  className="text-gray-900 font-extrabold text-2xl">
+                  className="text-gray-900 font-extrabold text-2xl ">
                   Achumboro Ataande{" "}
                 </p>
 
@@ -327,7 +327,7 @@ const Team = () => {
             <div
               data-aos-duration="2000"
               data-aos="fade-up"
-              className="flex flex-col md:flex-row md:gap-16 md:my-12 py-4 justify-center my-8 md:justify-start h-screen md:h-full md:items-center">
+              className="flex flex-col md:flex-row md:gap-16 md:my-12 py-4 justify-center my-8 md:justify-start  md:h-full md:items-center">
               <div data-aos-duration="2000" data-aos="fade-up">
                 <Image
                   className="rounded-full object-cover mb-8 md:mb-0 max-w-[400px] h-[200px] w-[200px]"
@@ -373,7 +373,7 @@ const Team = () => {
             <div
               data-aos-duration="2000"
               data-aos="fade-up"
-              className="flex flex-col md:flex-row md:gap-16 md:my-12 py-4 justify-center my-8 md:justify-start h-screen md:h-full md:items-center">
+              className="flex flex-col md:flex-row md:gap-16 md:my-12 py-4 justify-center my-8 md:justify-start  md:h-full md:items-center">
               <div data-aos-duration="2000" data-aos="fade-up">
                 <Image
                   className="rounded-full object-cover mb-8 md:mb-0 max-w-[400px] h-[200px] w-[200px]"
