@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Team from "../components/Team/page";
 import { FcSearch } from "react-icons/fc";
 import { FcOk } from "react-icons/fc";
@@ -41,9 +42,11 @@ const About = () => {
         </h2>
         <div className=" flex flex-col lg:flex-row gap-16 my-16">
           <div className=" shadow-lg p-2 bg-gray-50 rounded-2xl   w-fit flex  flex-col items-center justify-center">
-            <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center">
-              <div className=" rounded-full w-32 h-32 flex items-center justify-center    bg-purple-100 mx-auto">
-                <FcSearch className=" text-4xl text-green-400 " />
+            <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center overflow-hidden">
+              <div className=" rounded-full w-32 h-32 flex items-center justify-center    bg-purple-100 mx-auto overflow-hidden">
+                {/* <FcSearch className=" text-4xl text-green-400 " />
+                 */}
+                <Image width={ 200} height={200} src='/transparency.avif' alt='transparent image' />
               </div>
             </div>
             <h4 className=" text-gray-600 font-bold mt-7 text-center">
@@ -55,10 +58,11 @@ const About = () => {
               everything we do.
             </p>
           </div>
-          <div className=" shadow-lg p-2 bg-gray-50 rounded-2xl  w-fit flex  flex-col items-center justify-center">
-            <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center">
-              <div className=" rounded-full w-32 h-32 flex items-center justify-center    bg-purple-100 mx-auto">
-                <FcOk className=" text-4xl text-green-400 " />
+          <div className=" shadow-lg p-2 bg-gray-50 rounded-2xl  w-fit flex  flex-col items-center justify-center ">
+            <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center  overflow-hidden">
+              <div className=" rounded-full w-32 h-32 flex items-center justify-center   overflow-hidden  bg-purple-100 mx-auto">
+                {/* <FcOk className=" text-4xl text-green-400 " /> */}
+                <Image width={ 200} height={200} src='/excellence.jpg' alt='excellence image' />
               </div>
             </div>
             <h4 className=" text-gray-600 font-bold mt-7 text-center">
@@ -71,9 +75,10 @@ const About = () => {
             </p>
           </div>
           <div className=" shadow-lg p-2 bg-gray-50 rounded-2xl  w-fit flex  flex-col items-center justify-center ">
-            <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center">
-              <div className=" rounded-full w-32 h-32 flex items-center justify-center    bg-purple-100 mx-auto">
-                <FcOrganization className=" text-4xl text-green-400 " />
+            <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center overflow-hidden">
+              <div className=" rounded-full w-32 h-32 flex items-center justify-center   overflow-hidden  bg-purple-100 mx-auto">
+              <Image width={ 200} height={200} src='/diversity.jpg' alt='transparent image' />
+                {/* <FcOrganization className=" text-4xl text-green-400 " /> */}
               </div>
             </div>
             <h4 className=" text-gray-600 font-bold mt-7 text-center">
@@ -89,9 +94,10 @@ const About = () => {
 
         <div className=" flex flex-col lg:flex-row gap-16 my-16">
           <div className=" shadow-lg p-2 bg-gray-50 rounded-2xl  w-fit flex  flex-col items-center justify-center">
-            <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center">
-              <div className=" rounded-full w-32 h-32 flex items-center justify-center    bg-purple-100 mx-auto">
-                <FcOrgUnit className=" text-4xl text-green-400 " />
+            <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center overflow-hidden">
+              <div className=" rounded-full w-32 h-32 flex items-center justify-center   overflow-hidden  bg-purple-100 mx-auto">
+              <Image width={ 200} height={200} src='/teamwork.jpg' alt='transparent image' />
+                {/* <FcOrgUnit className=" text-4xl text-green-400 " /> */}
               </div>
             </div>
             <h4 className=" text-gray-600 font-bold mt-7 text-center">
@@ -104,9 +110,10 @@ const About = () => {
             </p>
           </div>
           <div className=" shadow-lg p-2 bg-gray-50 rounded-2xl  w-fit flex  flex-col items-center justify-center">
-            <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center">
-              <div className=" rounded-full w-32 h-32 flex items-center justify-center    bg-purple-100 mx-auto">
-                <FcSportsMode className=" text-4xl text-green-400 " />
+            <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center overflow-hidden">
+              <div className=" rounded-full w-32 h-32 flex items-center justify-center  overflow-hidden   bg-purple-100 mx-auto">
+              <Image width={ 200} height={200} src='/empowerment.jpg' alt='empowerment image' />
+                {/* <FcSportsMode className=" text-4xl text-green-400 " /> */}
               </div>
             </div>
             <h4 className=" text-gray-600 font-bold mt-7 text-center">
@@ -119,9 +126,10 @@ const About = () => {
             </p>
           </div>
           <div className=" shadow-lg p-2 bg-gray-50 rounded-2xl  w-fit flex  flex-col items-center justify-center ">
-            <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center">
-              <div className=" rounded-full w-32 h-32 flex items-center justify-center    bg-purple-100 mx-auto">
-                <FcServices className=" text-4xl text-green-400 " />
+            <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center overflow-hidden">
+              <div className=" rounded-full w-32 h-32 flex items-center justify-center  overflow-hidden   bg-purple-100 mx-auto">
+              <Image width={ 200} height={200} src='/innovation.jpeg' alt='innovation image' />
+                {/* <FcServices className=" text-4xl text-green-400 " /> */}
               </div>
             </div>
             <h4 className=" text-gray-600 font-bold mt-7 text-center">
