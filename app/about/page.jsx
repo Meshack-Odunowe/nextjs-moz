@@ -77,7 +77,7 @@ const About = () => {
           <div className=" shadow-lg p-2 bg-gray-50 rounded-2xl  w-fit flex  flex-col items-center justify-center ">
             <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center overflow-hidden">
               <div className=" rounded-full w-32 h-32 flex items-center justify-center   overflow-hidden  bg-purple-100 mx-auto">
-              <Image width={ 200} height={200} src='/diversity.jpg' alt='transparent image' />
+              <Image width={ 200} height={200} src='/diversity.jpg' alt='image denoting diversity image' />
                 {/* <FcOrganization className=" text-4xl text-green-400 " /> */}
               </div>
             </div>
@@ -96,7 +96,7 @@ const About = () => {
           <div className=" shadow-lg p-2 bg-gray-50 rounded-2xl  w-fit flex  flex-col items-center justify-center">
             <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center overflow-hidden">
               <div className=" rounded-full w-32 h-32 flex items-center justify-center   overflow-hidden  bg-purple-100 mx-auto">
-              <Image width={ 200} height={200} src='/teamwork.jpg' alt='transparent image' />
+              <Image width={ 200} height={200} src='/teamwork.jpg' alt='teamwork image' />
                 {/* <FcOrgUnit className=" text-4xl text-green-400 " /> */}
               </div>
             </div>
