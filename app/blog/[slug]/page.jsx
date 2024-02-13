@@ -100,6 +100,7 @@ export default async function BlogArticle({ params }) {
         alt="image"
         width={800}
         height={800}
+        loading="lazy"
         priority
         className="rounded-md border  mt-8  mx-auto object-cover"
       />{" "}
@@ -109,7 +110,7 @@ export default async function BlogArticle({ params }) {
           className="px-4 prose-blue max-w-4xl"
         />
         <p className=" text-red-500 text-sm mt-8">
-          Share on any of these social media platforms{" "}
+          Social Share
         </p>
         <div className="flex gap-2 my-8">
           {/* Facebook share button */}
