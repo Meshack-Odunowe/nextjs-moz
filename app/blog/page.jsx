@@ -96,7 +96,7 @@ export default async function Blog() {
               {post.categories.map((category) => (
                 <p
                   key={category._id}
-                  className="border  shadow-md bg-gray-200  py-1 px-2 text-[10px] rounded-full">
+                  className="border  shadow-md bg-gray-200  py-1 px-2 text-[10px] rounded-full mb-2">
                   {category.name}
                 </p>
               ))}
