@@ -95,7 +95,7 @@ export default async function BlogArticle({ params }) {
     priority
     className="rounded-md border  mt-8  mx-auto object-cover"
       />{" "}
-    <div className=" mt-16  mx-auto prose prose-lg px-4  prose-a:underline  prose-blue  leading-8 mb-16 max-w-4xl" >
+    <div className=" mt-16  mx-auto prose prose-lg prose-a:underline prose-blue px-4  prose-a:underline  prose-blue  leading-8 mb-16 max-w-4xl" >
         <PortableText value={data.content}  />
     </div>
     </>
