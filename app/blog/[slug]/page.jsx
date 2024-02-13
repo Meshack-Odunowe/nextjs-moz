@@ -103,8 +103,8 @@ export default async function BlogArticle({ params }) {
         priority
         className="rounded-md border  mt-8  mx-auto object-cover"
       />{" "}
-      <div className=" mt-16  mx-auto prose prose-lg prose-a:underline prose-blue px-4     leading-8 mb-16 max-w-4xl">
-        <PortableText value={data.content} className="px-4 prose-blue max-w-4xl" />
+      <div className=" mt-16  mx-auto prose prose-lg prose-a:underline prose-blue px-4  w-fit    leading-8 mb-16 max-w-4xl">
+        <PortableText value={data.content} className="px-4 prose-blue w-fit max-w-4xl" />
           <p className=" text-red-500 text-sm mt-8">Share on any of these social media platforms </p>
         <div className="flex gap-2 my-8">
   {/* Facebook share button */}
