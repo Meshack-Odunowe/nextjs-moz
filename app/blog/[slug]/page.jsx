@@ -104,7 +104,7 @@ export default async function BlogArticle({ params }) {
         priority
         className="rounded-md border  mt-8  mx-auto object-cover"
       />{" "}
-      <div className=" mt-16  mx-auto prose prose-lg prose-a:underline prose-blue px-4     leading-8 mb-16 max-w-4xl">
+      <article className=" mt-16  mx-auto prose prose-lg prose-a:underline prose-blue px-4     leading-8 mb-16 max-w-4xl">
         <PortableText
           value={data.content}
           className="px-4 prose-blue max-w-4xl"
@@ -158,7 +158,7 @@ export default async function BlogArticle({ params }) {
 
           {/* Instagram share button */}
         </div>
-      </div>
+      </article>
     </>
   );
 }
