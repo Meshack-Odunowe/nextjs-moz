@@ -103,54 +103,60 @@ export default async function BlogArticle({ params }) {
         priority
         className="rounded-md border  mt-8  mx-auto object-cover"
       />{" "}
-      <div className=" mt-16  mx-auto prose prose-lg prose-a:underline prose-blue px-4     leading-8 mb-16 max-w-4xl">
-        <PortableText value={data.content} className="px-4 prose-blue max-w-4xl" />
-          <p className=" text-red-500 text-sm mt-8">Share on any of these social media platforms </p>
+      <div className=" mt-16  mx-auto prose prose-lg prose-a:underline prose-blue px-4   sm:max-w-none  leading-8 mb-16 max-w-4xl">
+        <PortableText
+          value={data.content}
+          className="px-4 prose-blue max-w-4xl"
+        />
+        <p className=" text-red-500 text-sm mt-8">
+          Share on any of these social media platforms{" "}
+        </p>
         <div className="flex gap-2 my-8">
-  {/* Facebook share button */}
-  <Link
-    href={`https://www.facebook.com/sharer/sharer.php?u=https://mozisha.com/blog/${data.currentSlug}`}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full"
-  >
-    <FaFacebook />
-  </Link>
+          {/* Facebook share button */}
+          <Link
+            href={`https://www.facebook.com/sharer/sharer.php?u=https://mozisha.com/blog/${data.currentSlug}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full">
+            <FaFacebook />
+          </Link>
 
-  {/* Twitter share button */}
-  <Link
-    href={`https://twitter.com/intent/tweet?url=https://mozisha.com/blog/${data.currentSlug}&text=${encodeURIComponent(data.title)}`}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full"
-  >
-    <FaXTwitter />
-  </Link>
+          {/* Twitter share button */}
+          <Link
+            href={`https://twitter.com/intent/tweet?url=https://mozisha.com/blog/${
+              data.currentSlug
+            }&text=${encodeURIComponent(data.title)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full">
+            <FaXTwitter />
+          </Link>
 
-  {/* LinkedIn share button */}
-  <Link
-    href={`https://www.linkedin.com/sharing/share-offsite/?url=https://mozisha.com/blog/${data.currentSlug}`}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full"
-  >
-    <FaLinkedin />
-  </Link>
+          {/* LinkedIn share button */}
+          <Link
+            href={`https://www.linkedin.com/sharing/share-offsite/?url=https://mozisha.com/blog/${data.currentSlug}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full">
+            <FaLinkedin />
+          </Link>
 
-  {/* WhatsApp share button */}
-  <Link
-    href={`https://api.whatsapp.com/send?text=${encodeURIComponent(data.title + ' - ' + 'https://mozisha.com/blog/' + data.currentSlug)}`}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full"
-  >
-    <FaWhatsapp />
-  </Link>
+          {/* WhatsApp share button */}
+          <Link
+            href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
+              data.title +
+                " - " +
+                "https://mozisha.com/blog/" +
+                data.currentSlug
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full">
+            <FaWhatsapp />
+          </Link>
 
-  {/* Instagram share button */}
-  
-</div>
-
+          {/* Instagram share button */}
+        </div>
       </div>
     </>
   );
