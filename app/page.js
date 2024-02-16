@@ -113,7 +113,6 @@ function Home() {
       <HowItWorks />
       <Testimonial />
       <FrequentlyAskedQuestions /> 
-      <NewsletterSubscribe/>
     </>
   );
 }
