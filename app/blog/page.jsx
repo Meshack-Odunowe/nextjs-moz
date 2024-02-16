@@ -36,7 +36,6 @@ export const metadata = {
 
 export default async function Blog() {
   const data = await getData();
-  console.log(data);
   return (
     <div>
       <HeroSection />
@@ -46,7 +45,7 @@ export default async function Blog() {
       <div className="grid grid-cols-1  lg:grid-cols-3 gap-16 mx-auto  py-8 lg:px-16  px-4 lg:mx-auto mt-5 ">
         {data.map((post, index) => (
           <div key={index} className="bg-gray-100 shadow-xl rounded-md p-4">
-            <div className="image-container rounded-lg">
+            <div className="image-container  rounded-lg">
               <Image
                 src={urlFor(post.titleImage).url()}
                 alt="image"

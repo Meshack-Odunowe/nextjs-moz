@@ -1,69 +1,20 @@
+'use client'
 import Image from "next/image";
-import Link from "next/link";
-import { FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import NewsletterSubscribe from "../NewsletterSubscribe";
 
 const HeroSection = () => {
   return (
     <div className="lg:px-24 px-4 py-16  md:px-20">
-      <div className="flex flex-col md:flex-row">
-        <div className="flex flex-col  p-4 space-y-4 justify-end py-8 flex-1">
-          <h1 className="capitalize text-5xl md:text-5xl font-bold leading-10">
-            Mozisha Blog {" "}
-          </h1>
-          <p className=" leading-8">
-            Your go-to destination for the most recent updates on education, technology, business and human capital development in Africa.
-            
-          </p>
-
-          <h6 className="font-semibold  pt-8">
-            <Link href="tel:+27824277902">Contact Us</Link>
-          </h6>
-          <Link href="mailto:info@mozisha.com">info@mozisha.com</Link>
-          <div className="text-3xl flex gap-4 mt-36">
-            <Link
-              href="https://www.instagram.com/mozishaorg/"
-              target="_blank"
-              rel="noopener noreferrer">
-              <FaInstagram
-                data-aos="zoom-in"
-                className="hover:text-purple-500"
-              />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/company/mozisha/?originalSubdomain=ng"
-              target="_blank"
-              rel="noopener noreferrer">
-              <FaLinkedin
-                data-aos="zoom-in"
-                className="hover:text-purple-500"
-              />
-            </Link>
-            <Link
-              href="https://wa.me/+27824277902"
-              target="_blank"
-              rel="noopener
-          noreferrer">
-              <FaWhatsapp
-                data-aos="zoom-in"
-                className="hover:text-purple-500"
-              />
-            </Link>
-            <Link
-              href="https://twitter.com/MozishaOrg"
-              target="_blank"
-              rel="noopener
-          noreferrer">
-              <FaTwitter data-aos="zoom-in" className="hover:text-purple-500" />
-            </Link>
-          </div>
-          <div></div>
-        </div>
-        <div className="flex justify-center flex-1 ">
+      <div className="flex flex-col md:flex-row justify-center items-center">
+        
+        <NewsletterSubscribe />
+        
+        <div className="flex justify-center flex-1  bg-pink-50  rounded-s-full">
           <Image
-            className="rounded-lg object-cover"
-            src="/people.avif"
-            alt="extended family hero image"
-            width={500}
+            className="rounded-lg object-cover hidden md:block"
+            src="/drumm.png"
+            alt="image of a talking drum"
+            width={800}
             height={200}
           />
         </div>

@@ -11,6 +11,7 @@ import Hero from './components/hero/page';
 import HowItWorks from './components/howitworks/page';
 import Testimonial from './components/testimonial/page';
 import FrequentlyAskedQuestions from './components/frequentlyAskedQuestions/page';
+import NewsletterSubscribe from './components/NewsletterSubscribe';
 function Home() {
   const [isHovered, setIsHovered] = useState(false);
   const router = useRouter(); // Initialize useRouter
@@ -112,6 +113,7 @@ function Home() {
       <HowItWorks />
       <Testimonial />
       <FrequentlyAskedQuestions /> 
+      <NewsletterSubscribe/>
     </>
   );
 }

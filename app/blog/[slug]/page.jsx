@@ -100,7 +100,7 @@ export default async function BlogArticle({ params }) {
         alt="image"
         width={800}
         height={800}
-        loading="lazy"
+        // loading="lazy"
         priority
         className="rounded-md border  mt-8  mx-auto object-cover"
       />{" "}
