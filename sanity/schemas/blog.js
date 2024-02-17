@@ -57,7 +57,6 @@ export default {
             {title: 'H5', value: 'h5'},
             {title: 'H6', value: 'h6'},
             { title: 'Quote', value: 'blockquote' },
-            { title: 'Paragraph', value: 'paragraph' },
           ]
         },
         {

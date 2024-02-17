@@ -24,6 +24,9 @@ async function getData() {
         name,
         'slug':slug.current
       },
+      'images': *[_type == "image" && references(^._id)] {
+        ...
+      }
   }`;
   const data = await client.fetch(query);
   return data;
