@@ -15,13 +15,19 @@ export const revalidate = 10;
 
 async function getData(slug) {
   const query = `*[_type == 'blog' && slug.current == '${slug}']{
-    'currentSlug':slug.current,
-      title,
-      content,
-      titleImage,
-      smallDescription
-  }[0]
-  `;
+    'currentSlug': slug.current,
+    title,
+    content[]{
+      ..., 
+      'image': image-> {
+        _id,
+        asset->{url} 
+      }
+    },
+    titleImage,
+    smallDescription
+  }[0]`;
+  
   const data = await client.fetch(query);
   return data;
 }
