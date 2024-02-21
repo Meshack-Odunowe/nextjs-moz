@@ -38,7 +38,7 @@ export default function Testimonial() {
           className="flex flex-col md:flex-row justify-between items-center bg-purple-200 my-32 md:w-[800px] mx-auto p-16 md rounded-md"
           data-aos-duration="2000"
           data-aos="flip-left"
-          data-aos-easing="ease-out-cubic">
+          data-aos-easing="ease-out-cubic" >
           <div>
             <Image
               src={img2}

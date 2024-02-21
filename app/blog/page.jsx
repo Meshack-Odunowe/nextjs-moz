@@ -48,7 +48,17 @@ export default async function Blog() {
       </div>
       <div className="grid grid-cols-1  lg:grid-cols-3 gap-16 mx-auto  py-8 lg:px-16  px-4 lg:mx-auto mt-5 ">
         {data.map((post, index) => (
-          <div key={index} className="bg-gray-100 shadow-xl rounded-md p-4">
+          <div key={index} className="bg-gray-100 shadow-xl rounded-md p-4 " style={{
+            backgroundImage: `linear-gradient(
+              to bottom,
+              rgba(245, 244, 250, 0.06),
+              rgba(245, 244, 250, 1))
+              , url("/bg.jpg")`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundColor: 'rgba(0, 0, 0, 0.1)'
+          }}>
             <div className="image-container  rounded-lg">
               <Image
                 src={urlFor(post.titleImage).url()}
@@ -77,13 +87,15 @@ export default async function Blog() {
                 {post.author.name}
               </p>
             </div>
-
+            <div className=" ">
+              
             <h1 className=" text-lg line-clamp-2 font-bold mt-4">
               {post.title}
             </h1>
-            <p className=" text-sm line-clamp-3 mt-2 text-gray-600">
+            <p className=" text-sm line-clamp-3 mt-2 text-gray-700">
               {post.smallDescription}
             </p>
+            </div>
 
             <button className="  hover:text-purple-600 text-[14px] px-1 py-2 bg-purple-700 text-white hover:bg-purple-300 rounded-md mt-4">
               <Link

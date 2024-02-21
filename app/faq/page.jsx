@@ -1,11 +1,11 @@
 function FrequentlyAskedQuestions() {
   return (
-    <div className=" max-w-6xl mx-auto p-4 leading-8">
+    <div className=" max-w-6xl mx-auto p-4 leading-8"  >
       <h1 className="font-bold">Frequently Asked Questions </h1>
       
      
       <ol>
-        <li className="mt-4"> <span>1.</span>  What is Mozisha? .</li>
+        <li className="mt-4" > <span>1.</span>  What is Mozisha? .</li>
         <li className="">Mozisha is a platform dedicated to nurturing Africa's premium talents and facilitating their access to employment opportunities. We also specialize in providing outsourcing solutions to elevate the potential of startups.  </li>
         <li className="mt-4"> <span>2.</span>  How does Mozisha support talent development?</li>
         <li className="">Mozisha offers immersive learning experiences and mentorship programs to help talents develop market-relevant skills.  </li>

@@ -1,17 +1,18 @@
-'use client'
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation'; 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import mainImage2 from '../public/group.jpg';
-import Head from 'next/head';
-import Hero from './components/hero/page';
-import HowItWorks from './components/howitworks/page';
-import Testimonial from './components/testimonial/page';
-import FrequentlyAskedQuestions from './components/frequentlyAskedQuestions/page';
-import NewsletterSubscribe from './components/NewsletterSubscribe';
+"use client";
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { UserButton } from "@clerk/nextjs";
+import mainImage2 from "../public/group.jpg";
+import Head from "next/head";
+import Hero from "./components/hero/page";
+import HowItWorks from "./components/howitworks/page";
+import Testimonial from "./components/testimonial/page";
+import FrequentlyAskedQuestions from "./components/frequentlyAskedQuestions/page";
+import NewsletterSubscribe from "./components/NewsletterSubscribe";
 function Home() {
   const [isHovered, setIsHovered] = useState(false);
   const router = useRouter(); // Initialize useRouter
@@ -25,7 +26,6 @@ function Home() {
   };
 
   useEffect(() => {
-
     AOS.init();
     AOS.refresh();
 
@@ -33,11 +33,11 @@ function Home() {
   }, []);
 
   const wip = () => {
-    router.push("/workinprogress"); 
+    router.push("/workinprogress");
   };
 
   const handleSignUp = () => {
-    router.push("/signup"); // 
+    router.push("/signup"); //
   };
 
   const handleGetStartedClick = () => {
@@ -47,15 +47,15 @@ function Home() {
   return (
     <>
       <Head>
-  <title>Home</title>
-  <meta
-    name="Home"
-    content=" Welcome to Mozisha, Your Gateway to Premium Talents to Supercharge Business Growth.  "
-  />
-  <link rel="canonical" href="/home" />
-</Head>
-
+        <title>Home</title>
+        <meta
+          name="Home"
+          content=" Welcome to Mozisha, Your Gateway to Premium Talents to Supercharge Business Growth.  "
+        />
+        <link rel="canonical" href="/home" />
+      </Head>
       <div>
+
         <div className="flex justify-between items-center gap-16 leading-8  max-w-[1240px] mx-auto flex-col lg:flex-row px-4">
           <div>
             <h1 className="md:text-6xl text-4xl leading-[60px] font-bold md:leading-[80px] flex items-center justify-center  text-gray-700   md:text-start  ">
@@ -65,11 +65,11 @@ function Home() {
               Welcome to Mozisha, Africa's Skills Factory.
             </p>
             <div className="flex flex-col lg:flex-row mt-16   md:gap-8">
-              {' '}
+              {" "}
               <div>
                 <button className="bg-purple-700 text-white rounded-md md:px-4 md:py-2 py-2 hover:bg-purple-100 mb-4 hover:text-purple-800 hover:font-bold w-full">
-                  <Link href="/business"
-                    onClick={handleGetStartedClick}>For Businesses
+                  <Link href="/business" onClick={handleGetStartedClick}>
+                    For Businesses
                   </Link>
                 </button>
                 <p className="text-sm text-center mb-16">
@@ -78,7 +78,8 @@ function Home() {
               </div>
               <div>
                 <button className="bg-purple-700 text-white rounded-md md:px-4 md:py-2 py-2 hover:bg-purple-100 mb-4 hover:text-purple-800 hover:font-bold w-full">
-                  <Link href="/talents" onClick={handleGetStartedClick}>For Talents
+                  <Link href="/talents" onClick={handleGetStartedClick}>
+                    For Talents
                   </Link>
                 </button>
                 <p className="text-sm text-center mb-16">
@@ -87,7 +88,8 @@ function Home() {
               </div>
               <div>
                 <button className="bg-purple-700 text-white rounded-md md:px-4 md:py-2 py-2 hover:bg-purple-100 mb-4 hover:text-purple-800 hover:font-bold md:w-full justify-center items-center w-full">
-                  <Link href="/mentors" onClick={handleGetStartedClick}>For Mentors
+                  <Link href="/mentors" onClick={handleGetStartedClick}>
+                    For Mentors
                   </Link>
                 </button>
                 <p className="text-sm text-center mb-16">
@@ -106,13 +108,12 @@ function Home() {
             />
           </div>
         </div>
-        <p className="mx-auto max-w-[1240px] text-gray-500 ml-28 mb-8 md:my-8">
-        </p>
-      </div>
+        <p className="mx-auto max-w-[1240px] text-gray-500 ml-28 mb-8 md:my-8"></p>
+      </div>{" "}
       <Hero />
       <HowItWorks />
       <Testimonial />
-      <FrequentlyAskedQuestions /> 
+      <FrequentlyAskedQuestions />
     </>
   );
 }

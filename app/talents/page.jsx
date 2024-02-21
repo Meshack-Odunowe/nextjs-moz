@@ -5,7 +5,7 @@ import { PiStudentFill } from "react-icons/pi";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Head from "next/head";
-
+import { UserButton } from "@clerk/nextjs";
 function ForTalents() {
   const [selectedSection, setSelectedSection] = useState(null);
   const [hasError, setHasError] = useState(false);
@@ -37,7 +37,7 @@ function ForTalents() {
         window.scrollTo(0, 0);
       } else if (selectedSection === "student") {
         window.scrollTo(0, 0);
-        router.push("/students");
+        router.push("/workinprogress");
       }
     }
   };

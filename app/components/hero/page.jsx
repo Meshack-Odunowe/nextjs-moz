@@ -24,12 +24,18 @@ function Hero() {
 
   return (
     <>
-      <div data-aos-duration="2000" data-aos="fade-up" className=" bg-purple-200 ">
-        <h2 className="font-bold text-center text-3xl pt-24 md:text-4xl mb-12">
+          <div 
+     
+      style={{ backgroundImage: 'url("/bg.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',backgroundColor: 'rgba(225, 225, 225, 0.1)' }}
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+
+        <div data-aos-duration="2000" className=" p-9 max-w-[700px] mx-auto " data-aos="fade-up">
+        <h2 className="font-bold text-center text-3xl py-2 mt-20 md:text-4xl mb-12 bg-white  shadow-lg rounded-lg">
           Mozisha, Your Growth Partner{" "}
         </h2>
-        <div data-aos-duration="2000" className="md:w-[600px] mx-auto " data-aos="fade-up">
-          <p className="text-center text-gray-500 px-4  leading-8" data-aos="fade-up">
+          <p className="text-center text-gray-500 px-4  leading-8 bg-white shadow-lg font-semibold rounded-lg" data-aos="fade-up">
             Join other VC-backed companies to experience exponential growth.
           </p>
         </div>

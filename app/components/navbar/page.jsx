@@ -6,6 +6,7 @@ import { FcMenu } from "react-icons/fc";
 import { FaTimes, faTimes } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import img from "../../../public/mozishaweb.svg";
+import { UserButton } from "@clerk/nextjs";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -60,6 +61,7 @@ const NavBar = () => {
             <Link href="/" onClick={navigateToHome}>
               <Image className="w-40" src={img} alt="" width={50} height={50} />
             </Link>
+
             <ul
               className={`h-screen text-purple-700 top-8 z-20 justify-center items-center absolute bg-white underline cursor-pointer w-full flex flex-col leading-[80px] font-semibold text-xl ${
                 menuOpen ? "block" : "hidden"
@@ -81,7 +83,9 @@ const NavBar = () => {
                 <Link href="/blog">Blog</Link>
               </li>
             </ul>
+            {/* <UserButton/> */}
             <div>
+
               <FcMenu
                 className={`absolute top-6 right-4 text-3xl z-30 md:hidden ${
                   menuOpen ? "hidden" : "block"
@@ -109,7 +113,7 @@ const NavBar = () => {
           </Link>
         </div>
         <div>
-          <ul className="flex justify-between gap-8 font-extrabold">
+          <ul className="flex justify-between items-center gap-8 font-extrabold">
             <li className="px-4 py-4">
               <Link href="/" onClick={navigateToHome}>
                 Home
@@ -128,7 +132,9 @@ const NavBar = () => {
             <li className="px-4 py-4" onClick={handleGetStartedClick}>
               <Link href="/blog">Blog</Link>
             </li>
+          <UserButton className="px-4 py-4"/>
           </ul>
+
         </div>
       </div>
     </>

@@ -15,33 +15,17 @@ export const revalidate = 10;
 
 async function getData(slug) {
   const query = `*[_type == 'blog' && slug.current == '${slug}']{
-    'currentSlug': slug.current,
-    title,
-    content[]{
-      ..., 
-      'image': image-> {
-        _id,
-        asset->{url} 
-      }
-    },
-    titleImage,
-    smallDescription
-  }[0]`;
-  
+    'currentSlug':slug.current,
+      title,
+      content,
+      titleImage,
+      smallDescription
+  }[0]
+  `;
   const data = await client.fetch(query);
   return data;
 }
-const serializers = {
-  types: {
-    image: ({ node }) => {
-      const { asset, alt } = node;
-      if (!asset || !asset.url) return null; // Handle missing asset
-      return (
-        <Image src={urlFor(asset).url()} alt={alt} width={800} height={800} />
-      );
-    },
-  },
-};
+
 function extractTextFromPortableText(content) {
   return content
     .map((block) => {
@@ -103,78 +87,79 @@ export default async function BlogArticle({ params }) {
         />
         <meta property="og:type" content="article" />
       </Head>
-      <main className="  w-full mx-auto px-4 ">
-        <h1 className=" text-3xl block  font-bold leading-8 tracking-tight sm:text-4xl text-center my-8">
-          {data.title}
-        </h1>
-        <p className="border shadow-sm bg-gray-100 text-gray-400 p-1 w-fit text-[10px] font-bold text-center mx-auto">
-          {textForReadingTime
-            ? readingTime(textForReadingTime).text
-            : "Reading time not available"}
+      <main className=" max-w-6xl w-full mx-auto px-4 ">
+      <h1 className=" text-3xl block  font-bold leading-8 tracking-tight sm:text-4xl text-center my-8">
+        {data.title}
+      </h1>
+      <p className="border shadow-sm bg-gray-100 text-gray-400 p-1 w-fit text-[10px] font-bold text-center mx-auto">
+        {textForReadingTime
+          ? readingTime(textForReadingTime).text
+          : "Reading time not available"}
+      </p>
+      <Image
+        src={urlFor(data.titleImage).url()}
+        alt="image"
+        width={800}
+        height={800}
+        priority
+        className="rounded-md border  mt-8  mx-auto object-cover"
+      />{" "}
+      <article className=" mt-16  overflow-hidden mx-auto prose  prose-headings:leading-normal prose-a:underline prose-blue px-4     leading-8 mb-16 ">
+        <PortableText
+          value={data.content}
+          className=" prose-blue "
+        />
+        <p className=" text-red-500 text-sm mt-8">
+          Social Share
         </p>
-        <Image
-          src={urlFor(data.titleImage).url()}
-          alt="image"
-          width={800}
-          height={800}
-          priority
-          className="rounded-md border  mt-8  mx-auto object-cover"
-        />{" "}
-        <article className=" mt-16  overflow-hidden mx-auto prose  prose-headings:leading-normal prose-a:underline prose-blue px-4     leading-8 mb-16 ">
-          <PortableText
-            serializers={serializers}
-            value={data.content}
-            className=" prose-blue "
-          />
-          <p className=" text-red-500 text-sm mt-8">Social Share</p>
-          <div className="flex gap-2 my-8">
-            {/* Facebook share button */}
-            <Link
-              href={`https://www.facebook.com/sharer/sharer.php?u=https://mozisha.com/blog/${data.currentSlug}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full">
-              <FaFacebook />
-            </Link>
+        <div className="flex gap-2 my-8">
+          {/* Facebook share button */}
+          <Link
+            href={`https://www.facebook.com/sharer/sharer.php?u=https://mozisha.com/blog/${data.currentSlug}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full">
+            <FaFacebook />
+          </Link>
 
-            {/* Twitter share button */}
-            <Link
-              href={`https://twitter.com/intent/tweet?url=https://mozisha.com/blog/${
+          {/* Twitter share button */}
+          <Link
+            href={`https://twitter.com/intent/tweet?url=https://mozisha.com/blog/${
+              data.currentSlug
+            }&text=${encodeURIComponent(data.title)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full">
+            <FaXTwitter />
+          </Link>
+
+          {/* LinkedIn share button */}
+          <Link
+            href={`https://www.linkedin.com/sharing/share-offsite/?url=https://mozisha.com/blog/${data.currentSlug}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full">
+            <FaLinkedin />
+          </Link>
+
+          {/* WhatsApp share button */}
+          <Link
+            href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
+              data.title +
+                " - " +
+                "https://mozisha.com/blog/" +
                 data.currentSlug
-              }&text=${encodeURIComponent(data.title)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full">
-              <FaXTwitter />
-            </Link>
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full">
+            <FaWhatsapp />
+          </Link>
 
-            {/* LinkedIn share button */}
-            <Link
-              href={`https://www.linkedin.com/sharing/share-offsite/?url=https://mozisha.com/blog/${data.currentSlug}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full">
-              <FaLinkedin />
-            </Link>
-
-            {/* WhatsApp share button */}
-            <Link
-              href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
-                data.title +
-                  " - " +
-                  "https://mozisha.com/blog/" +
-                  data.currentSlug
-              )}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full">
-              <FaWhatsapp />
-            </Link>
-
-            {/* Instagram share button */}
-          </div>
+          {/* Instagram share button */}
+        </div>
         </article>
-      </main>
+        </main>
     </>
   );
 }

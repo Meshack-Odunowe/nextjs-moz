@@ -5,6 +5,8 @@ import Footer from "./footer/page";
 import { ToastContainer } from "react-toastify";
 import Whatsapp from "./components/Whatsapp/Whatsapp";
 import Script from "next/script";
+import { ClerkProvider } from "@clerk/nextjs";
+import {ToastProvider} from './components/providers/toaster-provider'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -16,26 +18,29 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <head>
-        <meta
-          name="google-site-verification"
-          content="Lp0VRsvcy7dFnbasOW4pGobR46Xvy1MA-T7cL2eCbGU"
-        />
-        <link rel="icon" href="/favicon.png" />
+    <ClerkProvider>
+      <html lang="en">
+        <head>
+          <meta
+            name="google-site-verification"
+            content="Lp0VRsvcy7dFnbasOW4pGobR46Xvy1MA-T7cL2eCbGU"
+          />
+          <link rel="icon" href="/favicon.png" />
 
-        <Script
-          type="text/javascript"
-          src="https://embed.tawk.to/65a10fc60ff6374032bf4458/1hjuisdne"
-          async
-        />
-      </head>
+          <Script
+            type="text/javascript"
+            src="https://embed.tawk.to/65a10fc60ff6374032bf4458/1hjuisdne"
+            async
+          />
+        </head>
         <body className={inter.className}>
           <NavBar />
+          <ToastProvider/>
           {children}
           <Whatsapp />
           <Footer />
         </body>
-    </html>
+      </html>
+    </ClerkProvider>
   );
 }

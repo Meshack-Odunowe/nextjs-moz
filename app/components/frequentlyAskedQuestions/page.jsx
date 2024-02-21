@@ -53,9 +53,9 @@ export default function FrequentlyAskedQuestions() {
   return (
     <div  className='h-screen max-w-[1000px] mx-auto my-44 rounded-md '>
       <h5 className='text-3xl text-center font-semibold my-20'>FREQUENTLY ASKED QUESTIONS</h5>
-      <Accordion expanded={expanded === 'panel1'}  onChange={handleChange('panel1')}>
+      <Accordion expanded={expanded === 'panel1'}  onChange={handleChange('panel1')} >
         <AccordionSummary  aria-controls="panel1d-content" id="panel1d-header">
-          <Typography  className=' rounded-md text-purple-900 py-4 px-8 w-full'>What is Mozisha?</Typography>
+          <Typography  className=' rounded-md text-purple-900 py-4 px-8 w-full' >What is Mozisha?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography className='  max-w-[1000px]'>

@@ -20,7 +20,11 @@ const Footer = () => {
   };
 
   return (
-    <div className="p-8 md:px-28 md:justify-center  flex flex-col md:flex-row bg-purple-700 text-white gap-[5rem] leading-10 md:items-center">
+    <div className="p-8 md:px-28 md:justify-center  flex flex-col md:flex-row  text-white gap-[5rem] leading-10 md:items-center" style={{ backgroundImage: `linear-gradient(
+      to bottom,
+      rgba(160, 4, 236, 0.8),
+      rgba(0, 0, 255, 0.5)
+    ), url("/afrika.jpg")`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',backgroundColor: 'rgba(225, 225, 225, 0.1)' }}>
       <div className="md:w-1/2">
         <Image src={img} alt="Mozisha website logo" />
       </div>{" "}
