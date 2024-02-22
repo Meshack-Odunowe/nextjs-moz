@@ -35,7 +35,7 @@ const Business = () => {
           Join other VC-backed companies supported by Mozisha. As your trusted
           growth partner, we specialize in providing top-notch data, operations
           sales, marketing, and customer support talents tailored to your unique
-          needs. We also provide other technology talents. Our commitment is
+          needs. We also provide a diverse pool of technology talents, including software developers. Our commitment is
           to empower your business with strategic resources for accelerated
           growth.
         </p>
