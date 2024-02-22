@@ -26,10 +26,13 @@ function Hero() {
     <>
           <div 
      
-      style={{ backgroundImage: 'url("/bg.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',backgroundColor: 'rgba(225, 225, 225, 0.1)' }}
+      style={{  backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',backgroundColor: 'rgba(225, 225, 225, 0.1)' ,backgroundImage: `linear-gradient(
+        to bottom,
+        rgba(160, 4, 236, 0.3),
+        rgba(0, 0, 255, 0.2)
+      ), url("/bg.jpg")` }}
       data-aos="fade-up"
-      data-aos-duration="2000"
-    >
+      data-aos-duration="2000">
 
         <div data-aos-duration="2000" className=" p-9 max-w-[700px] mx-auto " data-aos="fade-up">
         <h2 className="font-bold text-center text-3xl py-2 mt-20 md:text-4xl mb-12 bg-white  shadow-lg rounded-lg">

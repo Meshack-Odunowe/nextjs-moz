@@ -33,7 +33,7 @@ const Business = () => {
           className="py-4 leading-8 px-4 md:px-16"
         >
           Join other VC-backed companies supported by Mozisha. As your trusted
-          growth partner, we specialize in providing top-notch data,operations
+          growth partner, we specialize in providing top-notch data, operations
           sales, marketing, and customer support talents tailored to your unique
           needs. We also provide other technology talents. Our commitment is
           to empower your business with strategic resources for accelerated
