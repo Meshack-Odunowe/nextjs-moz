@@ -90,16 +90,18 @@ function FrequentlyAskedQuestions() {
           Fill out the needs assessment form on{" "}
           <Link
             className=" text-blue-500 underline"
-            href="www.mozisha.com/business">
+            href="/business">
             {" "}
             www.mozisha.com/business
           </Link>{" "}
           or contact us at{" "}
-          <Link
-            className=" text-blue-500 underline"
-            href="mailto:info@mozisha.com">
-            info@mozisha.com
-          </Link>{" "}
+          <a
+  className="text-blue-500 underline"
+  href="mailto:info@mozisha.com"
+>
+  info@mozisha.com
+</a>
+
           to get started.
         </li>
         
