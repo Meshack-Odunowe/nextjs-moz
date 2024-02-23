@@ -88,7 +88,7 @@ export default async function BlogArticle({ params }) {
         <meta property="og:type" content="article" />
       </Head>
       <main className=" max-w-6xl w-full mx-auto px-4 ">
-      <h1 className=" text-2xl md:text-3xl mx-auto block  font-bold leading-8 tracking-tight sm:text-4xl text-center my-8 max-w-3xl">
+      <h1 className=" text-2xl md:text-3xl lg:text-4xl mx-auto block  font-bold leading-8 tracking-tight sm:text-4xl text-center my-8 max-w-3xl">
         {data.title}
       </h1>
       <p className="border shadow-sm bg-gray-100 text-gray-400 p-1 w-fit text-[10px] font-bold text-center mx-auto">
@@ -109,16 +109,16 @@ export default async function BlogArticle({ params }) {
           value={data.content}
           className=" prose-blue "
         />
-        <p className=" text-red-500 text-sm mt-8">
-          Social Share
-        </p>
-        <div className="flex gap-2 my-8">
+        
+       
+        </article>
+        <div className="fixed border bg-white shadow-lg shadow-purple-400 rounded-full px-2 left-2 bottom-1/4" > <div className="flex flex-col gap-2 my-8">
           {/* Facebook share button */}
           <Link
             href={`https://www.facebook.com/sharer/sharer.php?u=https://mozisha.com/blog/${data.currentSlug}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full">
+            className=" border text-slate-600 p-4 font-bold hover:bg-purple-200 rounded-full" >
             <FaFacebook />
           </Link>
 
@@ -129,7 +129,7 @@ export default async function BlogArticle({ params }) {
             }&text=${encodeURIComponent(data.title)}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full">
+            className="border text-slate-600  p-4 font-bold hover:bg-purple-200 rounded-full">
             <FaXTwitter />
           </Link>
 
@@ -138,7 +138,7 @@ export default async function BlogArticle({ params }) {
             href={`https://www.linkedin.com/sharing/share-offsite/?url=https://mozisha.com/blog/${data.currentSlug}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full">
+            className="border text-slate-600  p-4 font-bold hover:bg-purple-200 rounded-full">
             <FaLinkedin />
           </Link>
 
@@ -152,13 +152,12 @@ export default async function BlogArticle({ params }) {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-purple-400 text-white p-4 font-bold hover:bg-purple-700 rounded-full">
+            className="border text-slate-600  p-4 font-bold hover:bg-purple-200 rounded-full">
             <FaWhatsapp />
           </Link>
-
-          {/* Instagram share button */}
+</div>
         </div>
-        </article>
+        
         </main>
     </>
   );
