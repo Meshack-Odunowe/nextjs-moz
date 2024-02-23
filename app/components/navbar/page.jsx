@@ -56,8 +56,8 @@ const NavBar = () => {
   return (
     <>
       <div>
-        <header className={navbarClass}>
-          <nav className="flex relative md:hidden py-8 mx-4 justify-between items-center">
+        <header className={navbarClass} >
+          <nav className="flex relative md:hidden py-8 mx-4 justify-between items-center ">
             <Link href="/" onClick={navigateToHome}>
               <Image className="w-40" src={img} alt="" width={50} height={50} />
             </Link>
