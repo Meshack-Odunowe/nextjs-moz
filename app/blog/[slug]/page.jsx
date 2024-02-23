@@ -87,7 +87,7 @@ export default async function BlogArticle({ params }) {
         />
         <meta property="og:type" content="article" />
       </Head>
-      <main className=" max-w-6xl w-full mx-auto px-8  ">
+      <main className=" max-w-6xl w-full mx-auto px-8 lg:px-0 ">
         <h1 className=" text-2xl md:text-3xl lg:text-4xl mx-auto block  font-bold leading-8 tracking-tight sm:text-4xl text-center my-8 max-w-3xl">
           {data.title}
         </h1>
@@ -104,7 +104,7 @@ export default async function BlogArticle({ params }) {
           priority
           className="rounded-md border  mt-8  mx-auto object-cover"
         />{" "}
-        <article className=" mt-16  overflow-hidden mx-auto prose  prose-headings:leading-normal prose-a:underline prose-blue px-4     leading-8 mb-16 ">
+        <article className=" mt-16  overflow-hidden mx-auto prose  prose-headings:leading-normal prose-a:underline prose-blue px-4 lg:px-0     leading-8 mb-16 ">
           <PortableText value={data.content} className=" prose-blue " />
         </article>
         <div className="fixed left-0 bottom-1/3 lg:fixed border bg-white shadow-lg shadow-purple-400 rounded-full lg:px-2 lg:left-2 lg:bottom-1/4">

@@ -15,9 +15,9 @@ function Apprenticeship() {
 
   return (
     <div className="px-4 md:px-24">
-      <div className="flex  flex-col leading-8 lg:flex-row items-center justify-center gap-8 ">
+      <div className="flex  flex-col leading-8 lg:flex-row items-center justify-center gap-8  overflow-hidden">
         <div>
-          <h1 className="text-5xl px-4  font-bold  tracking-normal leading-[70px] my-5 lg:text-7xl text-center  md:text-start ">
+          <h1 className="md:text-5xl text-4xl px-4  font-bold  tracking-normal leading-[70px] my-5 lg:text-7xl text-center  md:text-start ">
             <strong className=" text-gray-600">Mozisha Appren<span className=" text-purple-700 ">ticeship</span></strong>{" "}
             
           </h1>

@@ -25,10 +25,11 @@ const AccordionSummary = styled((props) => (
     {...props}
   />
 ))(({ theme }) => ({
+  
   backgroundColor:
     theme.palette.mode === 'dark'
-      ? '#b97eed'
-      : '#e6d8f2',
+      ? '#fff'
+      : '#f6f6f6',
   flexDirection: 'row-reverse',
   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
     transform: 'rotate(90deg)',
@@ -51,72 +52,151 @@ export default function FrequentlyAskedQuestions() {
   };
 
   return (
-    <div  className='h-screen max-w-[1000px] mx-auto my-44 rounded-md '>
+    <div  className='h-full max-w-[1000px] mx-auto my-44 rounded-md '>
       <h5 className='text-3xl text-center font-semibold my-20'>FREQUENTLY ASKED QUESTIONS</h5>
       <Accordion expanded={expanded === 'panel1'}  onChange={handleChange('panel1')} >
         <AccordionSummary  aria-controls="panel1d-content" id="panel1d-header">
-          <Typography  className=' rounded-md text-purple-900 py-4 px-8 w-full' >What is Mozisha?</Typography>
+          <Typography  className=' rounded-md  py-4 px-8 w-full' >What do we do at Mozisha? .</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography className='  max-w-[1000px]'>
-          Mozisha is a platform dedicated to nurturing Africa's premium talents and facilitating their access to employment opportunities. We also specialize in providing outsourcing solutions to elevate the potential of startups.
+          Mozisha nurtures top-tier African technology talent through its innovative, practice-based model. We also empower fast-growing companies to build remote data, sales, marketing, and operations teams in Africa, granting them access to stellar talent at competitive rates.
           </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography className=' rounded-md text-purple-900 py-4 px-8 w-full'>How does Mozisha support talent development?</Typography>
+          <Typography className=' rounded-md  py-4 px-8 w-full'>How does Mozisha differ from other competitors?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography className='  max-w-[1000px]'>
-          Mozisha offers immersive learning experiences and mentorship programs to help talents develop market-relevant skills.
+          Our commitment to excellence shines through our innovative model, where we meticulously identify and cultivate premium talent to perfectly match the specific needs of our partner businesses. Leveraging our extensive network and deep expertise, we empower companies to access a pool of highly skilled African professionals capable of driving innovation, efficiency, and growth – all at highly competitive rates. Whether you require one or several talented individuals, Mozisha streamlines the recruitment process, enabling you to seamlessly scale your team within a matter of days.
           </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography className=' rounded-md text-purple-900 py-4 px-8 w-full'>What are Mozisha’s training areas
+          <Typography className=' rounded-md  py-4 px-8 w-full'>How does Mozisha training work?
 
 </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography className='  max-w-[1000px]'>
-          Mozisha carefully selects its training areas based on market demands, emerging trends, and opportunities for job creation. We understand that the job market is constantly evolving, and it is essential to offer training programs that equip our students with the skills and knowledge that are in demand. Our current training domains include: data, design, research, sales and marketing.
+          Driven by our innovative, practice-based training model, young Africans gain the competitive edge to thrive on the global stage. This comprehensive program includes immersive skills training, real-world capstone projects, expert mentorship, and practical apprenticeship opportunities.
           </Typography>
         </AccordionDetails>
       </Accordion><Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography className=' rounded-md text-purple-900 py-4 px-8 w-full'>How does Mozisha connect talents with global businesses? 
+          <Typography className=' rounded-md  py-4 px-8 w-full'>How does the mentorship programme at Mozisha work?
 </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography className='  max-w-[1000px]'>
-          We collaborate with global businesses for outsourcing and recruitment opportunities. Talents who complete our programs may have the chance to be matched with these businesses based on their skills and preferences.
+          Designed for your success, the Mozisha Mentorship Program is a customized, 3- month journey. Whether you're an emerging professional ready to take the next step or an aspiring talent eager to learn from the best, we connect you with seasoned experts who share your path and achievements.
           </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography className=' rounded-md text-purple-900 py-4 px-8 w-full'>How can Mozisha help my business? 
+          <Typography className=' rounded-md  py-4 px-8 w-full'>How does Mozisha apprenticeship work?
+
 
 </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography className='  max-w-[1000px]'>
-          Using its premium talents, Mozisha offers a range of services, including operations, sales, marketing, executive assistant support, customer service, IT and technical support, among others. By partnering with us, you can focus on your core business activities while we do the heavy lifting.
+          Mozisha Apprenticeship pairs talented Africans with businesses for an immersive 3-month training program. This hands-on experience equips young individuals with the practical skills they need to excel in the ever-evolving world of technology.
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+      <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography className=' rounded-md text-purple-900 py-4 px-8 w-full'> Are Mozisha programmes only for talents in Africa?
+          <Typography className=' rounded-md  py-4 px-8 w-full'> What industries does Mozisha serve?
 
 
 </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography className='  max-w-[1000px]'>
-          While our primary focus is on nurturing African talents, Mozisha is open to individuals from diverse backgrounds who are interested in participating in our programs.
+          Mozisha connects fast-growing businesses across diverse sectors with top-tier, pre-trained talent. Regardless of your location or industry, we meticulously match your specific needs with premium talent, ensuring a seamless integration into your team.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
+        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+          <Typography className=' rounded-md  py-4 px-8 w-full'> What category of talents can I hire at Mozisha?
+
+
+</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className='  max-w-[1000px]'>
+          Mozisha specializes in providing data, sales, marketing, and operations talents.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion expanded={expanded === 'panel8'} onChange={handleChange('panel8')}>
+        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+          <Typography className=' rounded-md  py-4 px-8 w-full'>  How can I hire talents from Mozisha?
+
+
+</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className='  max-w-[1000px]'>
+          Fill out the needs assessment form on www.mozisha.com/business or contact us at info@mozisha.comto get started.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion expanded={expanded === 'panel9'} onChange={handleChange('panel9')}>
+        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+          <Typography className=' rounded-md  py-4 px-8 w-full'> How do I request a quote or pricing information?
+
+
+</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className='  max-w-[1000px]'>
+          Kindly contact us at info@mozisha.com to get started
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion expanded={expanded === 'panel10'} onChange={handleChange('panel10')}>
+        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+          <Typography className=' rounded-md  py-4 px-8 w-full'> How many countries does Mozisha serve?
+
+
+</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className='  max-w-[1000px]'>
+          Mozisha bridges the global talent gap by providing a gateway to a network of exceptionally trained professionals across 50+ African countries. We connect companies worldwide with premium African talent, facilitating meaningful partnerships that drive mutual success.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion expanded={expanded === 'panel11'} onChange={handleChange('panel11')}>
+        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+          <Typography className=' rounded-md  py-4 px-8 w-full'>  Does Mozisha handle compliance and Labour laws in the recruitment process?
+
+
+</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className='  max-w-[1000px]'>
+          From substandard employment agreements to wrong contractor setups, global hiring can be a compliance minefield. Diverse benefits, fees, and pensions across countries add more complexity. Mozisha cuts through it all, ensuring you're compliant and free to focus on your business. Get top talent to boost your productivity, while we handle the payroll hassle.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion expanded={expanded === 'panel12'} onChange={handleChange('panel12')}>
+        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+          <Typography className=' rounded-md  py-4 px-8 w-full'> Is Mozisha hiring? How can I apply for a job?
+
+
+</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className='  max-w-[1000px]'>
+          Register as a skilled talent seeking job opportunities on our website, and we will contact you with the next steps.
           </Typography>
         </AccordionDetails>
       </Accordion>

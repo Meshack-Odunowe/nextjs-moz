@@ -24,7 +24,7 @@ const Ment = () => {
     <div
       data-aos-duration="2000"
       data-aos="fade-up"
-      className="px-8 max-w-[1200px] mx-auto mt-12">
+      className="px-8 max-w-[1200px] mx-auto mt-12 overflow-hidden">
       <h1 className=" text-4xl text-center font-bold  md:text-6xl pb-16">
         Welcome to Mozisha Mentorship
       </h1>{" "}
