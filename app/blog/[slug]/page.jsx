@@ -87,78 +87,74 @@ export default async function BlogArticle({ params }) {
         />
         <meta property="og:type" content="article" />
       </Head>
-      <main className=" max-w-6xl w-full mx-auto px-4 ">
-      <h1 className=" text-2xl md:text-3xl lg:text-4xl mx-auto block  font-bold leading-8 tracking-tight sm:text-4xl text-center my-8 max-w-3xl">
-        {data.title}
-      </h1>
-      <p className="border shadow-sm bg-gray-100 text-gray-400 p-1 w-fit text-[10px] font-bold text-center mx-auto">
-        {textForReadingTime
-          ? readingTime(textForReadingTime).text
-          : "Reading time not available"}
-      </p>
-      <Image
-        src={urlFor(data.titleImage).url()}
-        alt="image"
-        width={800}
-        height={800}
-        priority
-        className="rounded-md border  mt-8  mx-auto object-cover"
-      />{" "}
-      <article className=" mt-16  overflow-hidden mx-auto prose  prose-headings:leading-normal prose-a:underline prose-blue px-4     leading-8 mb-16 ">
-        <PortableText
-          value={data.content}
-          className=" prose-blue "
-        />
-        
-       
+      <main className=" max-w-6xl w-full mx-auto px-8  ">
+        <h1 className=" text-2xl md:text-3xl lg:text-4xl mx-auto block  font-bold leading-8 tracking-tight sm:text-4xl text-center my-8 max-w-3xl">
+          {data.title}
+        </h1>
+        <p className="border shadow-sm bg-gray-100 text-gray-400 p-1 w-fit text-[10px] font-bold text-center mx-auto">
+          {textForReadingTime
+            ? readingTime(textForReadingTime).text
+            : "Reading time not available"}
+        </p>
+        <Image
+          src={urlFor(data.titleImage).url()}
+          alt="image"
+          width={800}
+          height={800}
+          priority
+          className="rounded-md border  mt-8  mx-auto object-cover"
+        />{" "}
+        <article className=" mt-16  overflow-hidden mx-auto prose  prose-headings:leading-normal prose-a:underline prose-blue px-4     leading-8 mb-16 ">
+          <PortableText value={data.content} className=" prose-blue " />
         </article>
-        <div className="fixed border bg-white shadow-lg shadow-purple-400 rounded-full px-2 left-2 bottom-1/4" > <div className="flex flex-col gap-2 my-8">
-          {/* Facebook share button */}
-          <Link
-            href={`https://www.facebook.com/sharer/sharer.php?u=https://mozisha.com/blog/${data.currentSlug}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className=" border text-slate-600 p-4 font-bold hover:bg-purple-200 rounded-full" >
-            <FaFacebook />
-          </Link>
+        <div className="fixed left-0 bottom-1/3 lg:fixed border bg-white shadow-lg shadow-purple-400 rounded-full lg:px-2 lg:left-2 lg:bottom-1/4">
+          {" "}
+          <div className="flex flex-col gap-2 my-4 px-1">
+            {/* Facebook share button */}
+            <Link
+              href={`https://www.facebook.com/sharer/sharer.php?u=https://mozisha.com/blog/${data.currentSlug}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" border text-slate-600  text-center mx-auto text-sm  p-1 font-bold hover:bg-purple-200 rounded-full lg:p-4">
+              <FaFacebook />
+            </Link>
 
-          {/* Twitter share button */}
-          <Link
-            href={`https://twitter.com/intent/tweet?url=https://mozisha.com/blog/${
-              data.currentSlug
-            }&text=${encodeURIComponent(data.title)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border text-slate-600  p-4 font-bold hover:bg-purple-200 rounded-full">
-            <FaXTwitter />
-          </Link>
-
-          {/* LinkedIn share button */}
-          <Link
-            href={`https://www.linkedin.com/sharing/share-offsite/?url=https://mozisha.com/blog/${data.currentSlug}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border text-slate-600  p-4 font-bold hover:bg-purple-200 rounded-full">
-            <FaLinkedin />
-          </Link>
-
-          {/* WhatsApp share button */}
-          <Link
-            href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
-              data.title +
-                " - " +
-                "https://mozisha.com/blog/" +
+            {/* Twitter share button */}
+            <Link
+              href={`https://twitter.com/intent/tweet?url=https://mozisha.com/blog/${
                 data.currentSlug
-            )}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border text-slate-600  p-4 font-bold hover:bg-purple-200 rounded-full">
-            <FaWhatsapp />
-          </Link>
-</div>
+              }&text=${encodeURIComponent(data.title)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border text-slate-600  text-center mx-auto text-sm  p-1 font-bold hover:bg-purple-200 rounded-full lg:p-4">
+              <FaXTwitter />
+            </Link>
+
+            {/* LinkedIn share button */}
+            <Link
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=https://mozisha.com/blog/${data.currentSlug}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border text-slate-600  text-center mx-auto text-sm  p-1 font-bold hover:bg-purple-200 rounded-full lg:p-4">
+              <FaLinkedin />
+            </Link>
+
+            {/* WhatsApp share button */}
+            <Link
+              href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
+                data.title +
+                  " - " +
+                  "https://mozisha.com/blog/" +
+                  data.currentSlug
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border text-slate-600  text-center mx-auto text-sm  p-1 font-bold hover:bg-purple-200 rounded-full lg:p-4">
+              <FaWhatsapp />
+            </Link>
+          </div>
         </div>
-        
-        </main>
+      </main>
     </>
   );
 }
