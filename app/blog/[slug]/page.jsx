@@ -88,7 +88,7 @@ export default async function BlogArticle({ params }) {
         <meta property="og:type" content="article" />
       </Head>
       <main className=" max-w-6xl w-full mx-auto px-4 ">
-      <h1 className=" text-3xl block  font-bold leading-8 tracking-tight sm:text-4xl text-center my-8">
+      <h1 className=" text-2xl md:text-3xl mx-auto block  font-bold leading-8 tracking-tight sm:text-4xl text-center my-8 max-w-3xl">
         {data.title}
       </h1>
       <p className="border shadow-sm bg-gray-100 text-gray-400 p-1 w-fit text-[10px] font-bold text-center mx-auto">
