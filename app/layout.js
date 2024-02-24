@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
             name="google-site-verification"
             content="Lp0VRsvcy7dFnbasOW4pGobR46Xvy1MA-T7cL2eCbGU"
           />
-          <link rel="icon" href="/favicon.png" />
+          <link rel="icon" href="/favicon.ico" />
 
           <Script
             type="text/javascript"
