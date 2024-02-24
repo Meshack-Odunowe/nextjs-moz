@@ -29,19 +29,19 @@ async function getData(slug) {
 }
 
 
-export async function generateStaticParams() {
-  const query = `*[_type == 'blog']{slug}`;
-  const posts = await client.fetch(query);
+// export async function generateStaticParams() {
+//   const query = `*[_type == 'blog']{slug}`;
+//   const posts = await client.fetch(query);
   
-  // Extracting the slug from each post
-  const staticParams = posts.map(post => ({
-    params: {
-      slug: post.slug.current
-    }
-  }));
+//   // Extracting the slug from each post
+//   const staticParams = posts.map(post => ({
+//     params: {
+//       slug: post.slug.current
+//     }
+//   }));
   
-  return staticParams;
-}
+//   return staticParams;
+// }
 
 function extractTextFromPortableText(content) {
   return content
