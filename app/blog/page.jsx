@@ -27,6 +27,10 @@ async function getData() {
       'images': *[_type == "image" && references(^._id)] {
         ...,
         asset->
+      },tags[]-> {
+        _id,
+        slug,
+        name
       }
   }`;
   const data = await client.fetch(query);

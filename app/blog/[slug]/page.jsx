@@ -2,6 +2,8 @@ import Image from "next/image";
 import { client, urlFor } from "../../lib/sanity";
 import { PortableText } from "@portabletext/react";
 import readingTime from "reading-time";
+import urlBuilder from '@sanity/image-url';
+import { getImageDimensions } from '@sanity/asset-utils';
 import Head from "next/head";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
@@ -19,11 +21,24 @@ async function getData(slug) {
       title,
       content,
       titleImage,
-      smallDescription
+      smallDescription,
   }[0]
   `;
   const data = await client.fetch(query);
   return data;
+}
+export async function generateStaticParams() {
+  const query = `*[_type == 'blog']{slug}`;
+  const posts = await client.fetch(query);
+  
+  // Extracting the slug from each post
+  const staticParams = posts.map(post => ({
+    params: {
+      slug: post.slug.current
+    }
+  }));
+  
+  return staticParams;
 }
 
 function extractTextFromPortableText(content) {
@@ -71,7 +86,37 @@ export default async function BlogArticle({ params }) {
 
   // Invoke the truncateDescription function with the actual parameters
   const truncatedDescription = truncateDescription(data.smallDescription, 200);
-
+  const SampleImageComponent = ({value, isInline}) => {
+    const {width, height} = getImageDimensions(value)
+    return (
+      <Image
+        width={800}
+        height={800}
+        src={urlFor()
+          .image(value)
+          .width(isInline ? 100 : 800)
+          .fit('max')
+          .auto('format')
+          .url()}
+        alt={value.alt || ' '}
+        loading="lazy"
+        style={{
+          // Display alongside text if image appears inside a block text span
+          display: isInline ? 'inline-block' : 'block',
+  
+          // Avoid jumping around with aspect-ratio CSS property
+          aspectRatio: width / height,
+        }}
+      />
+    )
+  }
+  const components = {
+    types: {
+      image: SampleImageComponent,
+      // Any other custom types you have in your content
+      // Examples: mapLocation, contactForm, code, featuredProjects, latestNews, etc.
+    },
+  }
   return (
     <>
       <Head>
@@ -105,7 +150,11 @@ export default async function BlogArticle({ params }) {
           className="rounded-md border  mt-8  mx-auto object-cover"
         />{" "}
         <article className=" mt-16  overflow-hidden mx-auto prose  prose-headings:leading-normal prose-a:underline prose-blue px-4 lg:px-0     leading-8 mb-16 ">
-          <PortableText value={data.content} className=" prose-blue " />
+          <PortableText
+            value={data.content}
+            className=" prose-blue "
+            components={components}
+          />
         </article>
         <div className="fixed left-0 bottom-1/3 lg:fixed border bg-white shadow-lg shadow-purple-400 rounded-full lg:px-2 lg:left-2 lg:bottom-1/4">
           {" "}

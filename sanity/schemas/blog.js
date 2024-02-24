@@ -1,4 +1,3 @@
-// schemas/pet.js
 export default {
   name: 'blog',
   type: 'document',
@@ -20,52 +19,68 @@ export default {
     {
       name: 'titleImage',
       type: 'image',
-      title:'Title Image'
-    }, {
+      title: 'Title Image'
+    },
+    {
       name: 'publishedAt',
       title: 'Published At',
       type: 'datetime',
-    }, {
+    },
+    {
       name: 'author',
       title: 'Author',
       type: 'reference',
-      to: {type: 'author'},
-    },{
+      to: { type: 'author' },
+    },
+    {
       name: 'categories',
       title: 'Categories',
       type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
+      of: [{ type: 'reference', to: { type: 'category' } }],
     },
     {
       name: 'smallDescription',
       type: 'text',
-      title:' Small Description'
+      title: 'Small Description'
     },
     {
       name: 'content',
       type: 'array',
-      title:"Content",
+      title: 'Content',
       of: [
         {
           type: 'block',
           styles: [
-            {title: 'Normal', value: 'normal'},
-            {title: 'H1', value: 'h1'},
-            {title: 'H2', value: 'h2'},
-            {title: 'H3', value: 'h3'},
-            {title: 'H4', value: 'h4'},
-            {title: 'H5', value: 'h5'},
-            {title: 'H6', value: 'h6'},
+            { title: 'Normal', value: 'normal' },
+            { title: 'H1', value: 'h1' },
+            { title: 'H2', value: 'h2' },
+            { title: 'H3', value: 'h3' },
+            { title: 'H4', value: 'h4' },
+            { title: 'H5', value: 'h5' },
+            { title: 'H6', value: 'h6' },
             { title: 'Quote', value: 'blockquote' },
-          ]
+          ],
         },
         {
-          type: 'image'
+          type: 'image',
+          options: {
+            hotspot: true,
+          },
+          fields: [
+            {
+              type: 'image',
+              name: 'image',
+              title: 'Image',
+            },
+            {
+              type: 'string',
+              name: 'alt',
+              title: 'Alternative Text',
+              description: "image from our blog",
+            },
+          ],
         },
-        
-        
-       
-      ]
+      ],
     },
     {
       name: 'comments',
@@ -76,6 +91,5 @@ export default {
         layout: 'grid',
       },
     },
-
   ]
 }
