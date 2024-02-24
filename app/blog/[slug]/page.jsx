@@ -27,19 +27,7 @@ async function getData(slug) {
   const data = await client.fetch(query);
   return data;
 }
-export async function generateDynamicParams() {
-  const query = `*[_type == 'blog']{slug}`;
-  const posts = await client.fetch(query);
-  
-  // Extracting the slug from each post
-  const dynamicParams = posts.map(post => ({
-    params: {
-      slug: post.slug.current
-    }
-  }));
-  
-  return dynamicParams;
-}
+
 
 export async function generateStaticParams() {
   const query = `*[_type == 'blog']{slug}`;
