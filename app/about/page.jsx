@@ -18,10 +18,10 @@ const About = () => {
         <div className=" max-w-6xl mx-auto">
 
         
-        <h1 className="text-4xl text-gray-600 font-bold text-center">
+        <h1 className="text-4xl text-gray-800 font-bold text-center">
           Mozisha - Africa’s Skills Factory.
         </h1>
-        <p className="md:px-8 leading-8 py-8 text-gray-500">
+        <p className="md:px-8 leading-8 py-8 text-gray-700">
           Mozisha is a technology workforce development firm that nurtures
           premium African talents. We empower young Africans with the in-demand
           skills they need to succeed in today’s global market, thereby
@@ -37,7 +37,7 @@ const About = () => {
           simultaneously tackling youth unemployment in Africa.
         </p></div>
 
-        <h2 className="text-2xl font-bold text-center text-gray-600 mb-8">
+        <h2 className="text-2xl font-bold text-center text-gray-800 mb-8">
           Our Core Values
         </h2>
         <div className=" flex flex-col lg:flex-row gap-16 my-16">
@@ -49,11 +49,11 @@ const About = () => {
                 <Image width={ 200} height={200} src='/transparency.avif' alt='transparent image' />
               </div>
             </div>
-            <h4 className=" text-gray-600 font-bold mt-7 text-center">
+            <h4 className=" text-gray-800 font-bold mt-7 text-center">
               Transparency
             </h4>
 
-            <p className=" text-gray-500 my-4 text-center">
+            <p className=" text-gray-700 my-4 text-center">
               We believe in open communication, honesty, and accountability in
               everything we do.
             </p>
@@ -65,11 +65,11 @@ const About = () => {
                 <Image width={ 200} height={200} src='/excellence.jpg' alt='excellence image' />
               </div>
             </div>
-            <h4 className=" text-gray-600 font-bold mt-7 text-center">
+            <h4 className=" text-gray-800 font-bold mt-7 text-center">
               Excellence
             </h4>
 
-            <p className=" text-gray-500 my-4 text-center">
+            <p className=" text-gray-700 my-4 text-center">
               We are committed to achieving the highest standards, constantly
               pushing ourselves to deliver unparalleled services.
             </p>
@@ -82,11 +82,11 @@ const About = () => {
                 {/* <FcOrganization className=" text-4xl text-green-400 " /> */}
               </div>
             </div>
-            <h4 className=" text-gray-600 font-bold mt-7 text-center">
+            <h4 className=" text-gray-800 font-bold mt-7 text-center">
               Diversity
             </h4>
 
-            <p className=" text-gray-500 my-4 text-center">
+            <p className=" text-gray-700 my-4 text-center">
               We empower our team through inclusivity, leading to richer
               experiences and better results.
             </p>
@@ -101,11 +101,11 @@ const About = () => {
                 {/* <FcOrgUnit className=" text-4xl text-green-400 " /> */}
               </div>
             </div>
-            <h4 className=" text-gray-600 font-bold mt-7 text-center">
+            <h4 className=" text-gray-800 font-bold mt-7 text-center">
               Collaboration{" "}
             </h4>
 
-            <p className=" text-gray-500 my-4 text-center">
+            <p className=" text-gray-700 my-4 text-center">
               We value collective efforts as a team because everyone contributes
               to amplifying our impact.
             </p>
@@ -117,11 +117,11 @@ const About = () => {
                 {/* <FcSportsMode className=" text-4xl text-green-400 " /> */}
               </div>
             </div>
-            <h4 className=" text-gray-600 font-bold mt-7 text-center">
+            <h4 className=" text-gray-800 font-bold mt-7 text-center">
               Empowerment{" "}
             </h4>
 
-            <p className=" text-gray-500 my-4 text-center">
+            <p className=" text-gray-700 my-4 text-center">
               Our mission is to set up individuals and organizations for
               success, equipping them with the resources required to thrive.
             </p>
@@ -133,11 +133,11 @@ const About = () => {
                 {/* <FcServices className=" text-4xl text-green-400 " /> */}
               </div>
             </div>
-            <h4 className=" text-gray-600 font-bold mt-7 text-center">
+            <h4 className=" text-gray-800 font-bold mt-7 text-center">
               Innovation{" "}
             </h4>
 
-            <p className=" text-gray-500 my-4 text-center">
+            <p className=" text-gray-700 my-4 text-center">
               We embrace creativity by adapting to the ever-evolving trends
               driving progress through forward-thinking.
             </p>
