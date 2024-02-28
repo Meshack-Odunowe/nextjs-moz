@@ -4,18 +4,14 @@ import { FaDatabase, FaDesktop, FaGlobeAfrica } from "react-icons/fa";
 import { ImStatsBars } from "react-icons/im";
 import Link from "next/link";
 import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import { SiBmcsoftware} from "react-icons/si";
 import { GiArchiveResearch } from "react-icons/gi";
 function Details() {
   function handleGetStartedClick() {
     window.scrollTo(0, 0);
   }
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
+  
   return (
     <div className="my-24">
       <p className=" text-center leading-8 my-8">
@@ -23,17 +19,15 @@ function Details() {
       </p>
 
       <div
-        data-aos-duration="2000"
-        data-aos="fade-up"
+        
         className="flex flex-col md:grid md:grid-cols-2  gap-16 mt-12">
         <div
-          data-aos-duration="2000"
-          data-aos="fade-up"
+          
           className="flex gap-8 items-center bg-green-100 shadow-md w-full  px-4 py-4 rounded-md ">
-          <div data-aos-duration="2000" data-aos="fade-up">
+          <div >
             <FaDesktop className="text-3xl text-teal-700" />
           </div>
-          <div data-aos-duration="2000" data-aos="fade-up">
+          <div >
             <h2 className="md:text-2xl font-extrabold text-purple-500">
               Design
             </h2>
@@ -42,8 +36,7 @@ function Details() {
         </div>
 
         <div
-          data-aos-duration="2000"
-          data-aos="fade-up"
+          
           className="flex gap-8 items-center bg-green-100 shadow-md w-full  px-4 py-4 rounded-md ">
           <div>
             <FaDatabase  className="text-3xl text-teal-700" />
@@ -57,8 +50,7 @@ function Details() {
         </div>
 
         <div
-          data-aos-duration="2000"
-          data-aos="fade-up"
+          
           className="flex gap-8 items-center bg-green-100 shadow-md w-full  px-4 py-4 rounded-md ">
           <div>
             <FaGlobeAfrica className="text-3xl text-teal-700" />
@@ -73,8 +65,7 @@ function Details() {
           </div>
         </div>
         <div
-          data-aos-duration="2000"
-          data-aos="fade-up"
+          
           className="flex gap-8 items-center bg-green-100 shadow-md w-full  px-4 py-4 rounded-md ">
           <div>
             <ImStatsBars className="text-3xl text-teal-700" />
@@ -89,8 +80,7 @@ function Details() {
           </div>
         </div>
         <div
-          data-aos-duration="2000"
-          data-aos="fade-up"
+          
           className="flex gap-8 items-center bg-green-100 shadow-md w-full  px-4 py-4 rounded-md ">
           <div>
             <SiBmcsoftware className="text-3xl text-teal-700" />
@@ -102,8 +92,7 @@ function Details() {
           </div>
         </div>
         <div
-          data-aos-duration="2000"
-          data-aos="fade-up"
+          
           className="flex gap-8 items-center bg-green-100 shadow-md w-full  px-4 py-4 rounded-md ">
           <div>
             <GiArchiveResearch className="text-3xl text-teal-700" />

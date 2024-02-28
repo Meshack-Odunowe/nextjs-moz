@@ -4,16 +4,12 @@ import { FaDesktop } from "react-icons/fa";
 import { ImStatsBars } from "react-icons/im";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 function Details() {
   function handleGetStartedClick() {
     window.scrollTo(0, 0);
   }
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
+ 
   return (
     <div className="my-24">
       
@@ -22,17 +18,15 @@ function Details() {
       </p>
 
       <div
-        data-aos-duration="2000"
-        data-aos="fade-up"
+        
         className="flex flex-col md:grid md:grid-cols-2  gap-16 mt-12">
         <div
-          data-aos-duration="2000"
-          data-aos="fade-up"
+          
           className="flex gap-8 items-center bg-green-100 shadow-md w-full  px-4 py-4 rounded-md ">
-          <div data-aos-duration="2000" data-aos="fade-up">
+          <div >
             <FaDesktop className="text-3xl text-teal-700" />
           </div>
-          <div data-aos-duration="2000" data-aos="fade-up">
+          <div >
             <h2 className="md:text-2xl font-extrabold text-purple-500">
               Design
             </h2>
@@ -41,8 +35,7 @@ function Details() {
         </div>
 
         <div
-          data-aos-duration="2000"
-          data-aos="fade-up"
+          
           className="flex gap-8 items-center bg-green-100 shadow-md w-full  px-4 py-4 rounded-md ">
           <div>
             <ImStatsBars className="text-3xl text-teal-700" />
@@ -56,8 +49,7 @@ function Details() {
         </div>
       
         <div
-          data-aos-duration="2000"
-          data-aos="fade-up"
+          
           className="flex gap-8 items-center bg-green-100 shadow-md w-full  px-4 py-4 rounded-md ">
           <div>
             <ImStatsBars className="text-3xl text-teal-700" />
@@ -71,8 +63,7 @@ International Development            </h2>
           </div>
         </div>
         <div
-          data-aos-duration="2000"
-          data-aos="fade-up"
+          
           className="flex gap-8 items-center bg-green-100 shadow-md w-full  px-4 py-4 rounded-md ">
           <div>
             <ImStatsBars className="text-3xl text-teal-700" />

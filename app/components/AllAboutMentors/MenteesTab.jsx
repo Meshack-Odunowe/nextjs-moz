@@ -16,10 +16,9 @@ function MenteesTab() {
     <div>
 
     <div
-      data-aos-duration="2000"
-      data-aos="fade-up"
+      
       className="flex flex-col md:flex-row mt-8  gap-8 items-center h-full">
-      <div data-aos-duration="2000" data-aos="fade-up" className="md:w-1/2">
+      <div  className="md:w-1/2">
         <h1 className="my-8 text-3xl md:text-4xl font-bold">
           Welcome to Mozisha Mentorship
         </h1>
@@ -38,15 +37,13 @@ function MenteesTab() {
         </button>
       </div>
       <div
-        data-aos-duration="2000"
-        data-aos="fade-up"
+        
         className="bg-purple-500 h-full md:w-1/2 ">
         <Image
           height={400}
           width={600}
           className=" object-cover"
-          data-aos-duration="2000"
-          data-aos="fade-left"
+          
           src={mentees}
           alt=""
         />
@@ -54,23 +51,20 @@ function MenteesTab() {
      
 
       </div>
-      <div data-aos-duration="2000" data-aos="fade-up">
+      <div >
             <h2 className=" font-bold text-2xl mb-8 text-center">
               Why Mozisha Mentorship?
             </h2>
 
             <div
-              data-aos-duration="2000"
-              data-aos="fade-up"
+              
               className=" bg-teal-100 relative flex-col md:flex-row  p-8  flex gap-8 items-center ">
-              <div data-aos-duration="2000" data-aos="fade-up">
+              <div >
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="  max-w-[600px] justify-center items-center shadow-2xl rounded-md bg-green-300  gap-12 p-4 mb-8">
                   <div
-                    data-aos-duration="2000"
-                    data-aos="fade-up"
+                    
                     className="mb-8 ">
                     <h4 className=" text-2xl font-semibold mb-4 bg-green-600 p-4 rounded-lg text-white">
                       Tailored Guidance
@@ -84,12 +78,10 @@ function MenteesTab() {
                   </div>
                 </div>
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="  max-w-[600px] justify-center items-center shadow-2xl bg-yellow-100 rounded-md p-4text-white  gap-12 p-4 mb-8">
                   <div
-                    data-aos-duration="2000"
-                    data-aos="fade-up"
+                    
                     className="mb-8 ">
                     <h4 className=" text-2xl font-semibold mb-4 bg-red-800 p-4 rounded-lg text-white">
                       Career Insights
@@ -102,12 +94,10 @@ function MenteesTab() {
                   </div>
                 </div>
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="  max-w-[600px] justify-center items-center shadow-2xl bg-gray-100 rounded-md p-4text-white  gap-12 p-4 mb-8">
                   <div
-                    data-aos-duration="2000"
-                    data-aos="fade-up"
+                    
                     className="mb-8 ">
                     <h4 className=" text-2xl font-semibold mb-4 bg-gray-800 p-4 rounded-lg text-white">
                       Mock Job Interviews
@@ -121,8 +111,7 @@ function MenteesTab() {
                 </div>
               </div>
               <Image width={400}
-                data-aos-duration="2000"
-                data-aos="fade-left"
+                
                 src={M}
                 alt="mentorship"
                 className=" object-cover h-96 "
@@ -132,26 +121,22 @@ function MenteesTab() {
       
 
 
-      <div data-aos-duration="2000" data-aos="fade-up">
+      <div >
             <h2 className=" font-bold text-2xl mb-8 text-center my-24">
               Connecting Talents with Experience{" "}
             </h2>
 
             <div
-              data-aos-duration="2000"
-              data-aos="fade-up"
+              
               className=" bg-yellow-100 relative p-8  flex  flex-col ">
               <div
-                data-aos-duration="2000"
-                data-aos="fade-up"
+                
                 className=" flex flex-col  gap-8 md:flex-row justify-center items-center my-16">
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="  max-w-[600px]  shadow-2xl rounded-md bg-green-300  gap-12 p-4 mb-8">
                   <div
-                    data-aos-duration="2000"
-                    data-aos="fade-up"
+                    
                     className="mb-8 ">
                     <h4 className=" text-2xl font-semibold mb-4 bg-green-600 p-4 rounded-lg text-white">
                       Personalized Matches
@@ -164,24 +149,20 @@ function MenteesTab() {
                   </div>
                 </div>
                 <Image width={400}
-                  data-aos-duration="2000"
-                  data-aos="fade-left"
+                  
                   src={locked}
                   alt="mentor"
                   className="hidden md:block w-64 h-56 object-cover"
                 />
               </div>
               <div
-                data-aos-duration="2000"
-                data-aos="fade-up"
+                
                 className="flex flex-col  gap-8 md:flex-row-reverse justify-center items-center my-16">
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="  max-w-[600px] justify-center items-center shadow-2xl bg-amber-200 rounded-md p-4text-white  gap-12 p-4 mb-8">
                   <div
-                    data-aos-duration="2000"
-                    data-aos="fade-up"
+                    
                     className="mb-8 ">
                     <h4 className=" text-2xl font-semibold mb-4 bg-red-800 p-4 rounded-lg text-white">
                       Continuous Support
@@ -194,24 +175,20 @@ function MenteesTab() {
                   </div>
                 </div>
                 <Image width={400}
-                  data-aos-duration="2000"
-                  data-aos="fade-left"
+                  
                   src={support}
                   alt=""
                   className="hidden md:block w-64 h-56"
                 />
               </div>
               <div
-                data-aos-duration="2000"
-                data-aos="fade-up"
+                
                 className="flex flex-col  gap-8 md:flex-row justify-center items-center my-16">
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="  max-w-[600px] justify-center items-center shadow-2xl bg-gray-100 rounded-md p-4text-white  gap-12 p-4 mb-8">
                   <div
-                    data-aos-duration="2000"
-                    data-aos="fade-up"
+                    
                     className="mb-8 ">
                     <h4 className=" text-2xl font-semibold mb-4 bg-gray-800 p-4 rounded-lg text-white">
                       Global Network
@@ -224,8 +201,7 @@ function MenteesTab() {
                   </div>
                 </div>
                 <Image width={400}
-                  data-aos-duration="2000"
-                  data-aos="fade-left"
+                  
                   src={network}
                   alt=""
                   className="hidden md:block w-64 h-56 object-cover"
@@ -234,21 +210,18 @@ function MenteesTab() {
             </div>
             <Details />
 
-            <div data-aos-duration="2000" data-aos="fade-up">
+            <div >
               <h5 className=" text-2xl font-bold text-center my-8">
                 How It Works
               </h5>
               <div
-                data-aos-duration="2000"
-                data-aos="fade-up"
+                
                 className=" flex flex-col md:flex-row gap-8 mb-8">
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className=" rounded-xl border p-4 shadow-xl relative">
                   <Image width={400}
-                    data-aos-duration="2000"
-                    data-aos="fade-left"
+                    
                     src={Arrow}
                     alt="arrow"
                     className="hidden md:block w-12 h-4 md:absolute md:-right-8 md:top-2/4"
@@ -263,12 +236,10 @@ function MenteesTab() {
                   </p>
                 </div>
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="relative rounded-xl border p-4 shadow-xl">
                   <Image width={400}
-                    data-aos-duration="2000"
-                    data-aos="fade-left"
+                    
                     src={Arrow}
                     alt="arrow"
                     className="hidden md:block w-12 h-4 md:absolute md:-right-8 md:top-2/4"
@@ -283,15 +254,13 @@ function MenteesTab() {
                   </p>
                 </div>
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="relative rounded-xl border p-4 shadow-xl">
                   <p className=" text-red-600 px-6 py-2 border-red-300 border w-fit rounded-xl">
                     Experience Growth
                   </p>
                   <Image width={400}
-                    data-aos-duration="2000"
-                    data-aos="fade-left"
+                    
                     src={Arrow}
                     alt="arrow"
                     className="hidden md:block w-12 h-4 md:absolute md:-right-8 md:top-2/4"
@@ -304,8 +273,7 @@ function MenteesTab() {
                   </p>
                 </div>
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className=" rounded-xl border p-4 shadow-xl">
                   <p className=" text-red-600 px-6 py-2 border-red-300 border w-fit rounded-xl">
                     Achieve Success
@@ -319,7 +287,7 @@ function MenteesTab() {
               </div>
             </div>
 
-            <div data-aos-duration="2000" data-aos="fade-up">
+            <div >
               <p className="flex flex-row items-center gap-4 text-2xl font-bold tracking-wide leading-8 my-8">
                 <span>
                   <FaGraduationCap />

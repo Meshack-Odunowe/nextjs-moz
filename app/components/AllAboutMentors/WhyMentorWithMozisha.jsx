@@ -14,20 +14,17 @@ import Details from "./Details";
 function WhyMentorWithMozisha() {
   return (
     <div>
-       <div data-aos-duration="2000" data-aos="fade-up">
+       <div >
            
             <div
-              data-aos-duration="2000"
-              data-aos="fade-up"
+              
               className=" bg-teal-100 relative flex-col md:flex-row  p-8  flex gap-8 items-center ">
-              <div data-aos-duration="2000" data-aos="fade-up">
+              <div >
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="  max-w-[600px] justify-center items-center shadow-md rounded-md bg-green-300  gap-12 p-4 mb-8">
                   <div
-                    data-aos-duration="2000"
-                    data-aos="fade-up"
+                    
                     className="mb-8 ">
                     <h4 className=" text-2xl font-semibold mb-4 bg-green-600 p-4 rounded-lg text-white">
                       Shape Careers{" "}
@@ -40,12 +37,10 @@ function WhyMentorWithMozisha() {
                   </div>
                 </div>
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="  max-w-[600px] justify-center items-center shadow-md bg-yellow-100 rounded-md p-4text-white  gap-12 p-4 mb-8">
                   <div
-                    data-aos-duration="2000"
-                    data-aos="fade-up"
+                    
                     className="mb-8 ">
                     <h4 className=" text-2xl font-semibold mb-4 bg-red-800 p-4 rounded-lg text-white">
                       Share Wisdom{" "}
@@ -59,12 +54,10 @@ function WhyMentorWithMozisha() {
                   </div>
                 </div>
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="  max-w-[600px] justify-center items-center shadow-2xl bg-gray-100 rounded-md p-4text-white  gap-12 p-4 mb-8">
                   <div
-                    data-aos-duration="2000"
-                    data-aos="fade-up"
+                    
                     className="mb-8 ">
                     <h4 className=" text-2xl font-semibold mb-4 bg-gray-800 p-4 rounded-lg text-white">
                       Inspire Growth{" "}
@@ -78,8 +71,7 @@ function WhyMentorWithMozisha() {
                 </div>
               </div>
               <Image width={400} height={400}
-                data-aos-duration="2000"
-                data-aos="fade-left"
+                
                 src={M}
                 alt="mentorship"
                 className=" object-cover h-96 "
@@ -89,26 +81,22 @@ function WhyMentorWithMozisha() {
       
 
 
-      <div data-aos-duration="2000" data-aos="fade-up">
+      <div >
             <h2 className=" font-bold text-2xl mb-8 text-center my-24">
               Unlock Personal and Professional Growth{" "}
             </h2>
 
             <div
-              data-aos-duration="2000"
-              data-aos="fade-up"
+              
               className=" bg-yellow-100 relative p-8  flex  flex-col ">
               <div
-                data-aos-duration="2000"
-                data-aos="fade-up"
+                
                 className=" flex flex-col  gap-8 md:flex-row justify-center items-center my-16">
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="  max-w-[600px]  shadow-2xl rounded-md bg-green-300  gap-12 p-4 mb-8">
                   <div
-                    data-aos-duration="2000"
-                    data-aos="fade-up"
+                    
                     className="mb-8 ">
                     <h4 className=" text-2xl font-semibold mb-4 bg-green-600 p-4 rounded-lg text-white">
                       Enhance Leadership Skill{" "}
@@ -121,24 +109,20 @@ function WhyMentorWithMozisha() {
                   </div>
                 </div>
                 <Image width={400} height={400}
-                  data-aos-duration="2000"
-                  data-aos="fade-left"
+                  
                   src={locked1}
                   alt="mentor"
                   className="hidden md:block w-64 h-56 object-cover"
                 />
               </div>
               <div
-                data-aos-duration="2000"
-                data-aos="fade-up"
+                
                 className="flex flex-col  gap-8 md:flex-row-reverse justify-center items-center my-16">
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="  max-w-[600px] justify-center items-center shadow-2xl bg-amber-200 rounded-md p-4text-white  gap-12 p-4 mb-8">
                   <div
-                    data-aos-duration="2000"
-                    data-aos="fade-up"
+                    
                     className="mb-8 ">
                     <h4 className=" text-2xl font-semibold mb-4 bg-red-800 p-4 rounded-lg text-white">
                       Expand your Network{" "}
@@ -151,24 +135,20 @@ function WhyMentorWithMozisha() {
                   </div>
                 </div>
                 <Image width={400} height={400}
-                  data-aos-duration="2000"
-                  data-aos="fade-right"
+                  
                   src={support}
                   alt=""
                   className="hidden md:block w-64 h-56"
                 />
               </div>
               <div
-                data-aos-duration="2000"
-                data-aos="fade-up"
+                
                 className="flex flex-col  gap-8 md:flex-row justify-center items-center my-16">
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="  max-w-[600px] justify-center items-center shadow-2xl bg-gray-100 rounded-md p-4text-white  gap-12 p-4 mb-8">
                   <div
-                    data-aos-duration="2000"
-                    data-aos="fade-up"
+                    
                     className="mb-8 ">
                     <h4 className=" text-2xl font-semibold mb-4 bg-gray-800 p-4 rounded-lg text-white">
                       Stay Relevant{" "}
@@ -182,34 +162,29 @@ function WhyMentorWithMozisha() {
                   </div>
                 </div>
                 <Image width={400} height={400}
-                  data-aos-duration="2000"
-                  data-aos="fade-left"
+                  
                   src={network1}
                   alt=""
                   className="hidden md:block w-64 h-56 object-cover"
                 />
               </div>
             </div>
-            <div data-aos-duration="2000" data-aos="fade-up">
+            <div >
               <h3 className=" font-bold text-2xl mb-8 text-center my-24">
                 Foster a Legacy of Success
               </h3>
             </div>
             <div
-              data-aos-duration="2000"
-              data-aos="fade-up"
+              
               className=" bg-yellow-100 relative p-8  flex  flex-col ">
               <div
-                data-aos-duration="2000"
-                data-aos="fade-up"
+                
                 className=" flex flex-col  gap-8 md:flex-row justify-center items-center my-16">
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="  max-w-[600px]  shadow-2xl rounded-md bg-green-300  gap-12 p-4 mb-8">
                   <div
-                    data-aos-duration="2000"
-                    data-aos="fade-up"
+                    
                     className="mb-8 ">
                     <h4 className=" text-2xl font-semibold mb-4 bg-green-600 p-4 rounded-lg text-white">
                       Leave Your Mark{" "}
@@ -223,24 +198,20 @@ function WhyMentorWithMozisha() {
                   </div>
                 </div>
                 <Image  width={400} height={400}
-                  data-aos-duration="2000"
-                  data-aos="fade-left"
+                  
                   src={locked2}
                   alt="mentor"
                   className="hidden md:block w-64 h-56 object-cover"
                 />
               </div>
               <div
-                data-aos-duration="2000"
-                data-aos="fade-up"
+                
                 className="flex flex-col  gap-8 md:flex-row-reverse justify-center items-center my-16">
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="  max-w-[600px] justify-center items-center shadow-2xl bg-amber-200 rounded-md p-4text-white  gap-12 p-4 mb-8">
                   <div
-                    data-aos-duration="2000"
-                    data-aos="fade-up"
+                    
                     className="mb-8 ">
                     <h4 className=" text-2xl font-semibold mb-4 bg-red-800 p-4 rounded-lg text-white">
                       Build a Professional Legacy{" "}
@@ -254,8 +225,7 @@ function WhyMentorWithMozisha() {
                   </div>
                 </div>
                 <Image width={400} height={400}
-                  data-aos-duration="2000"
-                  data-aos="fade-left"
+                  
                   src={support1}
                   alt=""
                   className="hidden md:block w-64 h-56 object-cover"
@@ -263,21 +233,18 @@ function WhyMentorWithMozisha() {
               </div>
             </div>
 
-            <div data-aos-duration="2000" data-aos="fade-up">
+            <div >
               <h5 className=" text-2xl font-bold text-center my-16">
                 Join Mozisha Mentorship - Where Your Expertise Shapes the Future{" "}
               </h5>
               <div
-                data-aos-duration="2000"
-                data-aos="fade-up"
+                
                 className=" flex flex-col md:flex-row gap-8 mb-8">
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className=" rounded-xl border p-4 shadow-xl relative">
                   <Image width={400} height={400}
-                    data-aos-duration="2000"
-                    data-aos="fade-left"
+                    
                     src={Arrow}
                     alt="arrow"
                     className="hidden md:block w-12 h-4 md:absolute md:-right-8 md:top-2/4"
@@ -292,12 +259,10 @@ function WhyMentorWithMozisha() {
                   </p>
                 </div>
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="relative rounded-xl border p-4 shadow-xl">
                   <Image width={400} height={400}
-                    data-aos-duration="2000"
-                    data-aos="fade-left"
+                    
                     src={Arrow}
                     alt="arrow"
                     className="hidden md:block w-12 h-4 md:absolute md:-right-8 md:top-2/4"
@@ -312,8 +277,7 @@ function WhyMentorWithMozisha() {
                   </p>
                 </div>
                 <div
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="relative rounded-xl border p-4 shadow-xl">
                   <p className=" text-red-600 px-6 py-2 border-red-300 border w-fit rounded-xl">
                     Be Rewarded{" "}
@@ -329,7 +293,7 @@ function WhyMentorWithMozisha() {
               </div>
             </div>
 
-            <div data-aos-duration="2000" data-aos="fade-up">
+            <div >
               <p className="flex flex-row items-center gap-4 text-2xl font-bold tracking-wide leading-8 mt-16 mb-8">
                 <span>{/* <FaGraduationCap /> */}</span>
                 <span>

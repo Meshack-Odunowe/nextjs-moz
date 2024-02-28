@@ -1,29 +1,21 @@
 "use client";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import { useEffect, useState } from "react";
-import AOS from "aos";
+import {  useState } from "react";
 import Link from "next/link";
-import "aos/dist/aos.css";
 import WhyMentorWithMozisha from "../../components/AllAboutMentors/WhyMentorWithMozisha";
 import { FaRegHandPointRight, FaRocket, FaRocketchat } from "react-icons/fa";
 import Image from "next/image";
 import MenteesTab from "../../components/AllAboutMentors/MenteesTab";
 import { IoArrowRedo } from "react-icons/io5";
 const Ment = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-    window.scrollTo(0, 0);
-
-  }, []);
+ 
 
   const [selectedTab, setSelectedTab] = useState(0);
 
   return (
     <div
-      data-aos-duration="2000"
-      data-aos="fade-up"
+      
       className="px-8 max-w-[1200px] mx-auto mt-12 overflow-hidden">
       <h1 className=" text-4xl text-center font-bold  md:text-6xl pb-16">
         Welcome to Mozisha Mentorship
@@ -36,8 +28,8 @@ const Ment = () => {
       <p className=" leading-8 tracking-wider mb-8">
       At Mozisha, we believe in the power of mentorship to transform careers and lives. Whether you're a seasoned professional eager to share your wisdom or a talented individual seeking guidance, Mozisha Mentorship is your gateway to success and fulfillment.
       </p>
-      <div data-aos-duration="2000" data-aos="fade-up">
-        <div data-aos-duration="2000" data-aos="fade-up" className="mb-32">
+      <div >
+        <div  className="mb-32">
           <h2 className=" font-bold md:text-3xl mb-8">
             Ready to Begin? Choose Your Path:
           </h2>
@@ -100,10 +92,9 @@ const Ment = () => {
         </TabList>
         <TabPanel>
           <div
-            data-aos-duration="2000"
-            data-aos="fade-up"
+            
             className="flex flex-col md:flex-row mt-8 mb-16  gap-8 items-center">
-            <div data-aos-duration="2000" data-aos="fade-up" className="">
+            <div  className="">
               <h1 className="my-8 text-3xl md:text-4xl font-bold">
 Empowering Young Professionals            </h1>
               <p className=" leading-8 mb-8">
@@ -121,14 +112,12 @@ Empowering Young Professionals            </h1>
               </button>
             </div>
             <div
-              data-aos-duration="2000"
-              data-aos="fade-up"
+              
               className="bg-purple-500 h-full  rounded-md ">
               <Image
                 width={800}
                 height={400}
-                data-aos-duration="2000"
-                data-aos="fade-left"
+                
                 className="rounded-md"
                 src='/office.png'
                 alt=""
