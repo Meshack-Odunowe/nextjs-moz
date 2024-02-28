@@ -3,20 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import img from "../../public/mozishapurple.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+
 
 const Footer = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-    window.scrollTo(0, 0);
-
-  }, []);
+ 
 
   const handleGetStartedClick = () => {
-    window.scrollTo(0, 0); // Scroll to the top of the page
+    window.scrollTo(0, 0); 
   };
 
   return (
@@ -28,7 +21,7 @@ const Footer = () => {
       <div className="md:w-1/2">
         <Image src={img} alt="Mozisha website logo" />
       </div>{" "}
-      <div data-aos-duration="1000" data-aos="fade-up">
+      <div >
         <p className="font-semibold ">
           {" "}
           <Link href="/about" onClick={handleGetStartedClick}>
@@ -55,10 +48,9 @@ const Footer = () => {
           <Link href="/faq">Frequently Asked Questions</Link>
         </p>
       </div>
-      <div data-aos-duration="1000" data-aos="fade-up">
+      <div >
         <h6
-          data-aos-duration="1000"
-          data-aos="fade-up"
+          
           className=" underline "
           onClick={handleGetStartedClick}>
           <Link href="/contact-us">Contact Us</Link>
@@ -69,17 +61,17 @@ const Footer = () => {
             href="https://www.instagram.com/mozishaorg/"
             target="_blank"
             rel="noopener noreferrer">
-            <FaInstagram data-aos="zoom-in" className="hover:text-purple-500" />
+            <FaInstagram  className="hover:text-purple-500" />
           </Link>
          <Link href="https://www.linkedin.com/company/mozisha/?originalSubdomain=ng"
           target="_blank" rel="noopener noreferrer">
-          <FaLinkedin data-aos="zoom-in" className="hover:text-purple-500" /></Link>
+          <FaLinkedin  className="hover:text-purple-500" /></Link>
          <Link href="https://wa.me/+27824277902" target="_blank" rel="noopener
           noreferrer">
-          <FaWhatsapp data-aos="zoom-in" className="hover:text-purple-500" /></Link>
+          <FaWhatsapp  className="hover:text-purple-500" /></Link>
          <Link href="https://twitter.com/MozishaOrg" target="_blank" rel="noopener
           noreferrer">
-          <FaTwitter data-aos="zoom-in" className="hover:text-purple-500" /></Link>
+          <FaTwitter  className="hover:text-purple-500" /></Link>
         </div>
       </div>
     </div>

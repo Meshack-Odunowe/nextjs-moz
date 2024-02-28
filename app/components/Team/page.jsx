@@ -1,8 +1,7 @@
 "use client"; // pages/team.js
 import { useEffect } from "react";
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import achumboro from "../../../public/achumboroataande.jpeg";
 import faustine from "../../../public/Faustine.jpg";
 import alicia from "../../../public/alicia.jpeg";
@@ -13,30 +12,24 @@ import sola from "../../../public/sola.png";
 import Link from "next/link";
 
 const Team = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
+ 
 
   return (
     <>
       <div
-        data-aos-duration="5000"
-        data-aos="fade-up"
+        
         className="max-w-[768px] mx-auto">
         <h1 className="md:text-center font-bold text-gray-950 uppercase text-4xl mb-8 md:text-5xl md:py-16 pt-8">
           Executive Team
         </h1>
-        <div data-aos-duration="5000" data-aos="fade-up">
+        <div >
           <div
-            data-aos-duration="5000"
-            data-aos="fade-up"
+            
             className="mx-auto justify-center items-center md:gap-16">
             <div
-              data-aos-duration="5000"
-              data-aos="fade-up"
+              
               className="flex flex-col md:flex-row md:gap-16 md:mb-12 justify-center md:items-center h-screen md:h-full">
-              <div data-aos-duration="5000" data-aos="fade-up">
+              <div >
                 <Image
                   className="rounded-full object-cover mb-8 md:mb-0 max-w-[400px] h-[200px] w-[200px]"
                   src={kene}
@@ -45,22 +38,19 @@ const Team = () => {
                   height={200}
                 />
               </div>
-              <div data-aos-duration="5000" data-aos="fade-up">
+              <div >
                 <p
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="text-gray-900 font-extrabold text-2xl">
                   Dr. Kenechukwu Ikebuaku
                 </p>
                 <p
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="text-gray-700 font-bold mt-4">
                   Founder/Chief Executive Officer
                 </p>
                 <blockquote
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="italic text-sm my-4">
                   Dr Kenechukwu Ikebuaku is an award-winning development
                   scholar, educator, and entrepreneur with over 12 years of
@@ -74,8 +64,7 @@ const Team = () => {
                   their dreams.
                 </blockquote>
                 <a
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="text-gray-700 font-bold underline"
                   href="https://www.linkedin.com/in/kenechukwu-ikebuaku-phd-781662154/"
                   target="_">
@@ -84,10 +73,9 @@ const Team = () => {
               </div>
             </div>
             <div
-              data-aos-duration="2000"
-              data-aos="fade-up"
+              
               className="flex flex-col md:flex-row md:gap-16 md:my-12 py-4 justify-center my-8 md:justify-start h-screen md:h-full md:items-center">
-              <div data-aos-duration="2000" data-aos="fade-up">
+              <div >
                 <Image
                   className="rounded-full object-cover mb-8 md:mb-0 max-w-[400px] h-[200px] w-[200px]"
                   src={lorna}
@@ -96,22 +84,19 @@ const Team = () => {
                   height={200}
                 />
               </div>
-              <div data-aos-duration="2000" data-aos="fade-up">
+              <div >
                 <p
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="text-gray-900 font-extrabold text-2xl">
                   Prof. Lorna Holtman
                 </p>
                 <p
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="text-gray-700 font-bold mt-4">
                   Chief Talent Officer
                 </p>
                 <blockquote
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="italic text-sm my-4">
                   Professor Lorna Holtman brings over 35 years of experience in
                   higher education, specializing in talent development,
@@ -124,8 +109,7 @@ const Team = () => {
                   Reinvention Practitioner.
                 </blockquote>
                 <Link
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="text-gray-700 font-bold underline"
                   href="https://www.linkedin.com/in/lorna-holtman-323b09b/"
                   target="_">
@@ -134,10 +118,9 @@ const Team = () => {
               </div>
             </div>
             <div
-              data-aos-duration="2000"
-              data-aos="fade-up"
+              
               className="flex flex-col md:flex-row md:gap-16 md:my-12 py-4 justify-center my-8 md:justify-start h-screen md:h-full md:items-center">
-              <div data-aos-duration="2000" data-aos="fade-up">
+              <div >
                 <Image
                   className="rounded-full object-cover mb-8 md:mb-0 max-w-[400px] h-[200px] w-[200px]"
                   src={sola}
@@ -146,22 +129,19 @@ const Team = () => {
                   height={200}
                 />
               </div>
-              <div data-aos-duration="2000" data-aos="fade-up">
+              <div >
                 <p
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="text-gray-900 font-extrabold text-2xl">
                   Sola Osinoiki{" "}
                 </p>
                 <p
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="text-gray-700 font-bold mt-4">
                   Chief Operating Officer{" "}
                 </p>
                 <blockquote
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="italic text-sm my-4">
                   Sola Osinoiki is a business executive with over 25 years of
                   working experience in the Tech industry. Sola has spent
@@ -179,8 +159,7 @@ const Team = () => {
                   the use of AI in HR.
                 </blockquote>
                 <Link
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="text-gray-700 font-bold  underline   "
                   href="https://www.linkedin.com/in/solaosinoiki/ 
           "
@@ -194,22 +173,19 @@ const Team = () => {
       </div>
 
       <div
-        data-aos-duration="5000"
-        data-aos="fade-up"
+        
         className="max-w-[768px] mx-auto">
         <h1 className="md:text-center font-bold text-gray-950 uppercase text-4xl  md:text-4xl md:py-16 py-24">
           Advisory Board{" "}
         </h1>
-        <div data-aos-duration="5000" data-aos="fade-up">
+        <div >
           <div
-            data-aos-duration="5000"
-            data-aos="fade-up"
+            
             className="mx-auto justify-center items-center md:gap-16">
             <div
-              data-aos-duration="5000"
-              data-aos="fade-up"
+              
               className="flex flex-col  md:flex-row md:gap-16 md:my-24 justify-center md:items-center  md:h-full ">
-              <div data-aos-duration="5000" data-aos="fade-up">
+              <div >
                 <Image
                   className="rounded-full  object-cover mb-8 md:mb-0 max-w-[400px] h-[200px] w-[200px]"
                   src={achumboro}
@@ -218,17 +194,15 @@ const Team = () => {
                   height={200}
                 />
               </div>
-              <div data-aos-duration="5000" data-aos="fade-up">
+              <div >
                 <p
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="text-gray-900 font-extrabold text-2xl ">
                   Achumboro Ataande{" "}
                 </p>
 
                 <blockquote
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="italic text-sm my-4">
                   Achumboro Ataande is a 4x entrepreneur and investor. He is an
                   attorney and an angel investor. In addition, Achumboro owns
@@ -248,8 +222,7 @@ const Team = () => {
                   financial literacy, leadership, and job readiness.
                 </blockquote>
                 <a
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="text-gray-700 font-bold underline"
                   href="www.linkedin.com/in/achumboroataande/"
                   target="_">
@@ -258,10 +231,9 @@ const Team = () => {
               </div>
             </div>
             <div
-              data-aos-duration="2000"
-              data-aos="fade-up"
+              
               className="flex flex-col md:flex-row md:gap-16 md:my-12 py-4 justify-center  md:justify-start h-screen md:h-full md:items-center  my-96">
-              <div data-aos-duration="2000" data-aos="fade-up">
+              <div >
                 <Image
                   className="rounded-full object-cover mb-8 md:mb-0 max-w-[400px] h-[200px] w-[200px]"
                   src={faustine}
@@ -270,17 +242,15 @@ const Team = () => {
                   height={200}
                 />
               </div>
-              <div data-aos-duration="2000" data-aos="fade-up">
+              <div >
                 <p
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="text-gray-900 font-extrabold text-2xl">
                   Faustine Wabwire{" "}
                 </p>
 
                 <blockquote
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="italic text-sm my-4">
                   Ms. Faustine Wabwire is a Senior Program Officer for Global
                   Policy and Advocacy at the Bill and Melinda Gates Foundation.
@@ -315,8 +285,7 @@ const Team = () => {
                   formative years in Kenya, where she was born and raised.
                 </blockquote>
                 <Link
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="text-gray-700 font-bold underline"
                   href="www.linkedin.com/in/faustine-wabwire-355b96b/"
                   target="_">
@@ -325,10 +294,9 @@ const Team = () => {
               </div>
             </div>
             <div
-              data-aos-duration="2000"
-              data-aos="fade-up"
+              
               className="flex flex-col md:flex-row md:gap-16 md:my-12 py-4 justify-center my-8 md:justify-start  md:h-full md:items-center">
-              <div data-aos-duration="2000" data-aos="fade-up">
+              <div >
                 <Image
                   className="rounded-full object-cover mb-8 md:mb-0 max-w-[400px] h-[200px] w-[200px]"
                   src={alicia}
@@ -337,17 +305,15 @@ const Team = () => {
                   height={200}
                 />
               </div>
-              <div data-aos-duration="2000" data-aos="fade-up">
+              <div >
                 <p
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="text-gray-900 font-extrabold text-2xl">
                   Alicia Kimiagarov{" "}
                 </p>
 
                 <blockquote
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="italic text-sm my-4">
                   Alicia Kimiagarov turns data analytics into visualizations,
                   detailed reports, and viable action plans to solve real
@@ -360,8 +326,7 @@ const Team = () => {
                   about helping others develop professionally.
                 </blockquote>
                 <Link
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="text-gray-700 font-bold  underline   "
                   href="www.linkedin.com/in/aliciakimiagarov/
           "
@@ -371,10 +336,9 @@ const Team = () => {
               </div>
             </div>
             <div
-              data-aos-duration="2000"
-              data-aos="fade-up"
+              
               className="flex flex-col md:flex-row md:gap-16 md:my-12 py-4 justify-center my-8 md:justify-start  md:h-full md:items-center">
-              <div data-aos-duration="2000" data-aos="fade-up">
+              <div >
                 <Image
                   className="rounded-full object-cover mb-8 md:mb-0 max-w-[400px] h-[200px] w-[200px]"
                   src="/gilbert.jpg"
@@ -383,17 +347,15 @@ const Team = () => {
                   height={200}
                 />
               </div>
-              <div data-aos-duration="2000" data-aos="fade-up">
+              <div >
                 <p
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="text-gray-900 font-extrabold text-2xl">
                   Gibert Anyetei{" "}
                 </p>
 
                 <blockquote
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="italic text-sm my-4">
                   Gilbert Anyetei currently serves as an Investment Associate at
                   Innovation Edge. Innovation Edge is an early stage
@@ -421,8 +383,7 @@ const Team = () => {
                   building and growing their ventures.
                 </blockquote>
                 <Link
-                  data-aos-duration="2000"
-                  data-aos="fade-up"
+                  
                   className="text-gray-700 font-bold  underline   "
                   href="https://www.linkedin.com/in/gilbert-anyetei-ca-sa-3b983b51/
           "
