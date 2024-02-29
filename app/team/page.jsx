@@ -3,7 +3,6 @@
 import ExpandableText from "../components/ExpandableText";
 import Image from "next/image";
 import Link from "next/link";
-
 function Teams() {
   return (
     <>
@@ -143,7 +142,7 @@ function Teams() {
                 <div className="flex items-center">
                   <a
                     className="text-gray-700 font-bold underline"
-                    href="www.linkedin.com/in/achumboroataande/"
+                    href="https://www.linkedin.com/in/achumboroataande/"
                     target="_">
                     LinkedIn Profile
                   </a>
@@ -202,7 +201,7 @@ function Teams() {
                 <div className="flex items-center">
                   <Link
                     className="text-gray-700 font-bold underline"
-                    href="www.linkedin.com/in/faustine-wabwire-355b96b/"
+                    href="https://www.linkedin.com/in/faustine-wabwire-355b96b/"
                     target="_">
                     LinkedIn Profile
                   </Link>
@@ -240,7 +239,7 @@ function Teams() {
                 <div className="flex items-center">
                   <Link
                     className="text-gray-700 font-bold  underline   "
-                    href="www.linkedin.com/in/aliciakimiagarov/
+                    href="https://www.linkedin.com/in/aliciakimiagarov/
           "
                     target="_">
                     LinkedIn Profile
