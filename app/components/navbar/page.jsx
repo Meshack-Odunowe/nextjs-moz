@@ -6,8 +6,7 @@ import { FcMenu } from "react-icons/fc";
 import { FaTimes, faTimes } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import img from "../../../public/mozishaweb.svg";
-import { UserButton } from "@clerk/nextjs";
-
+import {  ChevronDown } from "lucide-react";
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -33,14 +32,7 @@ const NavBar = () => {
     }
   };
 
-  // Add scroll event listener when the component mounts
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+ 
 
   const navbarClass = isNavbarFixed
     ? "fixed top-0 left-0 right-0 bg-white z-30"
@@ -52,12 +44,21 @@ const NavBar = () => {
     router.push("/");
     window.scrollTo(0, 0);
   };
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
 
   return (
     <>
       <div>
-        <header className={navbarClass} >
-          <nav className="flex relative md:hidden py-8 mx-4 justify-between items-center ">
+        <header className={navbarClass}>
+          <nav className="flex relative md:hidden py-8 mx-4 justify-between items-center">
             <Link href="/" onClick={navigateToHome}>
               <Image className="w-40" src={img} alt="" width={50} height={50} />
             </Link>
@@ -82,10 +83,11 @@ const NavBar = () => {
               <li onClick={closeMenu} className="cursor-pointer">
                 <Link href="/blog">Blog</Link>
               </li>
+              <li onClick={closeMenu} className="cursor-pointer">
+                <Link href="/team">Our Team</Link>
+              </li>
             </ul>
-            {/* <UserButton/> */}
             <div>
-
               <FcMenu
                 className={`absolute top-6 right-4 text-3xl z-30 md:hidden ${
                   menuOpen ? "hidden" : "block"
@@ -119,9 +121,35 @@ const NavBar = () => {
                 Home
               </Link>
             </li>
-            <li onClick={handleGetStartedClick} className="px-4 py-4 ">
-              <Link href="/about">About Us</Link>
+            <li
+              className="group px-4 py-4 flex justify-center items-center gap-2 relative"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}>
+              <span>About</span>
+              <ChevronDown
+                className={`text-sm transition-transform ${
+                  isHovered ? "rotate-180" : ""
+                }`}
+              />
+              <div
+                className="w-0 h-0 absolute left-4 top-10
+  border-l-[10px] border-l-transparent hidden group-hover:block
+  border-b-[55px] border-b-gray-200 shadow-lg
+  border-r-[10px] border-r-transparent"></div>
+              <div className="hidden absolute bg-white rounded-md shadow-md  w-32 text-center z-10 top-full left-0 group-hover:block transition-all">
+                <Link
+                  href="/about"
+                  className="block font-normal text-left px-4 py-2 hover:bg-gray-100">
+                  About
+                </Link>
+                <Link
+                  href="/team"
+                  className="block text-left font-normal  px-4 py-2 hover:bg-gray-100">
+                  Our Team
+                </Link>
+              </div>
             </li>
+
             <li onClick={handleGetStartedClick} className="px-4 py-4 ">
               <Link href="/mentors">Mentorship </Link>
             </li>
@@ -132,9 +160,7 @@ const NavBar = () => {
             <li className="px-4 py-4" onClick={handleGetStartedClick}>
               <Link href="/blog">Blog</Link>
             </li>
-          <UserButton className="px-4 py-4"/>
           </ul>
-
         </div>
       </div>
     </>

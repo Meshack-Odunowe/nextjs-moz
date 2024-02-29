@@ -13,6 +13,7 @@ import HowItWorks from "./components/howitworks/page";
 import Testimonial from "./components/testimonial/page";
 import FrequentlyAskedQuestions from "./components/frequentlyAskedQuestions/page";
 import NewsletterSubscribe from "./components/NewsletterSubscribe";
+
 function Home() {
   const [isHovered, setIsHovered] = useState(false);
   const router = useRouter(); // Initialize useRouter
@@ -55,8 +56,7 @@ function Home() {
         <link rel="canonical" href="/home" />
       </Head>
       <div>
-
-        <div className="flex justify-between items-center gap-16 leading-8  max-w-[1240px] mx-auto flex-col lg:flex-row px-4">
+        <div className="flex justify-between items-center gap-16 leading-8  max-w-[1240px] mx-auto flex-col lg:flex-row px-4 ">
           <div>
             <h1 className="md:text-6xl text-4xl leading-[60px] font-bold md:leading-[80px] flex items-center justify-center  text-gray-700   md:text-start  ">
               Unlocking African Talents for Global Success

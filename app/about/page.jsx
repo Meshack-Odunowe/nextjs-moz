@@ -1,11 +1,5 @@
 import Image from "next/image";
-import Team from "../components/Team/page";
-import { FcSearch } from "react-icons/fc";
-import { FcOk } from "react-icons/fc";
-import { FcOrgUnit } from "react-icons/fc";
-import { FcServices } from "react-icons/fc";
-import { FcSportsMode } from "react-icons/fc";
-import { FcOrganization } from "react-icons/fc";
+
 export const metadata = {
   title: "About Us",
   description:
@@ -44,8 +38,7 @@ const About = () => {
           <div className=" shadow-lg p-2 bg-gray-50 rounded-2xl   w-fit flex  flex-col items-center justify-center">
             <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center overflow-hidden">
               <div className=" rounded-full w-32 h-32 flex items-center justify-center    bg-purple-100 mx-auto overflow-hidden">
-                {/* <FcSearch className=" text-4xl text-green-400 " />
-                 */}
+               
                 <Image width={ 200} height={200} src='/transparency.avif' alt='transparent image' />
               </div>
             </div>
@@ -61,7 +54,6 @@ const About = () => {
           <div className=" shadow-lg p-2 bg-gray-50 rounded-2xl  w-fit flex  flex-col items-center justify-center ">
             <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center  overflow-hidden">
               <div className=" rounded-full w-32 h-32 flex items-center justify-center   overflow-hidden  bg-purple-100 mx-auto">
-                {/* <FcOk className=" text-4xl text-green-400 " /> */}
                 <Image width={ 200} height={200} src='/excellence.jpg' alt='excellence image' />
               </div>
             </div>
@@ -79,7 +71,6 @@ const About = () => {
               <div className=" rounded-full w-32 h-32 flex items-center justify-center   overflow-hidden  bg-purple-100 mx-auto">
                 <Image width={200} height={200} src='/diversity.jpg' alt='image denoting diversity
                image' />
-                {/* <FcOrganization className=" text-4xl text-green-400 " /> */}
               </div>
             </div>
             <h4 className=" text-gray-800 font-bold mt-7 text-center">
@@ -98,7 +89,6 @@ const About = () => {
             <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center overflow-hidden">
               <div className=" rounded-full w-32 h-32 flex items-center justify-center   overflow-hidden  bg-purple-100 mx-auto">
               <Image width={ 200} height={200} src='/teamwork.jpg' alt='teamwork image' />
-                {/* <FcOrgUnit className=" text-4xl text-green-400 " /> */}
               </div>
             </div>
             <h4 className=" text-gray-800 font-bold mt-7 text-center">
@@ -114,7 +104,6 @@ const About = () => {
             <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center overflow-hidden">
               <div className=" rounded-full w-32 h-32 flex items-center justify-center  overflow-hidden   bg-purple-100 mx-auto">
               <Image width={ 200} height={200} src='/empowerment.jpg' alt='empowerment image' />
-                {/* <FcSportsMode className=" text-4xl text-green-400 " /> */}
               </div>
             </div>
             <h4 className=" text-gray-800 font-bold mt-7 text-center">
@@ -130,7 +119,6 @@ const About = () => {
             <div className=" rounded-full w-40 h-40 shadow-xl flex justify-center items-center overflow-hidden">
               <div className=" rounded-full w-32 h-32 flex items-center justify-center  overflow-hidden   bg-purple-100 mx-auto">
               <Image width={ 200} height={200} src='/innovation.jpeg' alt='innovation image' />
-                {/* <FcServices className=" text-4xl text-green-400 " /> */}
               </div>
             </div>
             <h4 className=" text-gray-800 font-bold mt-7 text-center">
@@ -144,12 +132,11 @@ const About = () => {
           </div>
         </div>
 
-        <p className=" italic animate-pulse font-bold mb-16 text-red-500">
+        <p className="  text-sm font-serif underline font-bold mb-16 text-red-500">
           These values shape our culture, define our approach, and guide us in
           creating meaningful impact every day.
         </p>
 
-        <Team />
       </div>
     </>
   );
