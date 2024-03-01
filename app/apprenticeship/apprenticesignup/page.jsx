@@ -17,6 +17,7 @@ const ApprenticeshipForm = () => {
     firstName: "",
     lastName: "",
     email: "",
+    phoneNumber:'',
     motivation: "",
     selectedSkill: "",
   });
@@ -84,6 +85,7 @@ const ApprenticeshipForm = () => {
       firstName: formData.firstName,
       lastName: formData.lastName,
       email: formData.email,
+      phoneNumber: formData.phoneNumber,
       selectedSkill: formData.selectedSkill,
       motivation:formData.motivation
     };
@@ -101,12 +103,14 @@ const ApprenticeshipForm = () => {
         toast.success("Form submitted successfully!", {
           position: "top-right",
           autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
         });
+        router.push('/success');
 
-        toast.onChange(() => {
-          // Redirect to the "/success" page
-          router.push("/success");
-        });
+        
 
         setRegisteredEmails([...registeredEmails, formData.email]);
       } else {
@@ -127,6 +131,7 @@ const ApprenticeshipForm = () => {
       firstName: "",
       lastName: "",
       email: "",
+      phoneNumber:'',
       selectedSkill: "",
       motivation:"",
     });
@@ -226,12 +231,26 @@ const ApprenticeshipForm = () => {
                 required
                 className="w-full border py-2 px-3 rounded-lg focus:outline-none focus:ring focus:border-[#7e22ce]"
               />
+              <label
+                htmlFor="email"
+                className="block  my-4  text-gray-600 text-sm font-medium">
+Phone Number              </label>
+              <input
+                type="number"
+                id="phoneNumber"
+                name="phoneNumber"
+                placeholder="+2341234567890"
+                value={formData.phoneNumber}
+                onChange={handleInputChange}
+                required
+                className="w-full border py-2 px-3 rounded-lg focus:outline-none focus:ring focus:border-[#7e22ce]"
+              />
  <div className="py-8">
-          <label htmlFor="selectedSkill">Skill</label>
+          <label htmlFor="selectedSkill" >Skill</label>
           <select
             name="selectedSkill"
             id="selectedSkill"
-            className="border focus-visible:bg-purple-100 w-full pl-5"
+            className="border focus-visible:bg-purple-100 mt-4 w-full pl-5"
             value={formData.selectedSkill}
             onChange={handleInputChange}
           >

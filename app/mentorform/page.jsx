@@ -13,6 +13,7 @@ const MentorForm = () => {
     firstName: "",
     lastName: "",
     email: "",
+    phoneNumber: "",
     profession: "",
     yearsOfExperience: "",
     organization: "",
@@ -58,6 +59,7 @@ const MentorForm = () => {
       formData.firstName === "" ||
       formData.lastName === "" ||
       formData.email === "" ||
+      formData.phoneNumber === "" ||
       formData.profession === "" ||
       formData.yearsOfExperience === "" ||
       formData.organization === ""
@@ -75,6 +77,7 @@ const MentorForm = () => {
       firstName: formData.firstName,
       lastName: formData.lastName,
       email: formData.email,
+      phoneNumber: formData.phoneNumber,
       profession: formData.profession,
       yearsOfExperience: formData.yearsOfExperience,
       organization: formData.organization,
@@ -159,6 +162,18 @@ const MentorForm = () => {
             className="border focus-visible:bg-purple-100 w-full  pl-5"
             placeholder="Enter your Email"
             value={formData.email}
+            onChange={handleInputChange}
+          />
+        </div>
+        <div className="mb-8">
+          <label >Phone Number</label>
+          <input
+            type="number"
+            id="phoneNumber"
+            name="phoneNumber"
+            className="border focus-visible:bg-purple-100 w-full  pl-5"
+            placeholder="Enter your Email"
+            value={formData.phoneNumber}
             onChange={handleInputChange}
           />
         </div>

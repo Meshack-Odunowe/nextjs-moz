@@ -5,7 +5,6 @@ import { PiStudentFill } from "react-icons/pi";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Head from "next/head";
-import { UserButton } from "@clerk/nextjs";
 function ForTalents() {
   const [selectedSection, setSelectedSection] = useState(null);
   const [hasError, setHasError] = useState(false);

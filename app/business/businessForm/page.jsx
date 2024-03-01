@@ -17,6 +17,7 @@ const BusinessForm = () => {
     email: '',
     talentRequirements: '',
     otherRequirements: '',
+    phoneNumber:'',
     numberOfTalents: 1,
     startDate: new Date(),
   });
@@ -65,6 +66,7 @@ const BusinessForm = () => {
       formData.name === '' ||
       formData.companyName === '' ||
       formData.email === '' ||
+      formData.phoneNumber === '' ||
       !isValidEmail(formData.email) ||
       formData.talentRequirements === ''
     ) {
@@ -78,6 +80,7 @@ const BusinessForm = () => {
       name: formData.name,
       companyName: formData.companyName,
       email: formData.email,
+      phoneNumber: formData.phoneNumber,
       talentRequirements: formData.talentRequirements,
       otherRequirements:
         formData.talentRequirements === 'Others'
@@ -123,6 +126,7 @@ const BusinessForm = () => {
       name: '',
       companyName: '',
       email: '',
+      phoneNumber: '',
       talentRequirements: '',
       otherRequirements: '',
       numberOfTalents: 1,
@@ -153,7 +157,7 @@ const BusinessForm = () => {
   };
 
   return (
-    <div className="mt-4 md:mt-8 h-screen">
+    <div className="mt-4 md:mt-8 h-full">
       <h2 className="font-bold text-2xl text-center my-8">
         Needs Assessment Form
       </h2>
@@ -199,6 +203,19 @@ const BusinessForm = () => {
             value={formData.email}
             onChange={handleInputChange}
             required
+          />
+        </div>
+        <div className="mt-4 md:mt-8">
+          <label className="font-bold mr-8">Phone Number:</label>
+          <input
+            className="border w-full px-4"
+            type="number"
+                id="phoneNumber"
+                name="phoneNumber"
+                placeholder="+2341234567890"
+                value={formData.phoneNumber}
+                onChange={handleInputChange}
+                required
           />
         </div>
         <div className="mt-4 md:mt-8">

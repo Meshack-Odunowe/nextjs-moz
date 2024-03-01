@@ -21,6 +21,7 @@ const MenteeForm = () => {
     firstName: "",
     lastName: "",
     email: "",
+    phoneNumber: "",
     selectedSkill: "",  // Added selectedSkill
     yearsOfExperience: "",
   });
@@ -58,6 +59,7 @@ const MenteeForm = () => {
       formData.lastName === "" ||
       formData.email === "" ||
       formData.text === "" ||
+      formData.phoneNumber === "" ||
       formData.selectedSkill === ""   // Check if selectedSkill is empty
     ) {
       setFormValid(false);
@@ -73,6 +75,7 @@ const MenteeForm = () => {
       firstName: formData.firstName,
       lastName: formData.lastName,
       email: formData.email,
+      phoneNumber: formData.phoneNumber,
       selectedSkill: formData.selectedSkill,  
       text: formData.text,
     };
@@ -149,6 +152,18 @@ const MenteeForm = () => {
             className="border focus-visible:bg-purple-100 w-full  pl-5"
             placeholder="Enter your Email"
             value={formData.email}
+            onChange={handleInputChange}
+          />
+        </div>
+        <div className="mb-8">
+          <label >Phone Number</label>
+          <input
+           type="number"
+           id="phoneNumber"
+           name="phoneNumber"
+            className="border focus-visible:bg-purple-100 w-full  pl-5"
+            placeholder="+2341234567890"
+            value={formData.phoneNumber}
             onChange={handleInputChange}
           />
         </div>

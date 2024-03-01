@@ -29,6 +29,7 @@ const RegistrationForm = () => {
     lastName: "",
     email: "",
     text: "",
+    phoneNumber:"",
     cvLink: "",
   });
 
@@ -95,6 +96,7 @@ const RegistrationForm = () => {
       firstName: formData.firstName,
       lastName: formData.lastName,
       email: formData.email,
+      phoneNumber:formData.phoneNumber,
       text: formData.text,
       cvLink: formData.cvLink,
     };
@@ -114,10 +116,8 @@ const RegistrationForm = () => {
           autoClose: 2000,
         });
       
-        toast.onChange(() => {
-          // Redirect to the "/success" page
-          router.push("/success");
-        });
+        router.push("/success");
+       
       
         setRegisteredEmails([...registeredEmails, formData.email]);
       }else {
@@ -138,6 +138,7 @@ const RegistrationForm = () => {
       firstName: "",
       lastName: "",
       email: "",
+      phoneNumber:"",
       text: "",
       cvLink: "",
     });
@@ -398,6 +399,21 @@ const RegistrationForm = () => {
                 name="email"
                 placeholder="youremail@example.com"
                 value={formData.email}
+                onChange={handleInputChange}
+                required
+                className="w-full border py-2 px-3 rounded-lg focus:outline-none focus:ring focus:border-[#7e22ce]"
+              />
+              <label
+                htmlFor="number"
+                className=" block py-4  text-gray-600  text-sm font-medium">
+                Phone Number
+              </label>
+              <input
+                type="number"
+                id="phoneNumber"
+                name="phoneNumber"
+                placeholder="youremail@example.com"
+                value={formData.phoneNumber}
                 onChange={handleInputChange}
                 required
                 className="w-full border py-2 px-3 rounded-lg focus:outline-none focus:ring focus:border-[#7e22ce]"

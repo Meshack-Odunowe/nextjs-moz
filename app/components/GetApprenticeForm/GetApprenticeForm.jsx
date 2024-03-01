@@ -18,6 +18,7 @@ const GetApprenticeForm = () => {
     name: '',
     companyName: '',
     email: '',
+    phoneNumber:'',
     apprenticeRequirements: '',
     numberOfApprentice: 1,
     startDate: new Date(),
@@ -80,6 +81,7 @@ const GetApprenticeForm = () => {
       name: formData.name,
       companyName: formData.companyName,
       email: formData.email,
+      phoneNumber: formData.phoneNumber,
       apprenticeRequirements: formData.apprenticeRequirements,
       otherRequirements:
         formData.apprenticeRequirements === 'Others'
@@ -130,6 +132,7 @@ const GetApprenticeForm = () => {
       name: '',
       companyName: '',
       email: '',
+      phoneNumber:'',
       apprenticeRequirements: '',
       otherRequirements: '',
       numberOfApprentices: 1,
@@ -160,7 +163,7 @@ const GetApprenticeForm = () => {
   };
 
   return (
-    <div className="mt-4 md:mt-8 h-screen">
+    <div className="mt-4 md:mt-8 h-full">
      
       <form
         className="leading-10 h-full md:px-16"
@@ -202,6 +205,18 @@ const GetApprenticeForm = () => {
             name="email"
             placeholder="Enter your email"
             value={formData.email}
+            onChange={handleInputChange}
+            required
+          />
+        </div>
+        <div className="mt-4 md:mt-8">
+          <label className="font-bold mr-8">Phone Number:</label>
+          <input
+            className="border w-full px-4"
+            type="number"
+            name="phoneNumber"
+            placeholder="+2341234567890"
+            value={formData.phoneNumber}
             onChange={handleInputChange}
             required
           />
