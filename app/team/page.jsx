@@ -7,7 +7,7 @@ function Teams() {
   return (
     <>
       <div className="bg-slate-50 min-h-screen py-10">
-        <h1 className="md:text-center font-bold text-gray-950 uppercase text-4xl mb-8 md:text-5xl md:py-16 text-center pt-8">
+        <h1 className="md:text-center font-bold text-gray-950 uppercase text-3xl mb-8 md:text-5xl md:py-16 text-center pt-8">
           Executive Team
         </h1>
         <div className="container mx-auto">
@@ -107,7 +107,7 @@ function Teams() {
       </div>
 
       <div className="bg-gray-100  min-h-screen py-10">
-        <h1 className="md:text-center text-center font-bold text-gray-950 uppercase text-4xl mb-8 md:text-5xl md:py-16 pt-8">
+        <h1 className="md:text-center text-center font-bold text-gray-950 uppercase text-3xl mb-8 md:text-5xl md:py-16 pt-8">
           Advisory Board{" "}
         </h1>
         <div className="container mx-auto">
