@@ -6,7 +6,7 @@ import { FcMenu } from "react-icons/fc";
 import { FaTimes, faTimes } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import img from "../../../public/mozishaweb.svg";
-import {  ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -31,8 +31,6 @@ const NavBar = () => {
       setIsNavbarFixed(false);
     }
   };
-
- 
 
   const navbarClass = isNavbarFixed
     ? "fixed top-0 left-0 right-0 bg-white z-30"
@@ -84,7 +82,7 @@ const NavBar = () => {
                 <Link href="/blog">Blog</Link>
               </li>
               <li onClick={closeMenu} className="cursor-pointer">
-                <Link href="/team">Our Team</Link>
+                <Link href="/team">Executives</Link>
               </li>
             </ul>
             <div>
@@ -125,7 +123,7 @@ const NavBar = () => {
               className="group px-4 py-4 flex justify-center items-center gap-2 relative"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}>
-              <span>About</span>
+              <span>About Us</span>
               <ChevronDown
                 className={`text-sm transition-transform ${
                   isHovered ? "rotate-180" : ""
@@ -136,17 +134,15 @@ const NavBar = () => {
   border-l-[10px] border-l-transparent hidden group-hover:block
   border-b-[55px] border-b-gray-200 shadow-lg
   border-r-[10px] border-r-transparent"></div>
-              <div className="hidden absolute bg-white rounded-md shadow-md  w-32 text-center z-10 top-full left-0 group-hover:block transition-all">
+              <div className="hidden absolute bg-white rounded-md shadow-md  w-48 text-center z-10 top-full left-0 group-hover:block transition-all">
                 <Link
                   href="/about"
-                  className="block font-normal text-left px-4 py-2 hover:bg-gray-100">
-                  About
-                </Link>
+                  className="block font-normal text-left px-4 py-2 hover:bg-gray-100">Core
+Values                </Link>
                 <Link
                   href="/team"
                   className="block text-left font-normal  px-4 py-2 hover:bg-gray-100">
-                  Our Team
-                </Link>
+Executives                </Link>
               </div>
             </li>
 
